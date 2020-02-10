@@ -1,0 +1,40 @@
+{# @var craft \craft\web\twig\variables\CraftVariable #}
+{#
+/**
+ * UserGroupLogin plugin for Craft CMS 3.x
+ *
+ * UserGroupLogin index.twig
+ *
+ * @author    joomkit
+ * @copyright Copyright (c) 2020 joomkit
+ * @link      https://www.joomkit.com
+ * @package   UserGroupLogin
+ * @since     1
+ */
+#}
+
+{% extends "_layouts/cp" %}
+{% import "_includes/forms" as forms %}
+
+{% do view.registerAssetBundle("joomkit\\usergrouplogin\\assetbundles\\usergrouplogin\\UserGroupLoginAsset") %}
+{% do view.registerAssetBundle("joomkit\\usergrouplogin\\assetbundles\\indexcpsection\\IndexCPSectionAsset") %}
+
+{% set docsUrl = "https://github.com/Joomkit/user-group-login/blob/master/README.md" %}
+
+{% set title = "UserGroupLogin" %}
+
+{% set pluginCpUrl = url('user-group-login') %}
+
+{% set iconUrl = view.getAssetManager().getPublishedUrl('@joomkit/usergrouplogin/assetbundles/indexcpsection/dist', true) ~ '/img/Index-icon.svg' %}
+
+{% set extraPageHeaderHtml %}
+    <div class="buttons">
+        <a href="{{ pluginCpUrl }}" class="btn submit add icon">{{ "Click Me!"|t('user-group-login') }}</a>
+    </div>
+{% endset %}
+
+{% set content %}
+    <h2>{{ "Index CP Section body goes here"|t('user-group-login') }}</h2>
+    <img src="{{ iconUrl }}" height="64" width="64" />
+    <p class="textline"></p>
+{% endset %}

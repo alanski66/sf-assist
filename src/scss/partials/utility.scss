@@ -1,0 +1,358 @@
+body,div {
+  /*  background-color: $bg_grey !important;*/
+  //line-height: 1.5;
+  font-size: $font-size-base;
+  font-family: $font-family-base;
+  font-weight: $font-weight-normal;//300;
+}
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.4;
+  font-family: $headings-font-family;
+  letter-spacing: $heading-letter-spacing;
+}
+h1{
+  font-size: $h1-font-size;
+}
+h2{
+  font-size: $h2-font-size;
+}
+h3{
+  font-size: $h3-font-size;
+}
+h4{
+  font-size: $h4-font-size;
+}
+h5{
+  font-size: $h5-font-size;
+}
+h2 strong, h3 strong, h4 strong, h5 strong, h6 strong {
+  /*color: $darg_grey;*/
+}
+.hide{display:none!important}
+p{
+  hyphens: none;
+}
+.smalltext{
+  font-weight: 200!important;
+}
+.v-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+section.heading a{
+  color: $white;
+}
+section.page a{
+  color: $blue-mid;
+}
+.page-link{
+  color: $gray-600;
+}
+//$font-size-base: 2rem;
+p {
+  font-size: $font-size-base;
+  font-family: inherit; //$font-family-sans-serif-second;
+  line-height: 1.5;
+}
+
+ul li {
+  line-height: 1.5;
+  font-size: $font-size-base;
+  font-family:inherit;
+}
+
+section p{
+  font-family: $font-family-base;
+  font-weight: 400;
+}
+
+a{
+  color: $gray-900;
+  text-decoration: none;
+}
+a:hover{
+  text-decoration: none;
+  color:$blue-mid;
+}
+button:focus{
+  outline:none;
+}
+
+.page-link.current{
+  background: $blue-light;
+}
+.news h1{
+  font-size: $h2-font-size;
+}
+.hide{ display: none}
+.videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+}
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.blockquote{
+  border-left: 5px solid $blue-mid;
+  padding-left: 20px;
+  margin: 30px 0;
+}
+
+//captions
+figcaption{
+  font-size:12px;
+  position: relative;
+}
+
+.hero.banner .picture-credit{
+  right:25px;
+  left:initial;
+}
+/** ===========buttons =================*/
+.promo a.btn,
+a.btn.btn-primary{
+  color:$white;
+}
+.cta .btn{
+  background: $yellow;
+  color:$blue-text-dark;
+  font-weight:700;
+}
+.cta .btn:hover{
+  background: lighten($yellow,10%);
+
+  color:$blue-dark;
+}
+
+//.text-xs-center{
+//  text-align: center !important;
+//}
+//.text-xs-right{
+//  text-align: right !important;
+//}
+//
+//.text-xs-left{
+//  text-align: left !important;
+//}
+
+/*************** SKEW **********/
+
+
+.valign {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.skewblock{
+  display:block;
+  height: auto;
+  padding-bottom: 40px;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  //background: linear-gradient(to right, rgba(241,231,103,1) 0%, rgba(254,182,69,1) 100%);
+  background-color: #EAFAFF;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.skewblock::after{
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: inherit;
+  z-index: -1;
+  bottom: 0;
+  transform-origin: right top;
+  transform: skewY(2deg);
+}
+.skewtop{
+  background-color: #EAFAFF;
+  position:relative;
+  padding:0px;
+  height:270px;
+}
+.skewtop:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 10%;
+  background-color: $white;
+  //transform-origin:  bottom right 60px;
+  transform: skewY(2deg);
+}
+
+/**** possible mixinfor skews ************/
+
+//@mixin angle-edge($pos-top:null, $angle-top:null, $pos-btm:null, $angle-btm:null){
+//  width: 100%;
+//  position: relative;
+//  //background: linear-gradient(to right, rgba(241,231,103,1) 0%, rgba(254,182,69,1) 100%);
+//
+//  &::after{
+//    content: '';
+//    width: 100%;
+//    height: 100%;
+//    position: absolute;
+//    background: inherit;
+//    z-index: -1;
+//    transition: ease all .5s;
+//  }
+//
+//  @if $pos-top{
+//    &::before{
+//      @if $pos-top == 'topleft'{
+//        //top: 0;
+//        transform-origin: right top;
+//        transform: skewY($angle-top);
+//      }
+//      @if $pos-top == 'topright' {
+//        top: 0;
+//        transform-origin: left top;
+//        transform: skewY(-$angle-top);
+//      }
+//    }
+//  }
+//
+//  @if $pos-btm{
+//    &::after{
+//      @if $pos-btm == 'bottomleft' {
+//        bottom: 0;
+//        transform-origin: right bottom;
+//        transform: skewY(-$angle-btm);
+//
+//      }
+//
+//      @if $pos-btm == 'bottomright' {
+//        bottom: 0;
+//        transform-origin: left bottom;
+//        transform: skewY($angle-btm);
+//      }
+//    }
+//  }
+//}
+
+/** media *****/
+@media (min-width: 320px) {
+  //.text-xs-center{
+  // text-align: initial !important;
+  //}
+  //
+  //.text-xs-right{
+  //  text-align: initial;
+  //}
+  //
+  //.text-xs-left{
+  //  text-align: initial;
+  //}
+
+
+  //aligns vertically hero trapezoids
+  .rel-v-middle{
+    top: initial;
+    transform: none;
+
+  }
+
+  .text-xs-center {
+    text-align: center;
+  }
+  .float-xs-none{
+    float:none;
+  }
+
+  .float-xs-left{
+    float:left;
+  }
+
+  .pt-xs-2{
+    padding-top: .5rem;
+  }
+  .bg-highlight-xs{
+    background: $blue-light;
+    padding:15px;
+  }
+  .bg-highlight-xs h2{
+    color: $blue-dark;
+  }
+
+  .page-heading{
+    font-size: $font-size-lg;
+    margin: 20px 0 10px 0;
+  }
+
+  .picture-credit{
+    position: absolute;
+    //left: 10px;
+    //bottom: 10px;
+    color: #fff;
+    font-size: 10px;
+    opacity: 0.7;
+    text-shadow: 1px 1px 1px #000;
+  }
+}
+@media (min-width: 576px) {
+
+  .pt-xs-2{
+    padding-top: 0;
+  }
+  .text-sm-center {
+    text-align: center;
+  }
+
+  .bg-highlight-xs{
+    background: transparent;
+    padding:0px;
+  }
+  .bg-highlight-xs h2{
+    color: inherit;
+  }
+
+  .page-heading{
+    font-size: $font-size-xl;
+    margin: 0px 0 10px 0;
+  }
+}
+
+//@media (max-width: 767px) {
+//
+//  // Align text to center.
+//  .text-xs-center {
+//    text-align: center;
+//  }
+//}
+@media (min-width:650px) {
+  //aligns vertically hero trapezoids
+  .rel-v-middle {
+    top: 50%;
+    transform: translateY(-50%);
+    position: relative;
+  }
+}
+
+@media (min-width: 768px) {
+  .page-heading{
+    font-size: 2.5rem;
+    margin: 0px 0 10px 0;
+    font-weight: 600;
+  }
+}
+
+@media (min-width: 992px) {
+  .skewblock {
+    display: flex;
+  }
+  .picture-credit{
+    right:25px;
+    left:initial;
+  }
+}

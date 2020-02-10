@@ -1,0 +1,26 @@
+//google fonts
+//@import url('//fonts.googleapis.com/css?family=Cabin|Open+Sans:300,400,600,700,800');
+
+@import 'partials/variables';
+//bootstrap4 overrides
+
+@import 'partials/bootstrap_overrides.scss';
+
+@import "bootstrap/bootstrap.scss";
+
+@import 'font-awesome-v4/font-awesome.scss';
+
+@import 'partials/block-theme';
+@import 'partials/header';
+@import 'partials/nav';
+
+@import 'partials/footer';
+@import 'partials/page';
+@import 'partials/footer';
+@import 'partials/forms';
+@import 'partials/utility';
+
+//really simple social share
+//@import 'rrssb/rrssb.scss';
+
+//@import 'partials/cookie-consent-overrides.scss';

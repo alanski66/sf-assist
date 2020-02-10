@@ -1,0 +1,9 @@
+
+1. Create Site for company name eg 'company A'
+2. Make  a not of the handle
+3. Create a group with same handle as the company name handle
+4. Create user - use the Username filed to add the 5 digit company number
+5. Activate user on the right hand side of user edit screen
+6. Add user permissions to group you have created at step 3
+
+NB For additional language site repeat above steps but miss out step 3

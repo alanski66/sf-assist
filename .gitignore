@@ -1,0 +1,8 @@
+/.env
+/.idea
+/_templatesNY107
+/scripts/.env.sh
+/vendor
+
+.DS_Store
+sf-assist.code-workspace

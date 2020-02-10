@@ -1,0 +1,26 @@
+{# @var craft \craft\web\twig\variables\CraftVariable #}
+{#
+/**
+ * UserGroupLogin plugin for Craft CMS 3.x
+ *
+ * UserGroupLogin Settings.twig
+ *
+ * @author    joomkit
+ * @copyright Copyright (c) 2020 joomkit
+ * @link      https://www.joomkit.com
+ * @package   UserGroupLogin
+ * @since     1
+ */
+#}
+
+{% import "_includes/forms" as forms %}
+
+{% do view.registerAssetBundle("joomkit\\usergrouplogin\\assetbundles\\usergrouplogin\\UserGroupLoginAsset") %}
+
+{{ forms.textField({
+    label: 'Some Field',
+    instructions: 'Enter some setting here.',
+    id: 'someAttribute',
+    name: 'someAttribute',
+    value: settings['someAttribute']})
+}}

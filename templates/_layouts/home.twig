@@ -1,0 +1,49 @@
+{% extends "_includes/_partials/globals.twig" %}
+{%- block htmlPage -%}
+<!DOCTYPE html>
+<html lang="en" class="iswan">
+
+<head>
+
+
+    {% include '_includes/_partials/head-meta.twig' %}
+
+    {% set isMobile = craft.mobileDetect.isMobile ? '1' : '0' %}
+    {% set menu = craft.entries.section('pages').hidePage('< 1').all()  %}
+
+    <!-- Custom styles for this template -->
+    {% include '_includes/_partials/css.twig' %}
+
+    {#    <link href="{{baseUrl}}/css/wireframe.css" rel="stylesheet">#}
+
+</head>
+
+
+
+
+{% if bodyClass is not defined %}
+    {% set bodyClass = entry is defined ? entry.type : craft.app.request.segments|first  %}
+{% endif %}
+<body class="{{ bodyClass }}">
+<div class="wrapper">
+
+    {% block body %}
+        <div class="content-wrapper ">
+            {% block content %}
+
+            {% endblock %}
+        </div>
+    {% endblock %}
+
+    {% block foot %}
+        {% include '_includes/footer.twig' %}
+        {% include '_includes/js.twig' %}
+    {% endblock %}
+
+</div><!-- end wrapper -->
+{%  if siteInfo.showCookieInfo %}
+    {% include '_includes/cookies.twig' %}
+{% endif %}
+</body>
+</html>
+{%- endblock htmlPage -%}

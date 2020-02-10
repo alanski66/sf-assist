@@ -1,0 +1,11 @@
+
+
+{% if not currentUser %}
+          {% exit 403 %}
+{% endif %}
+{% extends
+[
+'pages/_custom/' ~ entry.slug ~ '.twig',
+'pages/_entrytypes/' ~ entry.type ~ '.twig',
+'pages/_generic.twig'
+] %}

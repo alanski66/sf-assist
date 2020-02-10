@@ -1,0 +1,20 @@
+         {% if currentSite.group.sites | length > 2 %}
+                            <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fa fa-language" aria-hidden="true"></i> Language</a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    {% for site in currentSite.group.sites %}
+
+                                            {% set url = alias(site.baseUrl) %}
+                                            {% if entry is defined %}
+                                                {% set entryForOtherSite = craft.entries.id(entry.id).site(site).one() %}
+                                                {% if entryForOtherSite %}
+                                                    {% set url = entryForOtherSite.getUrl() %}
+                                                {% endif %}
+                                            {% endif %}
+                                            <a  class="nav-link  {% if currentSite.id == site.id %} is-active{% endif %}" href="{{ url }}/lander">{{ site.name }}</a>
+
+                                    {% endfor %}
+                                </div>
+                            </li>
+                        {% endif %}
