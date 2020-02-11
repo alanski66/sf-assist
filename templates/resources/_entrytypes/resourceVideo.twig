@@ -1,0 +1,31 @@
+
+
+{# start card layout #}
+<div class="col-sm-6 portfolio-item mb-4 ">
+    <a class="ship-card" href="{{ entry.url }}">
+        <div class="card text-center hhh" >
+
+
+
+                <div class="card-icon " data-mh="my-group">
+
+                    {%  set url = entry.mediaUrl %}
+                    {%  set options = [] %}
+                    <div class="embed-responsive embed-responsive-16by9">
+                    {{ entry.mediaUrl.render }}
+                    </div>
+
+                </div>
+
+
+            <div class="card-body mb-5 ">
+                <h5 class="card-title pt-2 mb-0">
+                    <a href="{{ entry.url }}">{{  entry.title }}</a>
+                </h5>
+                {{ entry.introText }}
+
+            </div>
+        </div>
+    </a>
+</div>
+{# end card layout #}

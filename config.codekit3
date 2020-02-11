@@ -2272,6 +2272,38 @@
 		"oAP": "/templates/resources/_entry.twig",
 		"oF": 0
 		},
+	"/templates/resources/_entrytypes/resourceDocument.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/resources/_entrytypes/resourceDocument.twig",
+		"oF": 0
+		},
+	"/templates/resources/_entrytypes/resourceVideo.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/resources/_entrytypes/resourceVideo.twig",
+		"oF": 0
+		},
+	"/templates/resources/_entrytypes/ship_category_card_layout.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/resources/_entrytypes/ship_category_card_layout.twig",
+		"oF": 0
+		},
+	"/templates/resources/_entrytypes/shipCategoryPage.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/resources/_entrytypes/shipCategoryPage.twig",
+		"oF": 0
+		},
 	"/translations/fil/site.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -2312,6 +2344,12 @@
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
+		},
+	"/web": {
+		"ft": 65536,
+		"oA": 1,
+		"oAP": "/build/web",
+		"oF": 0
 		},
 	"/wireframe": {
 		"ft": 65536,

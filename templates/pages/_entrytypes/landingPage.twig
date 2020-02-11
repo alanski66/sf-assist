@@ -5,80 +5,58 @@
     <!-- Page Content -->
     {%  if entry is defined %}
 
-        {% include '/_includes/hero-featured.twig' %}
+        <section class="news gray-light py-2 ">
+            <div class="container">
+                <div class="row ">
+                    <div class="col-xs-12 col-sm-12 col-md-12">
+                        <h1 class="page-heading">{{ entry.title }} </h1>
 
-        {% cache %}
-        {% for block in entry.landingContent.all() %}
-
-
-            {% switch block.type %}
-                {%  case "contentBlock" %}
-                    <section class="blue heading pt-4 pb-1 {{ block.type }}">
-                        <div class="container mb-0">
-                            <div class="row mb-0">
-                                <div class="col-md-12  {{ block.type }} ">
-                                    <h2>{{ block.heading }}</h2>
-
-                                    <div class="block-text">{{ block.text }}</div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </section>
-
-
-            {%  case "cta" %}
-
-            {% include '_includes/donate-section.twig' %}
-            <!-- Matrix block Call to Action Section  replaced by include above -->
-            <section class="hide {{ block.rowBackgroundColor }} pt-4 pb-4 mb-5">
-                <div class="container cta ">
-                    <div class="row no-gutters  " >
-                        <div class="col-md-12 my-auto  text-center">
-                            <div class="mr-2 cta-intro d-inline-block align-middle">{{ block.ctaIntrotext }}
-                                {%  if block.ctaLink | length %}
-                                     <a class="ml-3 btn btn-lg btn-{{ block.ctaButtonColor }} " href="{{ block.ctaLink.one().url }}">{{ block.ctaButtonText }}</a>
-                                {% endif %}
-                            </div>
-                        </div>
                     </div>
-                </div><!-- /.container -->
-            </section>
-            <!-- end cta section -->
 
-            {%  case "sectionList" %}
+                </div>
+            </div>
 
-                {%  set section = block.sectionList %}
+        </section>
+        <section class="page generic mt-5">
+            <div class="container">
+                {% paginate craft.entries.section('resources').limit(10) as pageInfo, pageEntries %}
 
-                {%  set excludeFeatured = null %}
+                {% set lazyImage = false %}
+                {% set blockPrefix = "" %}
+                <div class="row ">
+                    <div class="col-xs-12 col-md-12 col-lg-7 col-xl-7 px-0">
 
-                {%  if  block.excludeFeatured %}
-                    {%  set excludeFeatured = '1' %}
-                {%  endif %}
+                        <div class="row">
+                        {% for entry in pageEntries %}
 
-                {% set entries = craft.entries({sectionId: block.sectionList, with:
-                ['pdfThumbnailImage','projectImage','image']
-                }).orderBy('lft asc').featureContent('not '~excludeFeatured).level(1) %}
-
-                <div class="container {{  block.layout }}-layout mt-5">
-                    <div class="row ">
-
-                        {% for entry in entries.all() %}
-                            {# Get the eager-loaded asset, if there is one #}
-                            {% set image = entry.projectImage[0] ?? null %}
-
-                            {% set introtext = entry.projectIntroText ?? 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.' %}
-
-                            {% include '/pages/_entrytypes/_styles/_layout_card.twig' %}
+                            {% switch entry.type %}
+                               {% case 'resourceVideo' %}
+                                {% include ('resources/_entrytypes/resourceVideo.twig') %}
+                                
+                                {% case 'resourceDocument' %}
+                                {% include ('resources/_entrytypes/resourceDocument.twig') %}
+                            {% endswitch %}
 
                         {% endfor %}
+                        </div>
 
                     </div>
-                </div><!-- /.container -->
-            {% endswitch %}
+                    <div class="col-xs-12 col-md-12 col-lg-4 offset-lg-1 col-xl-4 offset-xl-1">
+                        {% include ('_includes/sidebar_nav.twig') %}
+                    </div>
+                </div>
 
-        {% endfor %}
-        {% endcache %}
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
     {%  endif %}
 
 {% endblock %}

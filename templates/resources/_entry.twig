@@ -3,7 +3,7 @@
 {% block content %}
 
 
-    <section class="news blue pt-lg-5 pb-lg-3 pt-sm-4 pb-sm-2 ">
+    <section class="news gray-light pt-lg-5 pb-lg-3 pt-sm-4 pb-sm-2 ">
         <div class="container">
             <div class="row ">
                 <div class="col-xs-12 col-sm-12 col-md-12">
@@ -23,22 +23,22 @@
     <section class="page generic mt-5">
         <div class="container">
 
-            {#<div class="row ">#}
-
-
-            {#<div class="col-lg-12 mb-3">#}
-            {#<h1>{{ entry.title }}</h1>#}
-            {#</div>#}
-            {#</div>#}
 
             {% set lazyImage = false %}
             {% set blockPrefix = "" %}
             <div class="row ">
                 <div class="col-xs-12 col-md-12 col-lg-7 col-xl-7">
-                  {%  set url = entry.mediaUrl %}
-                    {%  set options = [] %}
 
-                    {{ entry.mediaUrl.render }}
+                    {% switch entry.type %}
+                        {% case 'resourceVideo' %}
+                            {%  set url = entry.mediaUrl %}
+                            {%  set options = [] %}
+
+                            {{ entry.mediaUrl.render }}
+
+                        {% case 'resource' %}
+                    {% endswitch %}
+                  {
 
                 </div>
                 <div class="col-xs-12 col-md-12 col-lg-4 offset-lg-1 col-xl-4 offset-xl-1">
