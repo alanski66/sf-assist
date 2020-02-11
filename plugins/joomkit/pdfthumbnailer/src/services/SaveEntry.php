@@ -295,7 +295,7 @@ class SaveEntry extends Component
         $asset = new Asset();
         $asset->tempFilePath = $tmpImagePath . $outputFilename . '.jpg';
         $asset->filename = $outputFilename . '.jpg';
-        $asset->setFieldValues(['documentLink' => $docFileName, 'title' =>$docTitle ]); //new filed added 'pdfTitleForThumbnail'
+        //$asset->setFieldValues(['documentLink' => $docFileName, 'title' =>$docTitle ]); //new filed added 'pdfTitleForThumbnail'
         //strip imagmagick pdf in filename??
 
         $asset->newFolderId = $folder->id;

@@ -117,6 +117,12 @@
 		"oAP": "/build/plugins",
 		"oF": 0
 		},
+	"/public_html": {
+		"ft": 65536,
+		"oA": 1,
+		"oAP": "/build/public_html",
+		"oF": 0
+		},
 	"/README.md": {
 		"cB": 0,
 		"cS": 0,
@@ -2306,12 +2312,6 @@
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
-		},
-	"/web": {
-		"ft": 65536,
-		"oA": 1,
-		"oAP": "/build/web",
-		"oF": 0
 		},
 	"/wireframe": {
 		"ft": 65536,
