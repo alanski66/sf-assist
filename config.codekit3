@@ -150,6 +150,14 @@
 		"oAP": "/sf-assist.code-workspace",
 		"oF": 0
 		},
+	"/sql/localsfassist20200211.sql.gz": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/sql/localsfassist20200211.sql.gz",
+		"oF": 0
+		},
 	"/src/js/jscustom.js": {
 		"bF": 0,
 		"ft": 64,
@@ -1786,12 +1794,12 @@
 		"oAP": "/templates/403.twig",
 		"oF": 0
 		},
-	"/templates/404.twig": {
+	"/templates/404.html": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/templates/404.twig",
+		"oAP": "/templates/404.html",
 		"oF": 0
 		},
 	"/templates/_ghi/index.twig": {
@@ -2010,12 +2018,12 @@
 		"oAP": "/templates/bakext_index.twig",
 		"oF": 0
 		},
-	"/templates/errors/404.twig": {
+	"/templates/errors/403.twig": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/templates/errors/404.twig",
+		"oAP": "/templates/errors/403.twig",
 		"oF": 0
 		},
 	"/templates/errors/503.twig": {
@@ -2248,6 +2256,14 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/templates/redirect/index.twig",
+		"oF": 0
+		},
+	"/templates/resources/_entry.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/templates/resources/_entry.twig",
 		"oF": 0
 		},
 	"/translations/fil/site.php": {

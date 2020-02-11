@@ -37,7 +37,7 @@ return [
             '@basePath' => getenv('CRAFTENV_BASE_PATH')
         ],
 
-    'errorTemplatePrefix' => "_errors/"
+//    'errorTemplatePrefix' => "_errors/"
     ],
 
     // Dev environment settings

@@ -3,6 +3,6 @@
 /_templatesNY107
 /scripts/.env.sh
 /vendor
-
+/sql
 .DS_Store
 sf-assist.code-workspace
