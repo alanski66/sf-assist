@@ -63,7 +63,8 @@ $headings-line-height: 1.2;
 //links
 $navbar-dark-color: #ffffff;
 
- 
+//buttons
+$btn-border-radius: 0px!important;
 html,body {
    height:100%;
 }
@@ -87,4 +88,7 @@ html,body {
 
 .cover {
 	min-height:100%;
+}
+.btn{
+  border-radius: 0px;
 }

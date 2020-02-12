@@ -5,7 +5,7 @@
     <!-- Page Content -->
     {%  if entry is defined %}
 
-        <section class="news gray-light py-2 ">
+        <section class=" gray-light py-2 ">
             <div class="container">
                 <div class="row ">
                     <div class="col-xs-12 col-sm-12 col-md-12">
@@ -17,14 +17,14 @@
             </div>
 
         </section>
-        <section class="page generic mt-5">
+        <section class="resource-lander page generic py-5">
             <div class="container">
                 {% paginate craft.entries.section('resources').limit(10) as pageInfo, pageEntries %}
 
                 {% set lazyImage = false %}
                 {% set blockPrefix = "" %}
                 <div class="row ">
-                    <div class="col-xs-12 col-md-12 col-lg-7 col-xl-7 px-0">
+                    <div class="col-xs-12 col-md-12 col-lg-12 col-xl-12 px-0">
 
                         <div class="row">
                         {% for entry in pageEntries %}
@@ -32,7 +32,7 @@
                             {% switch entry.type %}
                                {% case 'resourceVideo' %}
                                 {% include ('resources/_entrytypes/resourceVideo.twig') %}
-                                
+
                                 {% case 'resourceDocument' %}
                                 {% include ('resources/_entrytypes/resourceDocument.twig') %}
                             {% endswitch %}

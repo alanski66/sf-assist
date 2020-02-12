@@ -330,6 +330,7 @@ a.btn.btn-primary{
 //    text-align: center;
 //  }
 //}
+
 @media (min-width:650px) {
   //aligns vertically hero trapezoids
   .rel-v-middle {
@@ -341,8 +342,9 @@ a.btn.btn-primary{
 
 @media (min-width: 768px) {
   .page-heading{
-    font-size: 2.5rem;
-    margin: 0px 0 10px 0;
+    font-size: 1.7rem;
+    margin: 0px 0 0px 0;
+
     font-weight: 600;
   }
 }

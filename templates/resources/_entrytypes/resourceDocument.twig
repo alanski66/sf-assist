@@ -1,5 +1,5 @@
 {# start card layout #}
-<div class="col-sm-6 portfolio-item mb-4 ">
+<div class="col-sm-4 portfolio-item mb-4 ">
 
         <div class="card text-center hhh" >
 
@@ -25,7 +25,7 @@
                 <div class="card-icon " data-mh="my-group">
 
                     {%  if pdfImage |length %}
-                        <img class="card-img-top p-5 img-fluid my-auto" src="{{ pdfImage.getUrl('pdfTransform') }}"
+                        <img class="card-img-top mb-3 img-fluid my-auto" src="{{ pdfImage.getUrl('pdfTransform') }}"
                              width="{{ pdfImage.getWidth('pdfTransform') }}" height="{{ pdfImage.getHeight('pdfTransform') }}"
                              alt="{{ pdfImage.title ? pdfImage.title : entry.title }} {{ pdfImage.imageCredit ? pdfImage.imageCredit: ''  }}">
                     {%  endif %}
@@ -33,11 +33,12 @@
                 </div>
             {% endif %}
 
-            <div class="card-body mb-5 ">
+            <div class="card-body  ">
                 <h5 class="card-title pt-2 mb-0">
                     <a href="{{ entry.url }}">{{  entry.title }}</a>
                 </h5>
                 {{ entry.introText }}
+                <a href="{{ entry.pdfDocument.one().url }}"class="btn btn-blue">Download</a>
 
             </div>
         </div>

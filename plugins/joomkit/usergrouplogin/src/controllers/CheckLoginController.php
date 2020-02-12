@@ -38,6 +38,10 @@ class CheckLoginController extends Controller
     // Public Methods
     // =========================================================================
 
+    public function getHttpStatus()
+    {
+        return http_response_code();
+    }
     /**
      * @return mixed
      */
@@ -48,10 +52,19 @@ class CheckLoginController extends Controller
         $userId = Craft::$app->getRequest()->post('loginName');
         $user = Craft::$app->getUsers()->getUserByUsernameOrEmail($userId);
         # Login as user, by id
-        Craft::$app->getUser()->loginByUserId($user->id);
+//        var_dump($user); die();
+        if (!is_null($user)){
+            Craft::$app->getUser()->loginByUserId($user->id);
+
             $csite = Craft::$app->getSites()->currentSite->handle;
-        $url ='redirect';
-        return $this->redirect($url);
+            $url ='redirect';
+            return $this->redirect($url);
+
+        }else{
+            $url = '403';
+            return $this->redirect($url);
+        }
+
 
         # Redirect
         // return Craft::$app->getResponse()->redirect($url)->send();

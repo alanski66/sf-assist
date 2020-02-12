@@ -1,19 +1,86 @@
 
-{% if block.formIntro |length %}
-    {{ block.formIntro }}
-{% endif %}
-{% if block.form |length %}
 
-    {{ craft.freeform.form(block.form.handle, {
-        labelClass: "form-label",
-        inputClass: "form-control",
-        id: block.form.handle~block.id,
-        class: block.form.handle,
-        instructionsBelowField: true,
-        overrideValues: {
-            hiddenFieldHandle: entry.id
-        }
-    }).render() }}
+{% if block.selectForm |length %}
+
+    {% macro errorList(errors) %}
+        {% if errors %}
+            <ul class="errors">
+                {% for error in errors %}
+                    <li>{{ error }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+    {% endmacro %}
+    {% from _self import errorList %}
+
+    {% set form = wheelform.form({
+        id: block.selectForm.id,
+        redirect: 'contact/thanks'
+    }) %}
+
+    {{ form.open() }}
+    {{ wheelformErrors['form'] is defined ? errorList(wheelformErrors['form']) }}
+    {{ wheelformErrors['recaptcha'] is defined ? errorList(wheelformErrors['recaptcha']) }}
+    {{ wheelformErrors['honeypot'] is defined ? errorList(wheelformErrors['honeypot']) }}
+
+    {% for field in form.fields %}
+        {% switch field.type %}
+        {% case "checkbox" %}
+            <div class="form-checkbox">
+                {% for item in field.items %}
+                    <label><input class="checkbox" type="checkbox" value="{{ item }}" {{values[field.name] is defined and item in values[field.name] ? ' checked="checked"' : '' }} name="{{field.name}}[]" id=""/>{{item}}</label>
+                {% endfor %}
+            </div>
+        {% case "radio" %}
+            <div class="form-radio">
+                {% for item in field.items %}
+                    <input class="radio" type="radio" value="{{ item }}" {{values[field.name] is defined and item == values[field.name] ? ' checked="checked"' : '' }} name="{{field.name}}" id=""/>
+                    <label>{{item}}</label>
+                {% endfor %}
+            </div>
+        {% case "select" %}
+            <div class="form-select">
+                <select id="wf-select" name="{{field.name}}" class="wf-field {{field.fieldClass}}">
+                    {% for item in field.items %}
+                        <option value="{{ item }}" {{values[field.name] is defined and item == values[field.name] ? 'selected="selected"' : '' }}>{{item}}</option>
+                    {% endfor %}
+                </select>
+            </div>
+        {% case "file" %}
+            <div class="form-group">
+                <label>{{field.label}}</label>
+                <input type="file" name="{{field.name}}" id=""/>
+            </div>
+        {% case "textarea" %}
+            <div class="form-group">
+                <label>{{field.label}}</label>
+                <textarea class="form-control" name="{{field.name}}" id="">{{ values[field.name] ?? '' }}</textarea>
+            </div>
+        {% case "list" %}
+            <div class="form-group">
+                <label>{{field.label}}</label>
+                <input type="text" name="{{field.name}}[]" id=""/>
+                <script>//Javascript to handle adding fields</script>
+            </div>
+        {% default %}
+            <div class="form-group">
+                <label>{{field.label}}</label>
+                <input class="form-control" type="{{field.type}}" value="{{ values[field.name] ?? '' }}" name="{{field.name}}" id=""/>
+            </div>
+        {% endswitch %}
+        {{ wheelformErrors[field.name] is defined ? errorList(wheelformErrors[field.name]) }}
+    {% endfor %}
+    {% if form.recaptcha %}
+        <div>
+            <script src="https://www.google.com/recaptcha/api.js"></script>
+            <!-- Production captcha -->
+            <div class="g-recaptcha" data-sitekey="{{wheelform.getSettings('recaptcha_public')}}"></div>
+        </div>
+    {% endif %}
+
+    <button class="btn btn-success" id="submit">Send</button>
+
+    </form>
 
 
 {% endif %}

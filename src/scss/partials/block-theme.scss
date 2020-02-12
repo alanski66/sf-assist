@@ -17,6 +17,10 @@ section .description > *{
   font-family: $font-family-sans-serif;
 }
 
+/*======resource======*/
+section.resource-lander{
+  background-color: #f4f4f4;
+}
 /*======Sponsor======*/
 section.sponsor{
   font-size: $font-size-base;

@@ -7,13 +7,13 @@
 
         <nav class="navbar navbar-expand-md navbar-dark bg-info">
             <div class="container">
-                <a class="navbar-brand" href="#"><img src="{{baseUrl}}/assets/images/slogo.png" alt=""></a>
+                <a class="navbar-brand" href="{{ baseUrl }}"><img src="{{baseUrl}}/assets/images/slogo.png" alt=""></a>
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar2SupportedContent" aria-controls="navbar2SupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span> </button>
                 <div class="collapse navbar-collapse text-center justify-content-between" id="navbar2SupportedContent">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link mx-2" href="{{ alias(currentSite.baseUrl) }}"><i class="fa fa-fw fa-home"></i>{{ 'home'|t }}</a>
+                            <a class="nav-link mx-2" href="{{ alias(currentSite.baseUrl) }}/lander"><i class="fa fa-fw fa-home"></i>{{ 'home'|t }}</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link mx-2" href="{{ alias(currentSite.baseUrl) }}/about"><i class="fa fa-fw fa-info"></i>{{ 'about'|t }}</a>
@@ -39,7 +39,11 @@
                                                 {% set url = entryForOtherSite.getUrl() %}
                                             {% endif %}
                                         {% endif %}
-                                        <a  class="nav-link  {% if currentSite.id == site.id %} is-active{% endif %}" href="{{ url }}/lander">{{ site.handle }}</a>
+                                        {% set displayname = '' %}
+                                        {% if site.language == 'hi' %}
+                                        {% set displayname = 'hindi' %}
+                                        {% endif %}
+                                        <a  class="nav-link  {% if currentSite.id == site.id %} is-active{% endif %}" href="{{ url }}">{{ site.language }}</a>
 
                                     {% endfor %}
                                 </div>

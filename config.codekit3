@@ -164,6 +164,14 @@
 		"oAP": "/sql/localsfassist20200211.sql.gz",
 		"oF": 0
 		},
+	"/sql/localsfassist20200212.sql.gz": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/sql/localsfassist20200212.sql.gz",
+		"oF": 0
+		},
 	"/src/js/jscustom.js": {
 		"bF": 0,
 		"ft": 64,
@@ -304,7 +312,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/web/css/styles.css",
+		"oAP": "/public_html/css/styles.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -317,7 +325,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/web/css/styles.css",
+		"oAP": "/public_html/css/styles.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -330,7 +338,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/web/css/styles.css",
+		"oAP": "/public_html/css/styles.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -343,7 +351,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/web/css/styles.css",
+		"oAP": "/public_html/css/styles.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -356,7 +364,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/web/css/styles.css",
+		"oAP": "/public_html/css/styles.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -369,7 +377,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/web/css/styles.css",
+		"oAP": "/public_html/css/styles.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -382,7 +390,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/web/css/styles.css",
+		"oAP": "/public_html/css/styles.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -395,7 +403,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/web/css/styles.css",
+		"oAP": "/public_html/css/styles.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -408,7 +416,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/web/css/styles.css",
+		"oAP": "/public_html/css/styles.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -421,7 +429,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/web/css/styles.css",
+		"oAP": "/public_html/css/styles.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -434,7 +442,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/web/css/styles.css",
+		"oAP": "/public_html/css/styles.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -447,7 +455,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/web/css/styles.css",
+		"oAP": "/public_html/css/styles.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -460,7 +468,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/web/css/styles.css",
+		"oAP": "/public_html/css/styles.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -473,7 +481,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/web/css/styles.css",
+		"oAP": "/public_html/css/styles.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -486,7 +494,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/web/css/styles.css",
+		"oAP": "/public_html/css/styles.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -499,7 +507,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/web/css/styles.css",
+		"oAP": "/public_html/css/styles.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -512,7 +520,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/web/css/styles.css",
+		"oAP": "/public_html/css/styles.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -525,7 +533,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/web/css/styles.css",
+		"oAP": "/public_html/css/styles.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -538,7 +546,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/web/css/styles.css",
+		"oAP": "/public_html/css/styles.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -551,7 +559,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/web/css/styles.css",
+		"oAP": "/public_html/css/styles.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -564,7 +572,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/web/css/styles.css",
+		"oAP": "/public_html/css/styles.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -577,7 +585,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/web/css/styles.css",
+		"oAP": "/public_html/css/styles.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -590,7 +598,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/web/css/styles.css",
+		"oAP": "/public_html/css/styles.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -603,7 +611,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/web/css/styles.css",
+		"oAP": "/public_html/css/styles.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -616,7 +624,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/web/css/styles.css",
+		"oAP": "/public_html/css/styles.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -629,7 +637,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/web/css/styles.css",
+		"oAP": "/public_html/css/styles.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -642,7 +650,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/web/css/styles.css",
+		"oAP": "/public_html/css/styles.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -655,7 +663,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/web/css/styles.css",
+		"oAP": "/public_html/css/styles.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -668,7 +676,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/web/css/styles.css",
+		"oAP": "/public_html/css/styles.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -681,7 +689,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/web/css/styles.css",
+		"oAP": "/public_html/css/styles.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -694,7 +702,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/web/css/styles.css",
+		"oAP": "/public_html/css/styles.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -707,7 +715,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/web/css/styles.css",
+		"oAP": "/public_html/css/styles.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -720,7 +728,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/web/css/styles.css",
+		"oAP": "/public_html/css/styles.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -733,7 +741,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/web/css/styles.css",
+		"oAP": "/public_html/css/styles.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -746,7 +754,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/web/css/styles.css",
+		"oAP": "/public_html/css/styles.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -759,7 +767,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/web/css/styles.css",
+		"oAP": "/public_html/css/styles.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -772,7 +780,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/web/css/styles.css",
+		"oAP": "/public_html/css/styles.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -785,7 +793,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 0,
-		"oAP": "/web/css/styles.css",
+		"oAP": "/public_html/css/styles.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -798,7 +806,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 0,
-		"oAP": "/web/css/styles.css",
+		"oAP": "/public_html/css/styles.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -811,7 +819,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/web/css/styles.css",
+		"oAP": "/public_html/css/styles.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -824,7 +832,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/web/css/styles.css",
+		"oAP": "/public_html/css/styles.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -837,7 +845,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/web/css/styles.css",
+		"oAP": "/public_html/css/styles.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -850,7 +858,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/web/css/styles.css",
+		"oAP": "/public_html/css/styles.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -863,7 +871,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/web/css/styles.css",
+		"oAP": "/public_html/css/styles.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -876,7 +884,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/web/css/styles.css",
+		"oAP": "/public_html/css/styles.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -889,7 +897,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/web/css/styles.css",
+		"oAP": "/public_html/css/styles.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -902,7 +910,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/web/css/styles.css",
+		"oAP": "/public_html/css/styles.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -915,7 +923,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/web/css/styles.css",
+		"oAP": "/public_html/css/styles.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -928,7 +936,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/web/css/styles.css",
+		"oAP": "/public_html/css/styles.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -941,7 +949,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/web/css/styles.css",
+		"oAP": "/public_html/css/styles.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -954,7 +962,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/web/css/styles.css",
+		"oAP": "/public_html/css/styles.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -967,7 +975,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/web/css/styles.css",
+		"oAP": "/public_html/css/styles.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -980,7 +988,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/web/css/styles.css",
+		"oAP": "/public_html/css/styles.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -993,7 +1001,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/web/css/styles.css",
+		"oAP": "/public_html/css/styles.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -1006,7 +1014,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/web/css/styles.css",
+		"oAP": "/public_html/css/styles.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -1019,7 +1027,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/web/css/styles.css",
+		"oAP": "/public_html/css/styles.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -1032,7 +1040,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/web/css/styles.css",
+		"oAP": "/public_html/css/styles.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -1045,7 +1053,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/web/css/styles.css",
+		"oAP": "/public_html/css/styles.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -1058,7 +1066,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/web/css/styles.css",
+		"oAP": "/public_html/css/styles.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -1071,7 +1079,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/web/css/styles.css",
+		"oAP": "/public_html/css/styles.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -1084,7 +1092,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/web/css/styles.css",
+		"oAP": "/public_html/css/styles.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -1097,7 +1105,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/web/css/styles.css",
+		"oAP": "/public_html/css/styles.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -1110,7 +1118,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/web/css/styles.css",
+		"oAP": "/public_html/css/styles.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -1123,7 +1131,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/web/css/styles.css",
+		"oAP": "/public_html/css/styles.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -1136,7 +1144,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/web/css/styles.css",
+		"oAP": "/public_html/css/styles.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -1149,7 +1157,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/web/css/styles.css",
+		"oAP": "/public_html/css/styles.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -1162,7 +1170,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/web/css/styles.css",
+		"oAP": "/public_html/css/styles.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -1175,7 +1183,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/web/css/styles.css",
+		"oAP": "/public_html/css/styles.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -1188,7 +1196,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/web/css/styles.css",
+		"oAP": "/public_html/css/styles.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -1201,7 +1209,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/web/css/styles.css",
+		"oAP": "/public_html/css/styles.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -1214,7 +1222,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/web/css/styles.css",
+		"oAP": "/public_html/css/styles.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -1227,7 +1235,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/web/css/styles.css",
+		"oAP": "/public_html/css/styles.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -1240,7 +1248,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/web/css/styles.css",
+		"oAP": "/public_html/css/styles.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -1253,7 +1261,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/web/css/styles.css",
+		"oAP": "/public_html/css/styles.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -1266,7 +1274,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/web/css/styles.css",
+		"oAP": "/public_html/css/styles.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -1279,7 +1287,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/web/css/styles.css",
+		"oAP": "/public_html/css/styles.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -1292,7 +1300,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/web/css/styles.css",
+		"oAP": "/public_html/css/styles.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -1305,7 +1313,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/web/css/styles.css",
+		"oAP": "/public_html/css/styles.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -1318,7 +1326,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/web/css/styles.css",
+		"oAP": "/public_html/css/styles.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -1331,7 +1339,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/web/css/styles.css",
+		"oAP": "/public_html/css/styles.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -1344,7 +1352,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/web/css/styles.css",
+		"oAP": "/public_html/css/styles.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -1357,7 +1365,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/web/css/styles.css",
+		"oAP": "/public_html/css/styles.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -1370,7 +1378,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/web/css/styles.css",
+		"oAP": "/public_html/css/styles.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -1383,7 +1391,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/web/css/styles.css",
+		"oAP": "/public_html/css/styles.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -1396,7 +1404,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/web/css/styles.css",
+		"oAP": "/public_html/css/styles.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -1409,7 +1417,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/web/css/styles.css",
+		"oAP": "/public_html/css/styles.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -1422,7 +1430,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/web/css/styles.css",
+		"oAP": "/public_html/css/styles.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -1435,7 +1443,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/web/css/styles.css",
+		"oAP": "/public_html/css/styles.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -1448,7 +1456,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/web/css/styles.css",
+		"oAP": "/public_html/css/styles.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -1461,7 +1469,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 0,
-		"oAP": "/web/css/styles.css",
+		"oAP": "/public_html/css/styles.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -1474,7 +1482,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/web/css/styles.css",
+		"oAP": "/public_html/css/styles.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -1487,7 +1495,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/web/css/styles.css",
+		"oAP": "/public_html/css/styles.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -1500,7 +1508,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/web/css/styles.css",
+		"oAP": "/public_html/css/styles.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -1513,7 +1521,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/web/css/styles.css",
+		"oAP": "/public_html/css/styles.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -1526,7 +1534,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/web/css/styles.css",
+		"oAP": "/public_html/css/styles.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -1539,7 +1547,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/web/css/styles.css",
+		"oAP": "/public_html/css/styles.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -1552,7 +1560,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/web/css/styles.css",
+		"oAP": "/public_html/css/styles.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -1565,7 +1573,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/web/css/styles.css",
+		"oAP": "/public_html/css/styles.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -1578,7 +1586,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/web/css/styles.css",
+		"oAP": "/public_html/css/styles.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -1591,7 +1599,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/web/css/styles.css",
+		"oAP": "/public_html/css/styles.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -1604,7 +1612,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/web/css/styles.css",
+		"oAP": "/public_html/css/styles.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -1617,7 +1625,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/web/css/styles.css",
+		"oAP": "/public_html/css/styles.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -1630,7 +1638,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/web/css/styles.css",
+		"oAP": "/public_html/css/styles.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -1643,7 +1651,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/web/css/styles.css",
+		"oAP": "/public_html/css/styles.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -1656,7 +1664,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/web/css/styles.css",
+		"oAP": "/public_html/css/styles.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -1669,7 +1677,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/web/css/styles.css",
+		"oAP": "/public_html/css/styles.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -1682,7 +1690,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/web/css/styles.css",
+		"oAP": "/public_html/css/styles.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -1695,7 +1703,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/web/css/styles.css",
+		"oAP": "/public_html/css/styles.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -1708,7 +1716,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/web/css/styles.css",
+		"oAP": "/public_html/css/styles.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -1721,7 +1729,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/web/css/styles.css",
+		"oAP": "/public_html/css/styles.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -1734,7 +1742,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/web/css/styles.css",
+		"oAP": "/public_html/css/styles.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -1747,7 +1755,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/web/css/styles.css",
+		"oAP": "/public_html/css/styles.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -1760,7 +1768,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/web/css/styles.css",
+		"oAP": "/public_html/css/styles.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -1773,7 +1781,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 0,
-		"oAP": "/web/css/styles.css",
+		"oAP": "/public_html/css/styles.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -4363,7 +4371,7 @@
 	"languageDefaultsSASS": {
 		"autoOutputAction": 0,
 		"autoOutputPathFilenamePattern": "styles.css",
-		"autoOutputPathRelativePath": "../../web/css",
+		"autoOutputPathRelativePath": "../../public_html/css",
 		"autoOutputPathReplace1": "sass",
 		"autoOutputPathReplace2": "css",
 		"autoOutputPathStyle": 1,

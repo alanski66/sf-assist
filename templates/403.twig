@@ -10,21 +10,10 @@
     <section class="news blue pt-lg-5 pb-lg-3 pt-sm-4 pb-sm-2 ">
         <div class="container">
             <div class="row ">
-                <div class="col-xs-12 col-sm-6 col-md-3">
+                <div class="col-xs-12 ">
                     <h1 class="page-heading">403 Permission denied </h1>
                 </div>
-                <div class="col-xs-12 col-sm-6 col-md-9">
-                    {%  set btnColor = "btn-" ~ subscribe.ctaButtonColor ?? "btn-gray" %}
 
-                    <div class="text-xs-center text-sm-right text-lg-right cta-intro pt-md-3">
-                        <span class="cta-subscribe-text pb-sm2 pb-md-0 d-md-inline d-lg-none">Stay up to date</span>
-                        <span class="cta-subscribe-text d-none d-md-none d-lg-inline">{{ subscribe.ctaText }}</span>
-                        <a class="ml-md-3 btn {{ btnColor }} " id="top-subscribe"
-                           data-toggle="collapse" href="#collapseForm" role="button" aria-expanded="false" aria-controls="collapseForm">
-                            <i class="fa fa-envelope"></i>
-                            {{ subscribe.ctaButtonText }}</a>
-                    </div>
-                </div>
             </div>
         </div>
 
@@ -50,7 +39,8 @@
             <div class="row ">
                 <div class="col-xs-12 col-md-12 col-lg-7 col-xl-7">
 
-                    <p>Page not found</p>
+                    <p>It looks like your login is not recognised or setup properly. PLease go back and try again or <a href="contact">contact us here</a></p>
+                    <p><a href="{{ baseUrl}}" class="btn btn-default">Back</a></p>
 
                 </div>
                 <div class="col-xs-12 col-md-12 col-lg-4 offset-lg-1 col-xl-4 offset-xl-1">
