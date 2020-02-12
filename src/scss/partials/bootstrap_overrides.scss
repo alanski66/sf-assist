@@ -45,8 +45,11 @@ $link-color: #8e8e8e;
 //font-family: 'Arimo', sans-serif;
 //font-family: 'Open Sans', sans-serif;
 $font-family-base: Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-$headings-font-family:  'Arimo', sans-serif;//$font-family-base;
-$display-font-family:  'Arimo', sans-serif; //$font-family-base;
+//$headings-font-family:  'Arimo', sans-serif;//$font-family-base;
+//$display-font-family:  'Arimo', sans-serif; //$font-family-base;
+$headings-font-family:  'Lato', sans-serif;//$font-family-base;
+$display-font-family:  'Lato', sans-serif; //$font-family-base;
+
 $font-weight-normal: 200;
 $headings-font-weight: 200;
 $headings-font-weight: $font-weight-normal;
