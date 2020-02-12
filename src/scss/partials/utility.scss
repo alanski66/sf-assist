@@ -5,6 +5,9 @@ body,div {
   font-family: $font-family-base;
   font-weight: $font-weight-normal;//300;
 }
+body.contact .navbar-nav{
+  display: none!important;
+}
 h1, h2, h3, h4, h5, h6 {
   line-height: 1.4;
   font-family: $headings-font-family;
@@ -85,7 +88,7 @@ button:focus{
 .news h1{
   font-size: $h2-font-size;
 }
-.hide{ display: none}
+.hide{ display: none!important;}
 .videoWrapper {
   position: relative;
   padding-bottom: 56.25%; /* 16:9 */

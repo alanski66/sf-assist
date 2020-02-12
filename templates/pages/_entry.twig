@@ -1,6 +1,6 @@
 
-
-{% if not currentUser %}
+{% set seg =  craft.app.request.getSegment(1) %}
+{% if not currentUser and seg !='contact' %}
           {% exit 403 %}
 {% endif %}
 {% extends

@@ -10536,6 +10536,9 @@ body, div {
   font-family: Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: 200; }
 
+body.contact .navbar-nav {
+  display: none !important; }
+
 h1, h2, h3, h4, h5, h6 {
   line-height: 1.4;
   font-family: "Lato", sans-serif;
@@ -10614,7 +10617,7 @@ button:focus {
   font-size: 2.16rem; }
 
 .hide {
-  display: none; }
+  display: none !important; }
 
 .videoWrapper {
   position: relative;

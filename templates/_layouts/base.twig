@@ -26,7 +26,7 @@
 {% if bodyClass is not defined %}
     {% set bodyClass = entry is defined ? entry.type : craft.app.request.segments|first  %}
 {% endif %}
-<body class="{{ bodyClass }}">
+<body class="{{ bodyClass }} {{ craft.app.request.getSegment(1)}}">
 <div class="wrapper">
 
     <header class="header">
