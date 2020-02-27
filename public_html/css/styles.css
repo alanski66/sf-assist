@@ -10036,6 +10036,9 @@ img.chat {
 img.chat:hover {
   animation: none; }
 
+.page-heading {
+  text-transform: capitalize; }
+
 .dropdown-menu.show {
   background: #30435a91;
   margin-top: 0;

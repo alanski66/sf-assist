@@ -69,7 +69,8 @@
                             {#{% else %}#}
                             {#{%  set navTitle = entry.title %}#}
                             {#{% endif %}#}
-
+                            {% set onclick ="" %}
+                            {% set popclass ="" %}
                             {% if entry.entryLink.one()|length %}
                                 {% set navlink = entry.entryLink.one().uri %}
                             {% else %}
@@ -119,11 +120,33 @@
 
                             {% elseif entry.level == 1 and not entry.hasDescendants() %}
 
+                                 {% set link = "" %}
+                                {% if entry.title |lower == 'email' %}
+                                    {% set link = "mailto:" ~ navlink %}
+
+                                    {% elseif entry.title |lower  =='chat' %}
+                                    {% set link = entry.customLink %}
+{#                                    {%  set onclick = "onclick=" ~ clickstring ~ "return:false;" %}#}
+
+                                        {% set popclass = "popup" %}
+                                        {% set script = "$('.popup').click(function() {
+                                                console.log('pop');
+                                                    var newwindow = window.open($(this).prop('href'), '',
+                                                   'height=380,width=484');
+                                                    if (window.focus) {
+                                                        newwindow.focus();
+                                                    }
+                                                    return false;
+                                            });" %}
+                                        {% do view.registerJs(script) %}
+
+                                {% else %}
+                                    {% set link = siteUrl ~ navlink %}
+                                {% endif %}
 
                                 <li class="py-sm-2  px-3 bg-info list-group-item nav-item {{ macros.activeLinkClass(navlink, entry.level)|trim }} level{{ entry.level }} {{ entry.title |lower  }}">
                                     <img class="nav-icon {{ entry.title |lower  }}" src = "{{ baseUrl }}/icons/{{ entry.title |lower  }}.svg" >
-                                    <a id="{{ entry.title|lower }}" href="{{ siteUrl }}{{ navlink }}"
-                                                     class=" nav-link {{ macros.activeLinkClass(navlink, entry.level) |trim }} level{{ entry.level }}">
+                                    <a id="{{ entry.title|lower }}" href="{{ link }}" {{ onclick }} class="{{ popclass }} nav-link {{ macros.activeLinkClass(navlink, entry.level) |trim }} level{{ entry.level }}">
 
                                         {{ entry.title }}</a>
                                 </li>
