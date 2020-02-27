@@ -11,27 +11,13 @@
         <div class="container">
             <div class="row ">
                 <div class="col-xs-12 col-sm-6 col-md-3">
-                    <h1 class="page-heading">404 Error </h1>
+                    <h1 class="page-heading">404 {{ 'Page not found'|t }} </h1>
                 </div>
-                <div class="col-xs-12 col-sm-6 col-md-9">
-                    {%  set btnColor = "btn-" ~ subscribe.ctaButtonColor ?? "btn-gray" %}
 
-                    <div class="text-xs-center text-sm-right text-lg-right cta-intro pt-md-3">
-                        <span class="cta-subscribe-text pb-sm2 pb-md-0 d-md-inline d-lg-none">Stay up to date</span>
-                        <span class="cta-subscribe-text d-none d-md-none d-lg-inline">{{ subscribe.ctaText }}</span>
-                        <a class="ml-md-3 btn {{ btnColor }} " id="top-subscribe"
-                           data-toggle="collapse" href="#collapseForm" role="button" aria-expanded="false" aria-controls="collapseForm">
-                            <i class="fa fa-envelope"></i>
-                            {{ subscribe.ctaButtonText }}</a>
-                    </div>
-                </div>
             </div>
         </div>
 
     </section>
-
-
-    {# {% include '_includes/subscribe-section-top.twig' %} #}
 
     <!-- Page Content -->
     <section class="page generic mt-5">

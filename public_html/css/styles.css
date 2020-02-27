@@ -9987,9 +9987,6 @@ section.outlink a {
   .logo {
     max-width: 100%; } }
 
-.dropdown-menu .nav-link {
-  color: #333 !important; }
-
 .bg-info-top {
   background: #30435a; }
 
@@ -10038,6 +10035,17 @@ img.chat {
 
 img.chat:hover {
   animation: none; }
+
+.dropdown-menu.show {
+  background: #30435a91;
+  margin-top: 0;
+  padding: 10px; }
+
+.dropdown-menu.show .nav-link:hover {
+  color: #fefefe; }
+
+.dropdown-menu.show .nav-link:hover {
+  color: #ffffff; }
 
 @media (min-width: 0px) {
   .navbar-brand {

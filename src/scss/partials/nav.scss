@@ -1,5 +1,5 @@
 .dropdown-menu .nav-link{
-  color:#333!important
+  //color:#333!important
 }
 
 
@@ -57,6 +57,18 @@ img.chat:hover {
 }
 
 
+.dropdown-menu.show{
+  background:#30435a91;
+  margin-top:0;
+  padding:10px;
+}
+.dropdown-menu.show .nav-link:hover{
+  color:#fefefe;
+}
+
+.dropdown-menu.show .nav-link:hover{
+  color:$white;
+}
 @media (min-width: 0px) {
 
 
