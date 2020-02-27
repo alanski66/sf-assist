@@ -20,6 +20,6 @@
 
 return [
     'resources/<slug>' => ['template' => 'ship/_entry'],
-    'about' => ['template' => 'about/_entry'],
-    '<slug>/<slug>/about' => ['template' => 'about/_entry'],
+//    'about' => ['template' => 'about/_entry'],
+//    '<slug>/<slug>/about' => ['template' => 'about/_entry'],
 ];

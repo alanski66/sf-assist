@@ -2145,6 +2145,14 @@
 		"oAP": "/templates/pages/_entrytypes/_styles/_layout_ship.twig",
 		"oF": 0
 		},
+	"/templates/pages/_entrytypes/aboutPage.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/pages/_entrytypes/aboutPage.twig",
+		"oF": 0
+		},
 	"/templates/pages/_entrytypes/getInvolved.twig": {
 		"cB": 0,
 		"ft": 8192,
@@ -2159,14 +2167,6 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/templates/pages/_entrytypes/joinpage.twig",
-		"oF": 0
-		},
-	"/templates/pages/_entrytypes/landingPage.twig": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/templates/pages/_entrytypes/landingPage.twig",
 		"oF": 0
 		},
 	"/templates/pages/_entrytypes/landingpageAPI": {
@@ -2199,6 +2199,14 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/templates/pages/_entrytypes/pages.twig",
+		"oF": 0
+		},
+	"/templates/pages/_entrytypes/resourceLandingPage.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/pages/_entrytypes/resourceLandingPage.twig",
 		"oF": 0
 		},
 	"/templates/pages/_entrytypes/ship.twig": {
