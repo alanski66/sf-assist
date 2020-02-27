@@ -97,6 +97,12 @@
 		"oAP": "/build/documentation",
 		"oF": 0
 		},
+	"/icons": {
+		"ft": 65536,
+		"oA": 1,
+		"oAP": "/build/icons",
+		"oF": 0
+		},
 	"/modules": {
 		"ft": 65536,
 		"oA": 1,
@@ -156,20 +162,18 @@
 		"oAP": "/sf-assist.code-workspace",
 		"oF": 0
 		},
-	"/sql/localsfassist20200211.sql.gz": {
+	"/sf-assist.sketch": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/sql/localsfassist20200211.sql.gz",
+		"oAP": "/sf-assist.sketch",
 		"oF": 0
 		},
-	"/sql/localsfassist20200212.sql.gz": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/sql/localsfassist20200212.sql.gz",
+	"/sql": {
+		"ft": 65536,
+		"oA": 1,
+		"oAP": "/build/sql",
 		"oF": 0
 		},
 	"/src/js/jscustom.js": {
@@ -178,7 +182,7 @@
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "/web/js/all-min.js",
+		"oAP": "/public_html/js/all-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
@@ -189,7 +193,7 @@
 		"ma": 0,
 		"mi": 1,
 		"oA": 1,
-		"oAP": "/src/js/web/js/all-min.js",
+		"oAP": "/src/js/public_html/js/all-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
@@ -200,7 +204,7 @@
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "/src/js/web/js/all-min.js",
+		"oAP": "/src/js/public_html/js/all-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
@@ -211,7 +215,7 @@
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "/src/js/web/js/all-min.js",
+		"oAP": "/src/js/public_html/js/all-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
@@ -222,7 +226,7 @@
 		"ma": 0,
 		"mi": 1,
 		"oA": 1,
-		"oAP": "/src/js/web/js/all-min.js",
+		"oAP": "/src/js/public_html/js/all-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
@@ -233,7 +237,7 @@
 		"ma": 0,
 		"mi": 1,
 		"oA": 1,
-		"oAP": "/src/js/web/js/all-min.js",
+		"oAP": "/src/js/public_html/js/all-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
@@ -244,7 +248,7 @@
 		"ma": 0,
 		"mi": 1,
 		"oA": 1,
-		"oAP": "/src/js/web/js/all-min.js",
+		"oAP": "/src/js/public_html/js/all-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
@@ -255,7 +259,7 @@
 		"ma": 0,
 		"mi": 1,
 		"oA": 1,
-		"oAP": "/src/js/web/js/all-min.js",
+		"oAP": "/src/js/public_html/js/all-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
@@ -266,7 +270,7 @@
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "/src/js/web/js/all-min.js",
+		"oAP": "/src/js/public_html/js/all-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
@@ -277,7 +281,7 @@
 		"ma": 0,
 		"mi": 1,
 		"oA": 1,
-		"oAP": "/src/js/web/js/all-min.js",
+		"oAP": "/src/js/public_html/js/all-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
@@ -288,7 +292,7 @@
 		"ma": 0,
 		"mi": 1,
 		"oA": 1,
-		"oAP": "/src/js/web/js/all-min.js",
+		"oAP": "/src/js/public_html/js/all-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
@@ -299,7 +303,7 @@
 		"ma": 0,
 		"mi": 1,
 		"oA": 1,
-		"oAP": "/src/js/web/js/all-min.js",
+		"oAP": "/src/js/public_html/js/all-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
@@ -1747,6 +1751,19 @@
 		"oS": 3,
 		"uL": 1
 		},
+	"/src/scss/partials/ship-api.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 1,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/public_html/css/styles.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
 	"/src/scss/partials/utility.scss": {
 		"aP": 1,
 		"bl": 0,
@@ -2024,6 +2041,14 @@
 		"oAP": "/templates/_mindex.html",
 		"oF": 0
 		},
+	"/templates/about/_entry.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/templates/about/_entry.twig",
+		"oF": 0
+		},
 	"/templates/bakext_index.twig": {
 		"cB": 0,
 		"ft": 8192,
@@ -2142,6 +2167,14 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/templates/pages/_entrytypes/landingPage.twig",
+		"oF": 0
+		},
+	"/templates/pages/_entrytypes/landingpageAPI": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/pages/_entrytypes/landingpageAPI",
 		"oF": 0
 		},
 	"/templates/pages/_entrytypes/memberList.twig": {
@@ -2312,28 +2345,58 @@
 		"oAP": "/templates/resources/_entrytypes/shipCategoryPage.twig",
 		"oF": 0
 		},
-	"/translations/fil/site.php": {
+	"/templates/ship/_entry.twig": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
-		"oA": 0,
-		"oAP": "/translations/fil/site.php",
+		"oA": 1,
+		"oAP": "/templates/ship/_entry.twig",
 		"oF": 0
 		},
-	"/translations/hi/site.php": {
+	"/templates/ship/_includes/js-vars.twig": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/translations/hi/site.php",
+		"oAP": "/templates/ship/_includes/js-vars.twig",
 		"oF": 0
 		},
-	"/translations/ru/site.php": {
+	"/templates/ship/_includes/ship-sidenav.twig": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/translations/ru/site.php",
+		"oAP": "/templates/ship/_includes/ship-sidenav.twig",
+		"oF": 0
+		},
+	"/templates/ship/category.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/ship/category.twig",
+		"oF": 0
+		},
+	"/templates/ship/index.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/ship/index.twig",
+		"oF": 0
+		},
+	"/templates/ship/test-route.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/ship/test-route.twig",
+		"oF": 0
+		},
+	"/translations": {
+		"ft": 65536,
+		"oA": 1,
+		"oAP": "/build/translations",
 		"oF": 0
 		},
 	"/vendor": {
@@ -2352,12 +2415,6 @@
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
-		},
-	"/web": {
-		"ft": 65536,
-		"oA": 1,
-		"oAP": "/build/web",
-		"oF": 0
 		},
 	"/wireframe": {
 		"ft": 65536,
@@ -4267,7 +4324,7 @@
 	"languageDefaultsJS": {
 		"autoOutputAction": 0,
 		"autoOutputPathFilenamePattern": "all-min.js",
-		"autoOutputPathRelativePath": "../../web/js",
+		"autoOutputPathRelativePath": "../../public_html/js",
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
 		"autoOutputPathStyle": 2,
@@ -4460,7 +4517,7 @@
 	"rollupExternals": "",
 	"rollupReplacements": "process.env.NODE_ENV:::$NODE_ENV,,,ENVIRONMENT:::$NODE_ENV",
 	"rollupTreeshakingEnabled": 1,
-	"skippedFoldersString": "log, _logs, logs, _cache, cache, /storage/framework/sessions, node_modules, /.idea, /scripts, /craft, /backups, /public_html, /build, /iswanchop, /storage, /vendor, /config, /modules, /wireframe, /web, /plugins, /documentation, /_templatesny107",
+	"skippedFoldersString": "log, _logs, logs, _cache, cache, /storage/framework/sessions, node_modules, /.idea, /scripts, /craft, /backups, /public_html, /build, /iswanchop, /storage, /vendor, /config, /modules, /wireframe, /web, /plugins, /documentation, /_templatesny107, /translations, /icons, /sql",
 	"sourceFolderName": "source",
 	"susyVersion": 3,
 	"tsAllowSyntheticDefaultImports": 0,

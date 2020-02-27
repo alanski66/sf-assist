@@ -27,7 +27,19 @@ $green:   #28a745 !default;
 $teal:    #20c997 !default;
 $cyan:    #17a2b8 !default;
 
+$sea-green: #30435a !default;
 
+$theme-colors: (
+  primary: #3F4276,
+  secondary: #F8DD2E,
+  light: #CC402D,
+  dark: #555555,
+  info: #4184D1,
+  success: #28a745,
+  warning: #ffc107,
+  danger: #dc3545,
+  white: #ffffff
+);
 //$primary_color : #002a40;
 $black: #000;
 $white: #ffffff;
@@ -92,8 +104,8 @@ $font7 : 14px;
 // Font, line-height, and color for body text, headings, and more.
 
 // stylelint-disable value-keyword-case
-//$font-family-sans-serif:      'Open Sans', sans-serif;
-$font-family-sans-serif:      'Cabin', sans-serif;
+$font-family-sans-serif:      'Open Sans', sans-serif;
+//$font-family-sans-serif:      'Cabin', sans-serif;
 $font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
 $font-family-sans-serif-second:  'Open Sans', serif;
 $font-family-base:            $font-family-sans-serif-second;
@@ -118,10 +130,10 @@ $font-weight-base:            $font-weight-normal !default;
 $line-height-base:            1.5 !default;
 
 $h1-font-size:                $font-size-base * 2 !default;
-$h2-font-size:                $font-size-base * 1.8 !default;
-$h3-font-size:                $font-size-base * 1.75 !default;
-$h4-font-size:                $font-size-base * 1.5 !default;
-$h5-font-size:                $font-size-base * 1.25 !default;
+$h2-font-size:                $font-size-base * 1.7 !default;
+$h3-font-size:                $font-size-base * 1.65 !default;
+$h4-font-size:                $font-size-base * 1.45 !default;
+$h5-font-size:                $font-size-base * 1.15 !default;
 $h6-font-size:                $font-size-base !default;
 
 $spacer: 1rem !default;
@@ -132,11 +144,15 @@ $headings-margin-bottom:      ($spacer / 2) !default;
 $headings-font-weight:        600 !default;
 $headings-line-height:        1.2 !default;
 $headings-color:              inherit !default;
-$heading-letter-spacing:  1.1px !default;
+$heading-letter-spacing:  0px !default;
 
+/* nav */
+
+$nav-link-padding: 0.5rem;
 
 /*========= button =============*/
-
+////buttons
+$btn-border-radius: 0px!important;
 .btn.btn-default{
   border-color: $blue-mid;
   background-color: $blue-mid;

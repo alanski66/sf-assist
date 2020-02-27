@@ -1,26 +1,20 @@
 {% extends "_layouts/site.twig" %}
 
 {% block content %}
-    {%  set layout = null %}
-    <!-- Page Content -->
-    {%  if entry is defined %}
-
-        <section class=" gray-light py-2 ">
-            <div class="container">
-                <div class="row ">
-                    <div class="col-xs-12 col-sm-12 col-md-12">
-                        <h1 class="page-heading">{{ entry.title }} </h1>
-
-                    </div>
-
+    <section class=" gray-light py-2 ">
+        <div class="container">
+            <div class="row ">
+                <div class="col-xs-12 col-sm-12 col-md-12">
+                    <h1 class="page-heading">About Seafarers Assistance </h1>
                 </div>
+
             </div>
+        </div>
 
-        </section>
-
+    </section>
     <!-- tmpl/pages/landing pages api hooked up -->
     <!-- pages ship api -->
-    <div class="container site page pt-5 ">
+    <div class="container site page">
         <div class="row">
             <div class="col-md-6 col-md-offset-0 col-lg-7 main">
 
@@ -37,7 +31,7 @@
                 <div class="handles"></div>
 
             </div>
-            {#            {% include 'ship/_includes/ship-sidenav.twig' %}#}
+{#            {% include 'ship/_includes/ship-sidenav.twig' %}#}
         </div>
     </div>
     {% set handlebars = baseUrl  ~ '/js/handlebars.js' %}
@@ -73,13 +67,4 @@
     {% endset %}
 
     {% includeCss myCss %}
-
-
-
-
-
-
-
-    {%  endif %}
-
 {% endblock %}

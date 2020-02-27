@@ -8,9 +8,6 @@
                     <ul class="list-unstyled">
                         <li><a href="tel:{{ organisationDetails.organisationTelephone }}">{{ organisationDetails.organisationTelephone }}</a></li>
                         <li><a
-                                    data-event-category="Contact"
-                                    data-event-action="Text link"
-                                    data-event-label="LinkedIn"
                                     href="mailto:{{ organisationDetails.organisationEmail }}">{{ organisationDetails.organisationEmail }}</a></li>
                     </ul>
                     <p>
@@ -34,7 +31,7 @@
                 </div>
             </div>
             <div class="col-md-5">
-                <div class="footer-social">
+                <div class="footer-social hide">
                     <ul>
                         <li><a target="_blank" data-on="click" data-event-category="Social" data-event-action="Channel link" data-event-label="Facebook" href="{{ social.facebook }}"><img id="facebook" class="facebook svg" src="{{ baseUrl }}/assets/social/facebook-icon.svg" alt="" /></a></li>
                         <li><a target="_blank" data-on="click" data-event-category="Social" data-event-action="Channel link" data-event-label="Twitter" href="{{ social.twitter }}"><img class="twitter svg" src="{{ baseUrl }}/assets/social/twitter-icon.svg" alt="" /></a></li>

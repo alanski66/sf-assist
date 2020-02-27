@@ -23,7 +23,7 @@ return [
         // Control Panel trigger word
         'cpTrigger' => 'admin',
 //        'logoutPath' => '/logout/logOut.twig',
-
+        'shipAPIdomain' => 'https://www.seafarerswelfare.org',
         // The secure key Craft will use for hashing and encrypting data
         'securityKey' => getenv('SECURITY_KEY'),
         'baseUrl'  => getenv('CRAFTENV_BASE_URL'),

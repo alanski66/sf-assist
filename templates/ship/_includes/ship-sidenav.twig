@@ -1,0 +1,60 @@
+{% set entry = craft.entries.id(610).first() %}
+                {% if entry is defined %}
+                    {# set up menu root and sub nav variables #}
+                    {% set landing = entry.getAncestors().level(1).first() %}
+
+                    {% switch landing %}
+
+                    {% case null %}
+                    {% if entry.hasDescendants() %}
+                        {% set heading = entry.title %}
+                        {% set rootpage = entry %}
+                    {% endif %}
+                    {% set landingId = entry.id %}
+                    {% set ancestorIds = entry.getDescendants().ids() %}
+                    {% set entryIds = [ landingId ]|merge( ancestorIds ) %}
+
+                    {% case true %}
+
+                    {% set heading = landing.title %}
+                    {% set landingId = landing.id %}
+                    {% set rootpage = landing %}
+                    {% set ancestorIds = landing.getDescendants().ids() %}
+                    {% set entryIds = [ landingId ]|merge( ancestorIds ) %}
+                    {% endswitch %}
+
+                {% endif %}
+
+<div class="col-md-3 col-md-offset-1 col-lg-4 col-lg-offset-1 sidebar">
+
+    {% if heading is defined %}
+        <h3>{{ heading | t }}</h3>
+    {% endif %}
+
+    {% set entries = craft.entries.locale(currentLocale).id(entryIds) %}
+
+
+    <ul class="list-unstyled">
+        {% for entry in entries %}
+
+            {% if entry.level > 1 %}
+
+                <li>
+                    <a href="/{{ currentLocale }}/{{ entry.uri }}"
+                       class="{{ macros.isActiveChildClass(entry.slug) | trim }} level{{ entry.level }}">{{ entry.title }}</a>
+                </li>
+                {%  set seggy = "seafarers-health-resources" | t %}
+
+                {% set lastSeg = craft.request.lastSegment %}
+
+                {% if entry.slug == seggy or entry.slug in lastSeg %}
+
+                    <div class="mustache-catnav"></div>
+                    {% else %}
+
+                {% endif %}
+            {% endif %}
+        {% endfor %}
+    </ul>
+
+</div>

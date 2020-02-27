@@ -1,8 +1,53 @@
 <!-- nav twig -->
 {% import '_macros' as macros %}
 {% set topNavPages = craft.entries.section('topNav').hidePage('< 1').all()  %}
-<div class="navigation">
-    <div class="">
+
+<div class="container-fluid bg-info-top">
+<div class="container">
+    <ul class="top-nav mb-0 justify-content-center pr-0">
+        <li class="list-inline-item">
+            <a class="nav-link mx-2" href="{{ alias(currentSite.baseUrl) }}/lander"><i class="fa fa-fw fa-home"></i><span class="nav-text">{{ 'home'|t }}</span></a>
+        </li>
+        <li class="list-inline-item">
+            <a class="nav-link mx-2" href="{{ alias(currentSite.baseUrl) }}/about"><i class="fa fa-fw fa-info"></i><span class="nav-text">{{ 'about'|t }}</span></a>
+        </li>
+        <li class="list-inline-item">
+            <a class="nav-link mx-2" href="{{ alias(currentSite.baseUrl) }}/resources"><i class="fa fa-fw fa-file-text"></i><span class="nav-text">{{ 'resources' |t }}</span></a>
+        </li>
+        {% if currentSite.group.sites | length > 1 %}
+            <li class="list-inline-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="fa fa-language" aria-hidden="true"></i> <span class="nav-text lng">Language</span></a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    {% for site in currentSite.group.sites %}
+
+                        {% set url = alias(site.baseUrl) %}
+                        {% if entry is defined %}
+                            {% set entryForOtherSite = craft.entries.id(entry.id).site(site).one() %}
+                            {% if entryForOtherSite %}
+                                {% set url = entryForOtherSite.getUrl() %}
+                            {% endif %}
+                        {% endif %}
+                        {% set displayname = '' %}
+                        {% if site.language == 'hi' %}
+                            {% set displayname = 'hindi' %}
+                        {% endif %}
+                        <a  class="nav-link  {% if currentSite.id == site.id %} is-active{% endif %}" href="{{ url }}">{{ site.language }}</a>
+
+                    {% endfor %}
+                </div>
+            </li>
+        {% endif %}
+        <li class="list-inline-item">
+            <a class="nav-link mx-2" href="{{ logoutUrl }}"><span class="nav-text">{{ 'logout'|t }}</span> <i class="fa fa-sign-out" aria-hidden="true"></i></a>
+        </li>
+
+
+    </ul>
+</div>
+</div>
+<div class="navigation ">
+
 
 
         <nav class="navbar navbar-expand-md navbar-dark bg-info">
@@ -10,49 +55,83 @@
                 <a class="navbar-brand" href="{{ baseUrl }}"><img src="{{baseUrl}}/assets/images/slogo.png" alt=""></a>
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar2SupportedContent" aria-controls="navbar2SupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span> </button>
-                <div class="collapse navbar-collapse text-center justify-content-between" id="navbar2SupportedContent">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link mx-2" href="{{ alias(currentSite.baseUrl) }}/lander"><i class="fa fa-fw fa-home"></i>{{ 'home'|t }}</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link mx-2" href="{{ alias(currentSite.baseUrl) }}/about"><i class="fa fa-fw fa-info"></i>{{ 'about'|t }}</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link mx-2" href="{{ alias(currentSite.baseUrl) }}/resources"><i class="fa fa-fw fa-file-text"></i>{{ 'resources' |t }}</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link mx-2" href="#"><i class="fa fa-user fa-fw"></i>{{ 'chat' |t }}</a>
-                        </li>
 
-                        {% if currentSite.group.sites | length > 1 %}
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <i class="fa fa-language" aria-hidden="true"></i> Language</a>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    {% for site in currentSite.group.sites %}
+                <div class="collapse navbar-collapse text-center justify-content-end" id="navbar2SupportedContent">
+                    <ul class="navbar-nav  list-group list-group-horizontal">
+                        {% set pages = craft.entries.section('mainMenu').hidePage('0').all()  %}
 
-                                        {% set url = alias(site.baseUrl) %}
-                                        {% if entry is defined %}
-                                            {% set entryForOtherSite = craft.entries.id(entry.id).site(site).one() %}
-                                            {% if entryForOtherSite %}
-                                                {% set url = entryForOtherSite.getUrl() %}
+
+                        {% for entry in pages %}
+
+
+                            {#{%  if entry.altNavTitle|length %}#}
+                            {#{%  set navTitle = entry.altNavTitle %}#}
+                            {#{% else %}#}
+                            {#{%  set navTitle = entry.title %}#}
+                            {#{% endif %}#}
+
+                            {% if entry.entryLink.one()|length %}
+                                {% set navlink = entry.entryLink.one().uri %}
+                            {% else %}
+                                {% set navlink = entry.customLink %}
+                            {% endif %}
+
+                            {% if entry.level == 1 and entry.children|length %}
+                                <li class="nav-item dropdown {{ macros.activeLinkClass(navlink, entry.level)|trim }} level{{ entry.level }}">
+
+                                    {% if isMobile == 1 %}
+                                        <a id="{{ entry.title }}" href="#" class="nav-link mob" data-toggle="dropdown" role="button"
+                                           data-length="{{ entry.title|length }}" aria-haspopup="true"
+                                           aria-expanded="false">{{ entry.title }}<span class="caret"></span></a>
+                                    {% else %}
+                                        <a id="{{ entry.title }}" href="{{ siteUrl }}{{ navlink }}" class="nav-link  notmob"
+                                           data-length="{{ entry.title|length }}" aria-haspopup="true"
+                                           aria-expanded="false">{{ entry.title }} <span class="caret"></span></a>
+                                    {% endif %}
+
+                                    <div class="dropdown-menu dropdown-menu-right">
+
+                                        <!-- add mobile parent link to drop down -->
+                                        {% if isMobile == 1 %}
+
+                                            <a id="{{ entry.title }}" href="{{ siteUrl }}{{ navlink }}"
+                                               class="dropwdown-item {{ macros.activeLinkClass(navlink, entry.level)|trim }} level{{ entry.level }}">{{ entry.title }}</a>
+
+                                        {% endif %}
+
+                                        <!-- get children -->
+                                        {% for child in entry.getDescendants().hidePage('< 1') %}
+                                            {% if child is defined %}
+                                                {# get child custom link or entry uri #}
+                                                {#{% if child.entryLink.one()|length %}#}
+                                                {#{% set childlink = child.entryLink.one().uri %}#}
+                                                {#{% else %}#}
+                                                {% set childlink = child.uri %}
+                                                {#{% endif %}#}
+                                                <a id="{{ entry.title }}" href="{{ siteUrl }}{{ childlink }}"
+                                                   class="dropdown-item level {{ child.level }}">{{ child.title }}</a>
+
                                             {% endif %}
-                                        {% endif %}
-                                        {% set displayname = '' %}
-                                        {% if site.language == 'hi' %}
-                                        {% set displayname = 'hindi' %}
-                                        {% endif %}
-                                        <a  class="nav-link  {% if currentSite.id == site.id %} is-active{% endif %}" href="{{ url }}">{{ site.language }}</a>
+                                        {% endfor %}
 
-                                    {% endfor %}
-                                </div>
-                            </li>
-                        {% endif %}
+                                    </div>
+                                </li>
 
-                        <li class="nav-item">
-                            <a class="nav-link mx-2" href="{{ logoutUrl }}">{{ 'logout'|t }} <i class="fa fa-sign-out" aria-hidden="true"></i></a>
-                        </li>
+                            {% elseif entry.level == 1 and not entry.hasDescendants() %}
+
+
+                                <li class="py-sm-2  px-3 bg-info list-group-item nav-item {{ macros.activeLinkClass(navlink, entry.level)|trim }} level{{ entry.level }} {{ entry.title |lower  }}">
+                                    <img class="nav-icon {{ entry.title |lower  }}" src = "{{ baseUrl }}/icons/{{ entry.title |lower  }}.svg" >
+                                    <a id="{{ entry.title|lower }}" href="{{ siteUrl }}{{ navlink }}"
+                                                     class=" nav-link {{ macros.activeLinkClass(navlink, entry.level) |trim }} level{{ entry.level }}">
+
+                                        {{ entry.title }}</a>
+                                </li>
+                            {% endif %}
+                        {%  endfor %}
+
+
+
 
                     </ul>
                 </div>

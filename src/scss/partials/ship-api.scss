@@ -1,0 +1,229 @@
+.mustache-cats .thumbnail{
+  text-align: center;
+  padding:15px;
+
+}
+.mustache-cats h3{
+  font-size:20px;
+}
+ul li.download{
+  margin-bottom: 10px;
+}
+
+ul li.download a.btn{
+  font-size:16px;
+}
+.mustache-cats a.ship-card .thumbnail:hover{
+  background-color: #fffbe2;
+}
+
+.sponsored{
+  background-color: #f7fafc;
+  border: none;
+  border-radius: 4px;
+  padding:15px;
+}
+.sponsored > ul > li{
+  margin-bottom:15px;
+}
+.sponsored > ul > li{
+  padding-left:30px;
+}
+.sponsored > ul > li:first-of-type{
+  padding-left:0;
+}
+//category
+.s {
+  display: flex;
+  align-items: center;
+}
+
+.mustache-category {
+  display: flex;
+  flex-wrap: wrap;
+}
+.mustache-category > [class*='col-'] {
+  display: flex;
+  flex-direction: column;
+}
+
+.mustache-category .card-icon{
+  //position: absolute;
+  //top: 50%;
+  //transform: translateY(-50%);
+  //padding:0 15px;
+  //height:auto;
+}
+.mustache-category .card-icon img{
+  box-shadow: 0px 2px 10px 0px #ada8a8;
+}
+
+.thumbnail {
+  box-shadow: 0 0 10px 0 rgba(10,10,10,0.2);
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  -webkit-backface-visibility: hidden;
+  margin-top: 10px;
+  color: #333;
+  text-align: left;
+  font-size: 13px;
+  font-family: "effra", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 16px;
+}
+
+.thumbnail {
+  display: block;
+  padding: 4px;
+  margin-bottom: 20px;
+  line-height: 1.428571429;
+  background-color: #fff;
+  border: 1px solid #ddd;
+
+  border-radius: 4px;
+  -webkit-transition: border 0.2s ease-in-out;
+  transition: border 0.2s ease-in-out;
+}
+
+.btn-light {
+  color: #212529;
+  background-color:#f8f9fa;
+  border-color: #f8f9fa;
+  border-radius: 10px!important;
+  color: #0a9ad4;
+}
+element {
+
+}
+ul li.download a.btn {
+
+  font-size: 16px;
+
+}
+.btn-light:hover {
+
+  color:#212529;
+  background-color: #e2e6ea;
+  border-color: #dae0e5;
+
+}
+//.vcenter {
+//  position: relative;
+//  top: 50%;
+//  transform: translateY(-50%);
+//}
+//.vertical-align {
+//  display: flex;
+//  flex-direction: row;
+//}
+//
+//.vertical-align > [class^="col-"],
+//.vertical-align > [class*=" col-"] {
+//  display: flex;
+//  align-items: center;
+//  justify-content: center; /* Optional, to align inner items
+//                              horizontally inside the column */
+//}
+
+//hide api generated menu - call it on specific api templates in ship folder
+.shipLangNav{
+  display:none;
+}
+
+h3.sub-heading{
+  color: lighten(#131E29, 4%);
+  font-size:22px;
+  margin-bottom: 10px;
+}
+ul.apiside{
+  margin-top: 0;
+}
+@media(min-width: 320px){
+
+  .mustache-cats .card-icon{
+    //position: relative;
+    //top: 50%;
+    //transform: translateY(-50%);
+  }
+  .mustache-cats .thumbnail{
+    position: relative;
+    padding: 15px 25px;
+    box-shadow: none;
+  }
+
+  .mustache-category .card-title{
+    font-size:18px;
+    line-height: 1.2;
+  }
+  .mustache-category .thumbnail{
+    text-align: center;
+    box-shadow: none;
+    padding-top:15px;
+    position: relative;
+  }
+  .mustache-category .thumbnail .img-responsive{
+    max-width:60%;
+    display: inline;
+    max-height: 240px;
+  }
+
+  .mustache-category .good-mental-health .thumbnail img,
+  .mustache-category .medical-booklet .thumbnail img{
+    //silly posters ize need max height
+    max-height: none;
+    height:auto;
+  }
+  // item
+  .mustache-item img.item-image{
+    max-width: 100%;
+  }
+}
+@media (min-width: 450px){
+  // item
+  .mustache-item img.item-image{
+    max-width: 200px;
+  }
+  .mustache-item .thumbnail{
+    margin-left:15px;
+  }
+}
+@media(min-width: 768px){
+
+  .mustache-cats .card-icon{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .mustache-cats .thumbnail{
+    position: relative;
+    padding: 15px 0px;
+    min-height:302px;
+  }
+  .mustache-cats .thumbnail .card-body{
+    padding: 0 15px;
+  }
+  .mustache-category .thumbnail{
+    min-height:272px;
+  }
+}
+
+@media(min-width: 990px){
+  .mustache-cats .thumbnail{
+    min-height:320px;
+  }
+  .mustache-category .thumbnail{
+    min-height:350px;
+  }
+}
+@media(min-width: 1200px){
+  .mustache-cats .thumbnail{
+    min-height:300px;
+  }
+  .mustache-category .thumbnail{
+    //min-height:450px;
+  }
+  .mustache-category .thumbnail .card-icon{
+    max-height:345px;
+    overflow: hidden;
+  }
+
+}
