@@ -19,7 +19,7 @@ return [
 
         // Whether generated URLs should omit "index.php"
         'omitScriptNameInUrls' => true,
-
+        'useProjectConfigFile' => false,
         // Control Panel trigger word
         'cpTrigger' => 'admin',
 //        'logoutPath' => '/logout/logOut.twig',
