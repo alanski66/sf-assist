@@ -22,6 +22,12 @@ return array(
     "Download" => "скачать",
     "resources" => "Ресурсы",
 
+    //Callback form
+    "Request a callback" => "Запрос обратного вызова",
+    "Please fill in the form below and someone will contact you at your chosen time" => "Пожалуйста, заполните форму ниже , и кто-то свяжется с вами в выбранной Вами время",
+
+
+
     //buttons
     "Login" => "Авторизоваться",
     "logout" => "выйти",

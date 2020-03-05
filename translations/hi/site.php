@@ -14,7 +14,9 @@ return array(
     "SMS" => "एसएमएस",
     "Skype" => "स्काइप",
     "Call back" => "वापस कॉल करें",
-
+    //Callback form
+    "Request a callback" => "कॉलबैक का अनुरोध",
+    "Please fill in the form below and someone will contact you at your chosen time" => "नीचे के रूप में भरने और किसी को अपने चुने हुए समय में आप संपर्क करेंगे।",
     //home
     "Enter your 5 digit code" => "अपना पांच अंकों का कोड दर्ज करें",
     // Buttons

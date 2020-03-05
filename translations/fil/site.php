@@ -15,6 +15,11 @@ return array (
     "Skype" => "Skype",
     "Call back" => "Call back",
 
+    //Callback form
+    "Request a callback" => "Humiling ng isang callback",
+    "Please fill in the form below and someone will contact you at your chosen time" => "Mangyaring punan ang form sa ibaba at ang isang tao ay makipag-ugnayan ka sa iyong napiling oras",
+
+
     //Menu
     "Chat" => "Chat",
     "about" => "tungkol sa",
