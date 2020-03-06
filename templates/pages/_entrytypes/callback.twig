@@ -94,7 +94,7 @@
 
                     <div id="captcha"></div>
                     <input type="submit" class="btn btn-primary" value="{{ "Submit" | t }}">
-                    <input type="hidden" name="enabled" value="0">
+                    <input type="hidden" name="siteId" value="{{currentSite.id}}">
                     <input type="hidden" name="fields[company]" value="{{currentSite.name}}">
                     <input type="hidden" name="postDate" value="{{ now|date("Y-m-j H:i:s") }}" />
 
