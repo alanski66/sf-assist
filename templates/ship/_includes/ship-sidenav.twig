@@ -1,7 +1,7 @@
-{% set entry = craft.entries.id(610).first() %}
+{% set entry = craft.entries.id(600).one() %}
                 {% if entry is defined %}
                     {# set up menu root and sub nav variables #}
-                    {% set landing = entry.getAncestors().level(1).first() %}
+                    {% set landing = entry.getAncestors().level(1).one() %}
 
                     {% switch landing %}
 
@@ -25,27 +25,27 @@
 
                 {% endif %}
 
-<div class="col-md-3 col-md-offset-1 col-lg-4 col-lg-offset-1 sidebar">
+<div class="col-md-3 col-md-offset-1 col-lg-4  sidebar d-fex justify-content-end">
 
     {% if heading is defined %}
-        <h3>{{ heading | t }}</h3>
+        <h4>{{ heading | t }}</h4>
     {% endif %}
-
-    {% set entries = craft.entries.locale(currentLocale).id(entryIds) %}
+<h5>Resources</h5>
+    {% set entries = craft.entries.id(entryIds) %}
 
 
     <ul class="list-unstyled">
-        {% for entry in entries %}
+        {% for entry in entries.all() %}
 
-            {% if entry.level > 1 %}
+{#            {% if entry.level > 1 %}#}
 
-                <li>
-                    <a href="/{{ currentLocale }}/{{ entry.uri }}"
-                       class="{{ macros.isActiveChildClass(entry.slug) | trim }} level{{ entry.level }}">{{ entry.title }}</a>
-                </li>
-                {%  set seggy = "seafarers-health-resources" | t %}
+{#                <li>#}
+{#                    <a href="/{{ currentLocale }}/{{ entry.uri }}"#}
+{#                       class="{{ macros.isActiveChildClass(entry.slug) | trim }} level{{ entry.level }}">{{ entry.title }}</a>#}
+{#                </li>#}
+                {%  set seggy = "resources" | t %}
 
-                {% set lastSeg = craft.request.lastSegment %}
+                {% set lastSeg = craft.app.request.segments|last %}
 
                 {% if entry.slug == seggy or entry.slug in lastSeg %}
 
@@ -53,7 +53,7 @@
                     {% else %}
 
                 {% endif %}
-            {% endif %}
+{#            {% endif %}#}
         {% endfor %}
     </ul>
 

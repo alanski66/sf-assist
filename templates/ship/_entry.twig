@@ -6,21 +6,20 @@
         <div class="container">
             <div class="row ">
                 <div class="col-xs-12 col-sm-12 col-md-12">
-                    <h1 class="page-heading">Resources</h1>
+                    <h1 class="page-heading">{{ "Seafarers' health resources"|t }}</h1>
 
                 </div>
 
             </div>
         </div>
-
     </section>
-    <!-- pages ship api -->
+    <!--  ship entry.twig -->
     <div class="container site page pt-5">
         <div class="row">
             <div class="col-md-8 col-md-offset-0 col-lg-8 main">
-
+                <div class="preloader text-center" ><img src="{{baseUrl}}/assets/images/preloader.gif" alt="preloader"></div>
                 <article>
-                    <h1>{{ "Seafarers' health resources"|t }}</h1>
+
                     <h3 class="sub-heading"></h3>
                     <!-- mustache cats -->
                     <div class=" row">
@@ -35,12 +34,13 @@
                 </article>
                 <div class="handles"></div>
             </div>
-
+            {% include 'ship/_includes/ship-sidenav.twig' %}
         </div>
     </div>
 
     {% set handlebars = baseUrl  ~ '/js/handlebars.js' %}
-    {% includeJsFile handlebars %}
+{#    {% includeJsFile handlebars %}#}
+    {% do view.registerJsFile(handlebars) %}
 
     {% include 'ship/_includes/js-vars.twig' %}
     {# pass last segment as slug to api - to keep pretty urls #}
@@ -51,11 +51,11 @@
         {#var domain = '{{ craft.config.shipAPIdomain }}';#}
     {#{%  endset %}#}
     {#{% includeJs myJs %}#}
-
-    {% includeJsFile baseUrl ~ '//js/ship/item.js' %}
-    {% includeJsFile baseUrl ~ 'js/ship/langnav.js' %}
+{#    {% includeJsFile  %}#}
+    {% do view.registerJsFile(baseUrl ~ '/js/ship/item.js') %}
+{#    {% includeJsFile baseUrl ~ '/js/ship/langnav.js' %}#}
     {# show the api generated language block #}
-    {% set myCss %}
+    {% css %}
         .lang.dropdown-menu,
         .dt-lang-up-arrow{
             dispay:none;
@@ -69,5 +69,5 @@
         .lang-sel .shipLangNav {
             display: block!important;
         }
-    {% endset %}
+    {% endcss %}
 {% endblock %}

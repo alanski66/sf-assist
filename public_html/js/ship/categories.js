@@ -2,13 +2,11 @@ function initialise(){
 
     if(locale){
         var lang = "?lang=" + locale;
-
     }
     console.log("locale = " + locale);
-    var url = domain + '/api/v1/ship/structure/categories.json' + lang;
-
+    var url = domain + '/api/v1/ship/structure/categorieslimit.json' + lang;
+    console.log("domain = " + catUrl);
     $.getJSON( url, function( data ) {
-
 
         var current  = window.location.pathname.split("/").pop();
 
@@ -66,6 +64,8 @@ function initialise(){
 
 
     });
+
+    preLoader();
 
 }
 //{% endverbatim %}

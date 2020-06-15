@@ -2,13 +2,24 @@
 
 
 {% block content %}
-    <!-- pages ship api -->
-    <div class="container site page">
-        <div class="row">
-            <div class="col-md-6 col-md-offset-0 col-lg-7 main">
+    <!-- pages ship api category.twig-->
+    <section class=" gray-light py-2 ">
+        <div class="container">
+            <div class="row ">
+                <div class="col-xs-12 col-sm-12 col-md-12">
+                    <h1 class="page-heading">{{ "Seafarers' health resources"|t }}</h1>
 
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <div class="container site page py-5">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-0 col-lg-8 main">
+                <div class="preloader text-center" ><img src="{{baseUrl}}/assets/images/preloader.gif" alt="preloader"></div>
                 <article>
-                    <h1>{{ "Seafarers' health resources"|t }}</h1>
+                    
                     <h3 class="sub-heading"></h3>
                     <!-- mustache cats -->
                     <div class="mustache-category row ">
@@ -23,8 +34,9 @@
             {% include 'ship/_includes/ship-sidenav.twig' %}
         </div>
     </div>
-    {% set handlebars = baseUrl  ~ 'js/handlebars.js' %}
-    {% includeJsFile handlebars %}
+    {% set handlebars = baseUrl  ~ '/js/handlebars.js' %}
+{#    {% includeJsFile handlebars %}#}
+    {% do view.registerJsFile(handlebars) %}
 
     {% include 'ship/_includes/js-vars.twig' %}
     {# pass last segment as slug to api - to keep pretty urls #}
@@ -36,13 +48,14 @@
     {#{% includeJs myJs %}#}
 
 
-    {% includeJsFile baseUrl ~ 'js/ship/category.js' %}
+{#    {% includeJsFile baseUrl ~ '/js/ship/category.js' %}#}
+    {% do view.registerJsFile(baseUrl ~ '/js/ship/category.js') %}
 
     {# include navigation from api because we have no real urls and language switcher becomes defunct #}
-    {% includeJsFile baseUrl ~ 'js/ship/langnav.js' %}
+{#    {% includeJsFile baseUrl ~ '/js/ship/langnav.js' %}#}
 
     {# show the api generated language block #}
-    {% set myCss %}
+    {% css %}
         .lang.dropdown-menu,
         .dt-lang-up-arrow{
         dispay:none;
@@ -53,7 +66,7 @@
        .lang-sel .dropdown.open .lang.dropdown-menu.shipLangNav{
         display:block!important;
         }
-    {% endset %}
+    {% endcss %}
 
-    {% includeCss myCss %}
+{#    {% includeCss myCss %}#}
 {% endblock %}

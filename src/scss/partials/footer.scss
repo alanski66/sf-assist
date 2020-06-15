@@ -1,12 +1,23 @@
 ul.white li>a {
   color:$white;
 }
+//unstick footer except on homepage of main sfassist lander
+
+.contact.sfassist footer,
+.homepage.sfassist footer{
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1030;
+}
 
 .footer {
   background-color: $footer-bg-color;
-  padding-top: 35px;
+  padding-top: 0px;
   font-size: $font-size-xs;
   color:$white;
+  position: relative;
 }
 
 .footer .footer-inner h3 {

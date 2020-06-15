@@ -54,7 +54,7 @@ function initialise(){
         $('.mustache-item-downloads').html(html);
 
     });
-
+    preLoader();
 }
 
 
@@ -73,7 +73,7 @@ function doMenu(){
     if(locale){
         var lang = "?lang=" + locale;
     }
-    var url = domain + '/api/v1/ship/structure/categories.json' + lang;
+    var url = domain + '/api/v1/ship/structure/categorieslimit.json' + lang;
 
     $.getJSON( url, function( data ) {
         console.log(data);

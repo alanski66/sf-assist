@@ -1,7 +1,13 @@
 .mustache-cats .thumbnail{
   text-align: center;
   padding:15px;
+  background-color: $ship-bg-thumb;
 
+}
+
+.mustache-cats .card-img-top{
+  max-width:100px;
+  margin-bottom: 10px;
 }
 .mustache-cats h3{
   font-size:20px;

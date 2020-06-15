@@ -31,14 +31,16 @@
         {#</div>#}
 
         {% set lazyImage = false %}
+        {% set imageShow = false %}
         {% set blockPrefix = "" %}
         <div class="row ">
-            <div class="col-xs-12 col-md-12 col-lg-7 col-xl-7">
+            <div class="col-xs-12 col-md-12 ">
 
                 {% for block in entry.contentBlock.all() %}
                     {% include ('pages/_partials/_' ~ blockPrefix ~ 'block_' ~ block.type.handle) %}
                     {% if block.type.handle == "image" %}
                         {% set lazyImage = true %}
+                        {% set imageShow = true %}
                     {% endif %}
                 {% endfor %}
 

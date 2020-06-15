@@ -71,7 +71,6 @@ img.chat:hover {
 }
 @media (min-width: 0px) {
 
-
   .navbar-brand{
     padding:0;
   }
@@ -81,6 +80,19 @@ img.chat:hover {
     height: auto;
   }
 
+//nav top right
+  .navend a{
+    color:$white;
+    font-size:$font-size-sm;
+  }
+  .navend a:hover{
+    color: $yellow;
+  }
+  .navend .direct-dial,
+  .navend .direct-email{
+    color:darken($white,15%);
+    font-size:$font-size-sm;
+  }
   //top nav
   .top-nav{
     justify-content: space-evenly;
@@ -101,6 +113,10 @@ img.chat:hover {
   //end
 
   // main nav
+  .navbar-nav.top a.nav-link{
+    color:darken($white,5%);
+  }
+
   .navbar-nav.list-group-horizontal{
     flex-direction: column;
     //text-align: left;
@@ -115,6 +131,10 @@ img.chat:hover {
   }
   .navbar-nav .list-group-item.chat{
     background-color: #00b0eb!important;
+  }
+
+  .navbar-nav .list-group-item:hover{
+    background-color: $blue-mid!important;
   }
   //end
 }

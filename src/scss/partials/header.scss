@@ -2,6 +2,13 @@
   top:10px;right:10px;
 }
 
+//hide main sfasssit nav
+
+.sfassist .navbar-nav.top,
+.sfassist .navend{
+  display: none;
+}
+
 @media(min-width: 0px) {
   .logo {
     max-width: 250px
@@ -12,4 +19,26 @@
   .logo {
     max-width: 100%;
   }
+}
+
+.hero-sf-overlay{
+  width:100%;
+  height:100%;
+  position: absolute;
+  background:linear-gradient(0deg, rgba(1, 57, 158, 0.3), rgba(79, 131, 238, 0.1));
+}
+
+.hero-site-overlay{
+  width:100%;
+  height:100%;
+  position: absolute;
+  background:linear-gradient(0deg, rgba(1, 57, 158, 0.79), rgba(79, 131, 238, 0.35));
+}
+.heroic .text-white {
+  text-shadow: 1px 1px 1px #000;
+}
+.heroic .card{
+  border: 3px solid #0a9ad4;
+  border-radius: 0.5rem;
+  width:24rem;
 }

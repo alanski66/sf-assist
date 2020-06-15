@@ -1,36 +1,22 @@
 <!-- Footer -->
-<footer class="footer">
+<footer class="footer bg-secondary">
     <div class="container">
-        <div class="row">
-            <div class="col-md-3">
-                <div class="footer-inner">
+        <div class="row hide">
+            <div class="col-md-5">
+                <div class="footer-inner text-center text-md-left">
                     <h3>Contact</h3>
-                    <ul class="list-unstyled">
+                    <ul class="list-unstyled ">
                         <li><a href="tel:{{ organisationDetails.organisationTelephone }}">{{ organisationDetails.organisationTelephone }}</a></li>
                         <li><a
                                     href="mailto:{{ organisationDetails.organisationEmail }}">{{ organisationDetails.organisationEmail }}</a></li>
+                    <li>{{ organisationDetails.organisationAddress }}</li>
                     </ul>
-                    <p>
-                       {{ organisationDetails.organisationAddress }}
-                    </p>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="footer-inner hide">
-                    <h3>News</h3>
-                    <div class="footer-contant">
 
-                        {% set entries = craft.entries()
-                        .section('news')
-                        .limit('2')
-                        .all() %}
-                        {% for entry in entries %}
-                            <p>{{  entry.title }}<br><span>{{ entry.postDate.format('F d, Y') }}</span></p>
-                        {%  endfor %}
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-5">
+            <div class="col-md-7 d-flex justify-content-center justify-content-md-end">
+
+
                 <div class="footer-social hide">
                     <ul>
                         <li><a target="_blank" data-on="click" data-event-category="Social" data-event-action="Channel link" data-event-label="Facebook" href="{{ social.facebook }}"><img id="facebook" class="facebook svg" src="{{ baseUrl }}/assets/social/facebook-icon.svg" alt="" /></a></li>
@@ -42,11 +28,16 @@
                 </div>
             </div>
         </div>
+        <div class="row ">
+            <div class="col-md-12 d-flex justify-content-center pt-5">
+                <p class="small text-center text-md-right">Although the helpline is for seafarers from {{ siteName}} any seafarer can call</p>
+            </div>
+        </div>
     </div>
     <div class="container ">
             <div class="row no-gutters border-top copyright pb-0">
                 <div class="col-sm-12 col-md-9 footer-inner">
-                    <div class="copyright-left">
+                    <div class="copyright-left ">
                         <p>{{ copyright.charityOrganisationStatement}} <br>Charity no.{{ copyright.charityNumber }} | Company no. {{ copyright.companyNumber }}</p>
                     </div>
                 </div>

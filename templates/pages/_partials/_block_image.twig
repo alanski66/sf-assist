@@ -1,13 +1,26 @@
 {% set image = block.image.one() %}
-
+{%  set position = block.position %}
+{%  set height = image.getHeight() %}
+{% css %}
+.float-right{margin:1rem 0 1rem 1rem!important; }
+.float-left{margin:0.6rem 2rem 0rem 0!important}
+{% endcss %}
 {% if image %}
-   <section class="image mt-1 mb-3">
+    {% set thumb = {
+        mode: 'crop',
+        width: 400 ,
+        height: 700,
+        quality: 75,
+        position: 'center-center'
+    } %}
+    <section class="row d-block">
+   <div class="image mt-1 mb-3  col-xs-12 col-sm-5 float-{{ position }} {{ height }}">
        {% set imgCredit = image.imageCredit ?? null %}
        {% set imgCaption =  image.imageCaption ?? null %}
        {% set imgBlockCaption =  block.caption ?? null %}
 
        <figure>
-           <img class="img-fluid" src="{{ image.getUrl() }}">
+           <img class="img-fluid" src="{{ image.getUrl(thumb) }}">
            {%  if imgCaption or imgCredit or imgBlockCaption %}
                <figcaption>
                    <i class="fa fa-chevron-up" aria-hidden="true"></i>
@@ -17,5 +30,6 @@
                </figcaption>
            {% endif %}
        </figure>
-   </section>
+   </div>
+    </section>
 {% endif %}

@@ -44,20 +44,24 @@ return [
     'dev' => [
         // Base site URL
        // 'siteUrl' => null,
-
+        'cache' => false,
         // Dev Mode (see https://craftcms.com/support/dev-mode)
         'devMode' => true,
+        'shipAPIdomain' => 'https://iswancraft3.test',
     ],
 
     // Staging environment settings
     'staging' => [
+        'cache' => false,
         // Base site URL
         'siteUrl' => null,
+        'shipAPIdomain' => 'https://www.seafarerswelfare.org',
     ],
 
     // Production environment settings
     'production' => [
         // Base site URL
         'siteUrl' => null,
-    ],
+        'shipAPIdomain' => 'https://www.seafarerswelfare.org',
+    ]
 ];

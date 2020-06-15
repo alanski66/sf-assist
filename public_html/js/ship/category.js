@@ -7,9 +7,9 @@ function initialise(){
         lastSegment == firstSegment;
     }
     console.log ("lastSeg" + lastSegment);
-    // var url = domain + '/api/v1/ship/structure/category/'+ lastSegment+'.json' + lang;
-    var lurl = 'https://www.seafarerswelfare.org/api/v1/ship/structure/category/good-mental-health.json?lang=en'
-    $.getJSON( lurl, function( data ) {
+    var url = domain + '/api/v1/ship/structure/category/'+ lastSegment+'.json' + lang;
+    // var lurl = 'https://www.seafarerswelfare.org/api/v1/ship/structure/category/good-mental-health.json?lang=en'
+    $.getJSON( url, function( data ) {
         console.log(data);
 
 
@@ -20,9 +20,9 @@ function initialise(){
         var templateCard =
             '{{#shipStructureAsCategory}}' +
             '{{#entries}}' +
-            '<div class="col-xs-12 col-sm-6 col-md-6 '+lastSegment+'">' +
+            '<div class="col-xs-12 col-sm-6 col-md-6 d-flex'+lastSegment+'">' +
                 '<a class="ship-card " href="' + lastSegment + '/{{slug}}">' +
-                    '<div class=" thumbnail" >' +
+                    '<div class=" thumbnail flex-fill" data-mh="my-group">' +
                         '<div class="card-icon  ">' +
                             '{{#if mediaImage.length}}' +
                                 '<img class="img-responsive " src="{{mediaImage}}" alt="Icon {{title}} ">' +
@@ -53,7 +53,7 @@ function initialise(){
        // doSponsorship(data);
 
     });
-
+    preLoader();
 }
 
 function doSponsorship(data){
@@ -85,41 +85,42 @@ function doSponsorship(data){
 }
 
 function doMenu(){
-    // var current  = window.location.pathname.split("/").pop();
-    //
-    // Handlebars.registerHelper("ifvalue", function(conditional, options) {
-    //     if (conditional == options.hash.equals) {
-    //         return options.fn(this);
-    //     } else {
-    //         return options.inverse(this);
-    //     }
-    // });
-    //
-    // if(locale){
-    //     var lang = "?lang=" + locale;
-    // }
-    // var url = domain + '/api/v1/ship/structure/categories.json' + lang;
-    // $.getJSON( url, function( data ) {
-    //     console.log(data);
-    //     var sideMenu =
-    //         '<ul class="apiside">' +
-    //         '{{#shipStructureLevelOne}}' +
-    //         '{{#ifvalue sendtoseafarerhelp equals=true}}' +
-    //         '<li><a {{#ifvalue slug equals="'+current+'"}}class="active"{{/ifvalue}} href="' + catUrl + '{{slug}}">{{title}}</a></li>'+
-    //         '{{/ifvalue}}'+
-    //         '{{/shipStructureLevelOne}}' +
-    //         '</ul>';
-    //     var sidehtml = Handlebars.compile(sideMenu)(data);
-    //     $('.mustache-catnav').html(sidehtml);
-    // });
+    var current  = window.location.pathname.split("/").pop();
+
+    Handlebars.registerHelper("ifvalue", function(conditional, options) {
+        if (conditional == options.hash.equals) {
+            return options.fn(this);
+        } else {
+            return options.inverse(this);
+        }
+    });
+
+    if(locale){
+        var lang = "?lang=" + locale;
+    }
+    var url = domain + '/api/v1/ship/structure/categorieslimit.json' + lang;
+    $.getJSON( url, function( data ) {
+        console.log(data);
+        var sideMenu =
+            '<ul class="apiside">' +
+            '{{#shipStructureLevelOne}}' +
+            '{{#ifvalue sendtoseafarerhelp equals=true}}' +
+            '<li><a {{#ifvalue slug equals="'+current+'"}}class="active"{{/ifvalue}} href="' + catUrl + '{{slug}}">{{title}}</a></li>'+
+            '{{/ifvalue}}'+
+            '{{/shipStructureLevelOne}}' +
+            '</ul>';
+        var sidehtml = Handlebars.compile(sideMenu)(data);
+        $('.mustache-catnav').html(sidehtml);
+    });
 }
 
 
 $( document ).ready(function() {
     console.log( "ready!" );
     initialise();
-    // doMenu();
+    doMenu();
 
-       //matchehight $('.ship-card').matchHeight(options);
+       //matchehight
+   // $('.ship-card').matchHeight(options);
 
 });

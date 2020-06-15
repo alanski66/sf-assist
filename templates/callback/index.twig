@@ -6,25 +6,25 @@
 {% extends "_layouts/site" %}
 
 {% block content %}
+    <section class=" gray-light py-2 ">
+        <div class="container">
+            <div class="row ">
+                <div class="col-xs-12 col-sm-12 col-md-12">
+                    <h1 class="page-heading">{{ "Request a callback" | t }}</h1>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
 <div class="container site page">
     <div class="row">
-        <div class="col-md-6 col-md-offset-1 main">
-
-            <div class="row ">
-                <div class="col-md-12">
-                    <article>
-                        <h1>{{ "Request a callback" | t }} </h1>
-
-                        <p class="callbackform">{{ "Please fill in the form below and someone will contact you at your chosen time" | t }}</p>
-
-                    </article>
-                </div>
-            </div>
-
+        <div class="col-md-6 col-md-offset-1 main py-5">
             <div class="row thanks" style="display:none">
                 <div class="col-md-12">
                     <p class="thankyou alert alert-success">
-                        {{ "Thank you." | t }}
+                        {{ "Thank you. We will call you back as soon as possible." | t }}
                     </p>
                 </div>
             </div>
@@ -44,7 +44,7 @@
 
                 <input type="hidden" name="action" value="guest-entries/save">
                 {{ redirectInput('success') }}
-                <input type="hidden" name="sectionUid" value="f9a2e796-e321-4293-ae6e-433a19371a62">
+                <input type="hidden" name="sectionUid" value="20c9b3f2-1864-49ea-b42b-78c7a309d0fe">
 
                 <div class="form-group">
                     <label for="title">{{ "Name" | t }}</label>
@@ -85,6 +85,8 @@
                 <input type="hidden" name="enabled" value="0">
                 <input type="hidden" name="fields[company]" value="{{currentSite.name}}">
                 <input type="hidden" name="postDate" value="{{ now|date("Y-m-j H:i:s") }}" />
+                <input type="hidden" name="fields[ipAddress]" value="{{ craft.request.getIpAddress() }}">
+
 
 
             </form>

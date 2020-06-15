@@ -43,6 +43,13 @@ function updateAutoTrackLabelValue($searchVal){
     $('.search-submit').attr('data-event-label', $searchVal);
 }
 
+function preLoader(){
+    // Preloader js
+    // $(window).on('load', function () {
+    $('.preloader').fadeOut(700);
+    // });
+
+}
 // event handlers
 
 

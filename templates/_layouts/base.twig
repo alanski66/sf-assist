@@ -1,7 +1,7 @@
 {% extends "_includes/_partials/globals.twig" %}
 {%- block htmlPage -%}
 <!DOCTYPE html>
-<html lang="en" class="iswan">
+<html lang="en" class="iswan {{ currentSite.handle }}">
 
 <head>
 
@@ -26,7 +26,7 @@
 {% if bodyClass is not defined %}
     {% set bodyClass = entry is defined ? entry.type : craft.app.request.segments|first  %}
 {% endif %}
-<body class="{{ bodyClass }} {{ craft.app.request.getSegment(1)}}">
+<body class="{{ bodyClass }} {{ craft.app.request.getSegment(1)}} {{ currentSite.handle }}">
 <div class="wrapper">
 
     <header class="header">

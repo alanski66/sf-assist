@@ -1809,6 +1809,14 @@
 		"oAP": "/build/storage",
 		"oF": 0
 		},
+	"/templates-bak.zip": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates-bak.zip",
+		"oF": 0
+		},
 	"/templates/.gitkeep": {
 		"cB": 0,
 		"ft": 8192,
@@ -1945,6 +1953,14 @@
 		"oAP": "/templates/_includes/js.twig",
 		"oF": 0
 		},
+	"/templates/_includes/nav-home.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/_includes/nav-home.twig",
+		"oF": 0
+		},
 	"/templates/_includes/nav.twig": {
 		"cB": 0,
 		"ft": 8192,
@@ -2007,6 +2023,14 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/templates/_layouts/base.twig",
+		"oF": 0
+		},
+	"/templates/_layouts/home-sfassist.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/_layouts/home-sfassist.twig",
 		"oF": 0
 		},
 	"/templates/_layouts/home.twig": {
@@ -2081,6 +2105,14 @@
 		"oAP": "/templates/callback/proxy.php",
 		"oF": 0
 		},
+	"/templates/email/_notifications.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/templates/email/_notifications.twig",
+		"oF": 0
+		},
 	"/templates/errors/403.twig": {
 		"cB": 0,
 		"ft": 8192,
@@ -2119,6 +2151,14 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/templates/ext_index.twig",
+		"oF": 0
+		},
+	"/templates/index-sfassist.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/index-sfassist.twig",
 		"oF": 0
 		},
 	"/templates/index.twig": {
@@ -2201,12 +2241,12 @@
 		"oAP": "/templates/pages/_entrytypes/joinpage.twig",
 		"oF": 0
 		},
-	"/templates/pages/_entrytypes/landingpageAPI": {
+	"/templates/pages/_entrytypes/landingpageAPI.twig": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/templates/pages/_entrytypes/landingpageAPI",
+		"oAP": "/templates/pages/_entrytypes/landingpageAPI.twig",
 		"oF": 0
 		},
 	"/templates/pages/_entrytypes/memberList.twig": {
@@ -2239,6 +2279,14 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/templates/pages/_entrytypes/resourceLandingPage.twig",
+		"oF": 0
+		},
+	"/templates/pages/_entrytypes/resourceLandingPageBAK.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/pages/_entrytypes/resourceLandingPageBAK.twig",
 		"oF": 0
 		},
 	"/templates/pages/_entrytypes/ship.twig": {
