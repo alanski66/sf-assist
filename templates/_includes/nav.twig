@@ -122,12 +122,17 @@
                 {#{% else %}#}
                 {#{%  set navTitle = entry.title %}#}
                 {#{% endif %}#}
+                {% set openInNew = "_self" %}
                 {% set onclick ="" %}
                 {% set popclass ="" %}
                 {% if entry.entryLink.one()|length %}
                     {% set navlink = entry.entryLink.one().uri %}
                 {% else %}
                     {% set navlink = entry.customLink %}
+                {% endif %}
+
+                {% if entry.openInNewWindow %}
+                    {% set openInNew = "_blank" %}
                 {% endif %}
 
                 {% if entry.level == 1 and entry.children|length %}
@@ -200,10 +205,10 @@
                     {% endif %}
 
                     <li class="{{ entry.title |lower  }} {{ order }} py-3 px-sm-3 px-lg-5 px-xl-5   bg-primary list-group-item nav-item {{ macros.activeLinkClass(navlink, entry.level)|trim }} level{{ entry.level }} {{ entry.title |lower  }}">
-                        <a id="{{ entry.title|lower }}" href="{{ link }}" {{ onclick }} class="p-0 {{ popclass }} nav-link {{ macros.activeLinkClass(navlink, entry.level) |trim }} level{{ entry.level }}">
+                        <a target="{{ openInNew }}" id="{{ entry.title|lower }}" href="{{ link }}" {{ onclick }} class="p-0 {{ popclass }} nav-link {{ macros.activeLinkClass(navlink, entry.level) |trim }} level{{ entry.level }}">
                         <img class="nav-icon {{ entry.title |lower  }}" src = "{{ baseUrl }}/icons/{{ entry.title |lower  }}.svg" >
                         </a>
-                       <a id="{{ entry.title|lower }}" href="{{ link }}" {{ onclick }} class="p-0 {{ popclass }} nav-link {{ macros.activeLinkClass(navlink, entry.level) |trim }} level{{ entry.level }}">
+                       <a target="{{ openInNew }}" id="{{ entry.title|lower }}" href="{{ link }}" {{ onclick }} class="p-0 {{ popclass }} nav-link {{ macros.activeLinkClass(navlink, entry.level) |trim }} level{{ entry.level }}">
 
                             {{ entry.title }}</a>
                     </li>

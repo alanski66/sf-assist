@@ -28,11 +28,16 @@
                 </div>
             </div>
         </div>
+        {%  if entry.footerNotice | length %}
         <div class="row ">
             <div class="col-md-12 d-flex justify-content-center pt-5">
-                <p class="small text-center text-md-right">Although the helpline is for seafarers from {{ siteName}} any seafarer can call</p>
+{#                {{ "I like %this% and %that%."|replace({'%this%': foo, '%that%': "bar"}) }}#}
+
+                {%  set footerNotice = entry.footerNotice | replace('[site]',siteName) %}
+                <p class="small text-center text-md-right">{{ footerNotice }}</p>
             </div>
         </div>
+        {% endif %}
     </div>
     <div class="container ">
             <div class="row no-gutters border-top copyright pb-0">

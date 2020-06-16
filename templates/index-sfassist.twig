@@ -59,14 +59,14 @@
           <div class="text-white">{{- entry.introText -}}</div>
           {%  if entry.ctaLink | length %}
           {% set link = entry.ctaLink.one.url %}
-          {% elseif entry.custom | length %}
-          {% set link = entry.custom %}
+          {% elseif entry.ctaCustom | length %}
+          {% set link = entry.ctaCustom %}
           {% endif %}
 <div class="mt-5 d-flex justify-content-center">
           <div class="card" >
             <div class="card-body">
               <h5 class="card-title">Access your company support</h5>
-              <h6 class="card-subtitle mb-2 text-muted hide">Card subtitle</h6>
+
                 <div class="form-group my-2">
                     <label for="company-select" class=" hide" aria-hidden="false">Select a company</label>
                     <select  class="form-control " name="sites" id="company-select">
