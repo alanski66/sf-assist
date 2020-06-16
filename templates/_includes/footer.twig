@@ -28,12 +28,12 @@
                 </div>
             </div>
         </div>
-        {%  if entry.footerNotice | length %}
+        {%  if globalContent.footerNotice | length %}
         <div class="row ">
             <div class="col-md-12 d-flex justify-content-center pt-5">
 {#                {{ "I like %this% and %that%."|replace({'%this%': foo, '%that%': "bar"}) }}#}
 
-                {%  set footerNotice = entry.footerNotice | replace('[site]',siteName) %}
+                {%  set footerNotice = globalContent.footerNotice | replace('[site]',siteName) %}
                 <p class="small text-center text-md-right">{{ footerNotice }}</p>
             </div>
         </div>
