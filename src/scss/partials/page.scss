@@ -8,6 +8,15 @@
 //}
 //
 
+.homepage.sfassist .copyright-right li.contact-us{
+  display:inline-block;
+}
+.footer .copyright .copyright-right li:last-child{
+  margin-right:0;
+}
+.footer .copyright .copyright-right li.contact-us{
+  display:none;
+}
 .resource{
   background: $gray-ex-light;
   filter: blur(2px);

@@ -44,7 +44,7 @@
   {% if entry.bannerImage | length %}
       {% set image = entry.bannerImage.one().url %}
     {% else %}
-      {% set image = 'assets/images/_static/placeholder.jpg' %}
+      {% set image = baseUrl~'assets/images/_static/placeholder.jpg' %}
   {% endif %}
   <div class=" d-flex align-items-start position-relative heroic" style="background-image: url('{{ image }}');min-height:800px">
     <div class="hero-sf-overlay"></div>

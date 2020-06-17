@@ -10256,16 +10256,21 @@ ul.white li > a {
     margin-left: 0px; } }
 
 @media (min-width: 768px) {
-  .footer .copyright .copyright-right ul li:first-child {
-    margin-right: 0px; }
   .footer .copyright .copyright-right {
     text-align: right; } }
 
 @media (min-width: 992px) {
-  .footer .copyright .copyright-right ul li:first-child {
-    margin-right: 15px; }
   .footer .copyright .copyright-right {
     text-align: right; } }
+
+.homepage.sfassist .copyright-right li.contact-us {
+  display: inline-block; }
+
+.footer .copyright .copyright-right li:last-child {
+  margin-right: 0; }
+
+.footer .copyright .copyright-right li.contact-us {
+  display: none; }
 
 .resource {
   background: #f8f9fa;
@@ -10675,14 +10680,10 @@ ul.white li > a {
     margin-left: 0px; } }
 
 @media (min-width: 768px) {
-  .footer .copyright .copyright-right ul li:first-child {
-    margin-right: 0px; }
   .footer .copyright .copyright-right {
     text-align: right; } }
 
 @media (min-width: 992px) {
-  .footer .copyright .copyright-right ul li:first-child {
-    margin-right: 15px; }
   .footer .copyright .copyright-right {
     text-align: right; } }
 

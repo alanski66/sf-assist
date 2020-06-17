@@ -16,7 +16,17 @@
     {% include '_includes/_partials/css.twig' %}
 
 
-{#    <link href="{{baseUrl}}/css/wireframe.css" rel="stylesheet">#}
+    {% if env == 'production' %}
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-39410406-3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-39410406-3');
+    </script>
+    {% endif %}
 
 </head>
 
@@ -27,6 +37,7 @@
     {% set bodyClass = entry is defined ? entry.type : craft.app.request.segments|first  %}
 {% endif %}
 <body class="{{ bodyClass }} {{ craft.app.request.getSegment(1)}} {{ currentSite.handle }}">
+
 <div class="wrapper">
 
     <header class="header">
