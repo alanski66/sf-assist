@@ -1,3 +1,8 @@
+// fix blue bottom footer to give appeareance of fixed bottom
+body{
+  border-bottom:200px solid $blue-mid;
+}
+
 body,div {
   /*  background-color: $bg_grey !important;*/
   //line-height: 1.5;
