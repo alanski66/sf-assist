@@ -11,7 +11,9 @@ ul.white li>a {
   left: 0;
   z-index: 1030;
 }
-
+.contact.sfassist footer{
+  position: relative;
+}
 .footer {
   background-color: $footer-bg-color;
   padding-top: 0px;
@@ -81,7 +83,12 @@ ul.white li>a {
   color:$white;
   font-size: $font-size-sm;
 }
-
+.footer .copyright .copyright-right ul li.contact-us{
+  display: none;
+}
+.sfassist .footer .copyright .copyright-right ul li.contact-us{
+  display: inline-block;
+}
 .footer .copyright .copyright-left ul li:last-child {
   margin-right: 0;
 }
@@ -98,11 +105,14 @@ ul.white li>a {
 
 .footer .copyright .copyright-right ul li {
   display: inline-block;
-  margin-right: 0px;
+  //margin-right: 0px;
   font-size: $font-size-xs;
 }
 
-.footer .copyright .copyright-right ul li:first-child {
+.sfassist .footer .copyright .copyright-right ul li:first-child {
+  margin-right: 15px;
+}
+ .footer .copyright .copyright-right ul li:last-child {
   margin-right: 15px;
 }
 

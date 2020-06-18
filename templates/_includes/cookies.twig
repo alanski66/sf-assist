@@ -11,6 +11,9 @@
 <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
 <script>
     window.addEventListener("load", function(){
+        var cookieDismiss = '{{ siteInfo.cookieDismiss | default('Got it') }}';
+        var cookiePolicyLinkText = '{{ siteInfo.cookiepolicylinktext | default('Learn more')}}';
+        var cookieDeny = '{{ siteInfo.cookiedeny | default('Decline')}}';
         window.cookieconsent.initialise({
             "palette": {
                 "popup": {
@@ -25,10 +28,11 @@
             "theme": "edgeless",
             "type": "{{ siteInfo.cookieType }}",
             "content": {
-                "dismiss": "{{ siteInfo.cookieDismiss | default('Got it')}}",
-                "link": "{{ siteInfo.cookiePolicyLinkText | default('Learn more')}}",
-                "deny": "{{ siteInfo.cookieDeny | default('Decline')}}",
-                "message": "{{ siteInfo.cookieMessage| default('This website uses cookies to ensure you get the best experience on our website.') }}"
+                "dismiss": cookieDismiss,
+                "link": cookiePolicyLinkText,
+                "deny": cookieDeny,
+                "message": "{{ siteInfo.cookieMessage| default('This website uses cookies to ensure you get the best experience on our website.') }}",
+                "href": "{{ baseUrl ~ '/privacy-policy' }}"
             }
         })});
 </script>

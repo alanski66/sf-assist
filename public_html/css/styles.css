@@ -10152,6 +10152,9 @@ ul.white li > a {
   left: 0;
   z-index: 1030; }
 
+.contact.sfassist footer {
+  position: relative; }
+
 .footer {
   background-color: #1E205A;
   padding-top: 0px;
@@ -10210,6 +10213,12 @@ ul.white li > a {
   color: #ffffff;
   font-size: 1.05rem; }
 
+.footer .copyright .copyright-right ul li.contact-us {
+  display: none; }
+
+.sfassist .footer .copyright .copyright-right ul li.contact-us {
+  display: inline-block; }
+
 .footer .copyright .copyright-left ul li:last-child {
   margin-right: 0; }
 
@@ -10223,10 +10232,12 @@ ul.white li > a {
 
 .footer .copyright .copyright-right ul li {
   display: inline-block;
-  margin-right: 0px;
   font-size: 0.93rem; }
 
-.footer .copyright .copyright-right ul li:first-child {
+.sfassist .footer .copyright .copyright-right ul li:first-child {
+  margin-right: 15px; }
+
+.footer .copyright .copyright-right ul li:last-child {
   margin-right: 15px; }
 
 .footer .copyright .copyright-right ul li a {
@@ -10576,6 +10587,9 @@ ul.white li > a {
   left: 0;
   z-index: 1030; }
 
+.contact.sfassist footer {
+  position: relative; }
+
 .footer {
   background-color: #1E205A;
   padding-top: 0px;
@@ -10634,6 +10648,12 @@ ul.white li > a {
   color: #ffffff;
   font-size: 1.05rem; }
 
+.footer .copyright .copyright-right ul li.contact-us {
+  display: none; }
+
+.sfassist .footer .copyright .copyright-right ul li.contact-us {
+  display: inline-block; }
+
 .footer .copyright .copyright-left ul li:last-child {
   margin-right: 0; }
 
@@ -10647,10 +10667,12 @@ ul.white li > a {
 
 .footer .copyright .copyright-right ul li {
   display: inline-block;
-  margin-right: 0px;
   font-size: 0.93rem; }
 
-.footer .copyright .copyright-right ul li:first-child {
+.sfassist .footer .copyright .copyright-right ul li:first-child {
+  margin-right: 15px; }
+
+.footer .copyright .copyright-right ul li:last-child {
   margin-right: 15px; }
 
 .footer .copyright .copyright-right ul li a {
@@ -10686,6 +10708,9 @@ ul.white li > a {
 @media (min-width: 992px) {
   .footer .copyright .copyright-right {
     text-align: right; } }
+
+body {
+  border-bottom: 200px solid #0a9ad4; }
 
 body, div {
   /*  background-color: $bg_grey !important;*/

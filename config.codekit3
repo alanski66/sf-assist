@@ -21,9 +21,9 @@
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
-		"oA": 1,
+		"oA": 0,
 		"oAP": "/.env",
-		"oF": 1
+		"oF": 0
 		},
 	"/.env.example": {
 		"cB": 0,
@@ -47,10 +47,10 @@
 		"oAP": "/build/.idea",
 		"oF": 0
 		},
-	"/_templatesNY107": {
+	"/backups": {
 		"ft": 65536,
 		"oA": 1,
-		"oAP": "/build/_templatesNY107",
+		"oAP": "/build/backups",
 		"oF": 0
 		},
 	"/composer.json": {
@@ -154,26 +154,12 @@
 		"oAP": "/build/scripts",
 		"oF": 0
 		},
-	"/sf-assist.code-workspace": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/sf-assist.code-workspace",
-		"oF": 0
-		},
 	"/sf-assist.sketch": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/sf-assist.sketch",
-		"oF": 0
-		},
-	"/sql": {
-		"ft": 65536,
-		"oA": 1,
-		"oAP": "/build/sql",
 		"oF": 0
 		},
 	"/src/js/jscustom.js": {
@@ -1809,14 +1795,6 @@
 		"oAP": "/build/storage",
 		"oF": 0
 		},
-	"/templates-bak.zip": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/templates-bak.zip",
-		"oF": 0
-		},
 	"/templates/.gitkeep": {
 		"cB": 0,
 		"ft": 8192,
@@ -2103,6 +2081,14 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/templates/callback/proxy.php",
+		"oF": 0
+		},
+	"/templates/contact/thanks/index.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/contact/thanks/index.twig",
 		"oF": 0
 		},
 	"/templates/email/_notifications.twig": {
@@ -2499,6 +2485,14 @@
 		"ft": 65536,
 		"oA": 1,
 		"oAP": "/build/vendor",
+		"oF": 0
+		},
+	"/vendor.zip": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/vendor.zip",
 		"oF": 0
 		},
 	"/video-tel-1.jpg": {
