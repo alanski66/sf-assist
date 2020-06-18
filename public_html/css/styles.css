@@ -10146,14 +10146,10 @@ ul.white li > a {
 
 .contact.sfassist footer,
 .homepage.sfassist footer {
-  position: fixed;
   right: 0;
   bottom: 0;
   left: 0;
   z-index: 1030; }
-
-.contact.sfassist footer {
-  position: relative; }
 
 .footer {
   background-color: #1E205A;
@@ -10581,14 +10577,10 @@ ul.white li > a {
 
 .contact.sfassist footer,
 .homepage.sfassist footer {
-  position: fixed;
   right: 0;
   bottom: 0;
   left: 0;
   z-index: 1030; }
-
-.contact.sfassist footer {
-  position: relative; }
 
 .footer {
   background-color: #1E205A;
@@ -10710,7 +10702,10 @@ ul.white li > a {
     text-align: right; } }
 
 body {
-  border-bottom: 200px solid #0a9ad4; }
+  background-color: #0a9ad4; }
+
+.content-wrapper {
+  background: #ffffff; }
 
 body, div {
   /*  background-color: $bg_grey !important;*/
