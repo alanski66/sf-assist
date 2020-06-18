@@ -1,4 +1,4 @@
-<<<<<<< Updated upstream
+
 /.env
 /.idea
 /_templatesNY107
@@ -9,7 +9,7 @@
 sf-assist.code-workspace
 config.codekit3
 /templates-bak.zip
-=======
+
 
 # Craft 3 .gitignore
 #
