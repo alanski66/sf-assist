@@ -1,0 +1,40 @@
+{
+    "name": "joomkit/usergrouplogin",
+    "description": "Lets user login with company id",
+    "type": "craft-plugin",
+    "version": "1.0.0",
+    "keywords": [
+        "craft",
+        "cms",
+        "craftcms",
+        "craft-plugin",
+        "usergrouplogin"
+    ],
+    "support": {
+        "docs": "https://github.com/Joomkit/user-group-login/blob/master/README.md",
+        "issues": "https://github.com/Joomkit/user-group-login/issues"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "joomkit",
+            "homepage": "https://www.joomkit.com"
+        }
+    ],
+    "require": {
+        "craftcms/cms": "^3.0.0-RC1"
+    },
+    "autoload": {
+        "psr-4": {
+          "joomkit\\usergrouplogin\\": "src/"
+        }
+    },
+    "extra": {
+        "name": "UserGroupLogin",
+        "handle": "user-group-login",
+        "hasCpSettings": true,
+        "hasCpSection": false,
+        "changelogUrl": "https://raw.githubusercontent.com/Joomkit/user-group-login/master/CHANGELOG.md",
+        "class": "joomkit\\usergrouplogin\\UserGroupLogin"
+    }
+}

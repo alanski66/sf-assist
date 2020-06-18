@@ -1,0 +1,165 @@
+/////////////////////////////////
+//    Brand official RGB Colors
+//////////////////////////////////
+//brand official RGB
+//Red: R246 G11 B42
+//Yellow: R255 G196 B78
+//Light Blue: R7 G112 B177
+//Dark Blue: R38 G33 B113
+$brand-blue: darken(#213485,5%); //#213485    #002A40;  //#28255f;//#1d1f5c // 1D205A //053165 /// 1D250B  //221F72  //NB*** #002A40 is original INVISION jason // purple/blue logo = 28255f
+$brand-yellow: #ffc44e;
+$brand-light-blue: #0770b1;
+$brand-dark-blue: #262171;
+/////////////////////////////////
+  //    Theme Primary Colors
+//////////////////////////////////
+
+$black: #333333;
+$blue:    #0a9ad4 !default; //#0B9DD7
+$indigo:  #6610f2 !default;
+$purple:  #6f42c1 !default;
+$pink:    #e83e8c !default;
+$red:     #dc3545 !default;
+$orange:  #fd7e14 !default;
+$gold:    #ED9F2D !default;
+$yellow:  #ffc107 !default;
+$green:   #28a745 !default;
+$teal:    #20c997 !default;
+$cyan:    #17a2b8 !default;
+
+$sea-green: #30435a !default;
+
+$theme-colors: (
+  primary: #3F4276,
+  secondary: #0a9ad4,
+  light: #CC402D,
+  dark: #555555,
+  info: #4184D1,
+  success: #28a745,
+  warning: #ffc107,
+  danger: #dc3545,
+  white: #ffffff
+);
+
+//$primary_color : #002a40;
+$black: #000;
+$white: #ffffff;
+//$blue: #0B9DD7;
+$body-color: #404041;
+$primary: $yellow;
+$gray-light: #adb5bd !default;
+$gray-ex-light: #f8f9fa;
+$bg-blue-light:#B7EBFF;
+
+
+
+$blue-mid: #0a9ad4;  //#0b9dd7;
+$blue-light:#B7EBFF;
+$blue-dark: #1d205a;
+$blue-text-dark: #026b90;  //
+$text_color: #404041;
+
+//background_colors
+$header-bg-color:#1E205A; // brandguide line blue is =>  1E205A // darken(#2e3c79,5%);//#213485;
+$footer-bg-color: $header-bg-color;
+$blue-bg: #0B9DD7;;
+$yellow-bg: #f5c137;
+$gray-bg: #E9EFF1;
+$blue-bg-hover:#1586A4;
+$bg-blue: #0a9ad4; // #0B9DD7;
+
+
+/////////////////////////////////
+//    Brand switch outs
+//////////////////////////////////
+//$blue:    $brand-light-blue; //#0B9DD7 !default;
+//$yellow:  $brand-yellow; //#ffc107 !default;
+//$bg-blue: $brand-light-blue;//#0B9DD7;
+
+
+//award blue
+$award-blue-mid: #09408a;
+
+//////
+/// sidebox
+//////
+$blue-sidebox-bg:#cff1ff;
+
+/////////////////////////////////
+//        FONT SIZES
+//////////////////////////////////
+$font1 : 32px;
+$font2 : 30px;
+$font2a : 28px;
+$font3 : 24px;
+$font3a : 22px;
+$font4 : 20px;
+$font5 : 18px;
+$font5a : 17px;
+$font6 : 16px;
+$font7 : 14px;
+
+
+// Fonts
+//
+// Font, line-height, and color for body text, headings, and more.
+
+// stylelint-disable value-keyword-case
+$font-family-sans-serif:      'Open Sans', sans-serif;
+//$font-family-sans-serif:      'Cabin', sans-serif;
+$font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+$font-family-sans-serif-second:  'Open Sans', serif;
+$font-family-base:            $font-family-sans-serif-second;
+// stylelint-enable value-keyword-case
+
+//size
+$font-size-base:              1.2rem !default; // Assumes the browser default, typically `16px`
+$font-size-lg:                ($font-size-base * 1.25) !default;
+$font-size-sm:                ($font-size-base * .875) !default;
+$font-size-xs:                ($font-size-base * .775) !default;
+$font-size-xl:                ($font-size-base * 1.50) !default;
+$font-size-xxl:                ($font-size-base * 1.75) !default;
+$font-size-page-heading:      ($font-size-base * 1.75) !default;
+
+$font-weight-exlight:         200 !default;
+$font-weight-light:           300 !default;
+$font-weight-normal:          400 !default;
+$font-weight-semi-bold:       600 !default;
+$font-weight-bold:            700 !default;
+
+$font-weight-base:            $font-weight-normal !default;
+$line-height-base:            1.5 !default;
+
+$h1-font-size:                $font-size-base * 2 !default;
+$h2-font-size:                $font-size-base * 1.7 !default;
+$h3-font-size:                $font-size-base * 1.65 !default;
+$h4-font-size:                $font-size-base * 1.45 !default;
+$h5-font-size:                $font-size-base * 1.15 !default;
+$h6-font-size:                $font-size-base !default;
+
+$spacer: 1rem !default;
+
+$headings-margin-bottom:      ($spacer / 2) !default;
+//$headings-font-family:        'Lato', serif;
+//$headings-font-family:        'Montserrat', serif;
+$headings-font-weight:        600 !default;
+$headings-line-height:        1.2 !default;
+$headings-color:              inherit !default;
+$heading-letter-spacing:  0px !default;
+
+/* nav */
+
+$nav-link-padding: 0.5rem;
+/*ship*/
+$ship-bg-thumb: rgba(213, 235, 219, 0.16);  ////#f0f8ff;
+/*========= button =============*/
+////buttons
+$btn-border-radius: 0px!important;
+.btn.btn-default{
+  border-color: $blue-mid;
+  background-color: $blue-mid;
+  color:#ffffff;
+}
+.btn.btn-default:hover{
+  background-color: darken($blue-mid,10%);
+}

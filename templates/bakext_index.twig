@@ -1,0 +1,133 @@
+{% extends "_layouts/home.twig" %}
+
+{% set firstGroup = currentUser.getGroups()[0] ?? null %}
+
+{% if firstGroup is not null %}
+{% set tmplRedirect = alias('@web')~'/'~firstGroup.handle~"/lander" %}
+  {#    {{firstGroup}}#}
+  {% redirect tmplRedirect %}
+{% endif %}
+
+{% block content %}
+
+
+
+
+<!-- Page Content -->
+
+  <div class="h-50 d-flex align-items-center bg-info p-2 p-md-4" >
+    <div class="position-absolute ">
+
+      {% if currentSite.group.sites | length > 1 %}
+
+        <div class="btn-group">
+          <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-language" aria-hidden="true"></i> Language</a>
+          </button>
+          <div class="dropdown-menu">
+            {% for site in currentSite.group.sites %}
+
+              {% set url = alias(site.baseUrl) %}
+              {% if entry is defined %}
+                {% set entryForOtherSite = craft.entries.id(entry.id).site(site).one() %}
+                {% if entryForOtherSite %}
+                  {% set url = entryForOtherSite.getUrl() %}
+                {% endif %}
+              {% endif %}
+              <a  class="dropdown-item  {% if currentSite.id == site.id %} is-active{% endif %}" href="{{ url }}">{{ site.handle }} {{ url }}</a>
+
+            {% endfor %}
+          </div>
+        </div>
+      {% endif %}
+
+    </div>
+    <div class="container">
+      <div class="row section-bg" >
+        <div class="mx-auto text-center col-md-6">
+          <img src="assets/images/Flag left half bold@1x.png" alt="" class="mb-3 mr-5 img-fluid">
+          <p class="lead text-white">{{entry.strapline1}}<br>{{entry.strapline2}}</p>
+          
+          <div class="row">
+            <div class="col-md-12">
+              <div class="card text-center text-dark">
+                <div class="card-body">
+                  <h5 class="card-title primary">Login </h5>
+                  <p class="card-text">Enter your five digit code </p>
+                          <form method="post"  accept-charset="UTF-8">
+  {{ csrfInput() }}
+
+
+                    <div class="form-group"> 
+                        <input id="loginName" class="form-control w-50 mx-auto mb-2"  type="text" name="loginName" >
+                        {# <input type="email" class="form-control w-50 mx-auto" placeholder="Enter email">  #}
+                            <input type="hidden" name="action" value="user-group-login/check-login/login">
+                        {% if errorMessage is defined %}
+                                <p>{{ errorMessage }}</p>
+                            {% endif %}
+                             {% if currentUser %}
+                                <p>Welcome, {{ currentUser.friendlyName }}!</p>
+                                {% else %}
+                                    <p class="hide">ya not logged in</p>
+                            {% endif %}
+                    </div>
+                    <button type="submit" class="btn btn-primary">Login</button>
+                    {% if currentUser %}
+                      <br><a href="{{ logoutUrl }}">Logout</a>
+                    {% endif %}
+                  </form>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row d-flex">
+      </div>
+      <!--
+      <div class="py-3 d-fl justify-content-center align-items-center bg-info"-->
+    </div>
+  </div>
+  <div class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 d-flex justify-content-center mb-3"><h3>Access resources</h3></div>
+        <div class="col-md-6 d-flex justify-content-center">
+
+          <div class="card" style="width: 18rem;">
+            <img src="{{ baseUrl }}/assets/images/simeon-muller-f4bNG3lYKNY-unsplash.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Resources</h5>
+              <p class="card-text">Download self-help guides and other useful resources.</p>
+              <span  class="btn btn-primary">Download <i class="fa fa-cloud-download" aria-hidden="true"></i>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 d-flex justify-content-center">
+
+          <div class="card" style="width: 18rem;">
+            <img src="{{ baseUrl }}/assets/images/video-tel-1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Live chat</h5>
+              <p class="card-text">Confidential emotional support service for seafarers. 24 hours a day.</p>
+              <span class="btn btn-primary">Chat <i class="fa fa-comments" aria-hidden="true"></i></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 justify-content-center d-flex">
+          <p>Download self-help guides and other useful resources</p>
+        </div>
+        <div class="col-md-6 justify-content-center d-flex">
+          <p>Confidential live chat or WhatsApp service</p>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- / page content -->
+
+{% endblock %}
+

@@ -1,0 +1,95 @@
+<!-- Footer -->
+<footer class="footer bg-secondary">
+    <div class="container">
+        <div class="row hide">
+            <div class="col-md-5">
+                <div class="footer-inner text-center text-md-left">
+                    <h3>Contact</h3>
+                    <ul class="list-unstyled ">
+                        <li><a href="tel:{{ organisationDetails.organisationTelephone }}">{{ organisationDetails.organisationTelephone }}</a></li>
+                        <li><a
+                                    href="mailto:{{ organisationDetails.organisationEmail }}">{{ organisationDetails.organisationEmail }}</a></li>
+                    <li>{{ organisationDetails.organisationAddress }}</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-md-7 d-flex justify-content-center justify-content-md-end">
+
+
+                <div class="footer-social hide">
+                    <ul>
+                        <li><a target="_blank" data-on="click" data-event-category="Social" data-event-action="Channel link" data-event-label="Facebook" href="{{ social.facebook }}"><img id="facebook" class="facebook svg" src="{{ baseUrl }}/assets/social/facebook-icon.svg" alt="" /></a></li>
+                        <li><a target="_blank" data-on="click" data-event-category="Social" data-event-action="Channel link" data-event-label="Twitter" href="{{ social.twitter }}"><img class="twitter svg" src="{{ baseUrl }}/assets/social/twitter-icon.svg" alt="" /></a></li>
+                        <li><a target="_blank" data-on="click" data-event-category="Social" data-event-action="Channel link" data-event-label="Flickr" href="{{ social.flickr }}"><img  class="flickr svg" src="{{ baseUrl }}/assets/social/flickr-icon.svg" alt="" /></a></li>
+                        <li><a target="_blank" data-on="click" data-event-category="Social" data-event-action="Channel link" data-event-label="LinkedIn" href="{{ social.linkedin }}"><img  class="linkedin svg" src="{{ baseUrl }}/assets/social/linkedin-icon.svg" alt="" /></a></li>
+                        <li><a target="_blank" data-on="click" data-event-category="Social" data-event-action="Channel link" data-event-label="Instagram" href="{{ social.instagram }}"><img  class="instagram svg" src="{{ baseUrl }}/assets/social/instagram-icon.svg" alt="" /></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        {%  if globalContent.footerNotice | length %}
+        <div class="row ">
+            <div class="col-md-12 d-flex justify-content-center pt-5">
+{#                {{ "I like %this% and %that%."|replace({'%this%': foo, '%that%': "bar"}) }}#}
+
+                {%  set footerNotice = globalContent.footerNotice | replace('[site]',siteName) %}
+                <p class="small text-center text-md-right">{{ footerNotice }}</p>
+            </div>
+        </div>
+        {% endif %}
+    </div>
+    <div class="container ">
+            <div class="row no-gutters border-top copyright pb-0">
+                <div class="col-sm-12 col-md-9 footer-inner">
+                    <div class="copyright-left ">
+                        <p>{{ copyright.charityOrganisationStatement}} <br>Charity no.{{ copyright.charityNumber }} | Company no. {{ copyright.companyNumber }}</p>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-3">
+                    <div class="copyright-right">
+                        <ul>
+                            {% for block in copyright.rights.type('copyright').all() %}
+                                <li>{{ block.copyright | raw}}</li>
+                            {%  endfor %}
+
+                            {% for block in copyright.rights.type('footerLeftLinks').all() %}
+
+                                {%  if block.footerLeftLink | length %}
+                                    {%  for flink in block.footerLeftLink.all() %}
+                                        <li class="list-inline-item"><a href="{{ flink.uri }}">{{ flink.title }}</a></li>
+                                    {%  endfor %}
+                                {% endif %}
+                            {%  endfor %}
+
+
+                            {% for block in copyright.rights.type('footerRightLinks').all() %}
+
+                                {%  for flink in block.footerRightLink.all() %}
+                                    <li class="{{ flink.title|lower|kebab }}"><a href="{{ flink.uri }}">{{ flink.title }}</a></li>
+                                {%  endfor %}
+
+                            {%  endfor %}
+                            {#<li><a href="#">Quick links:</a></li>#}
+                            {#<li><a href="#">Resources</a></li>#}
+                            {#<li><a href="#">Real-life stories</a></li>#}
+                            {#<li><a href="#">Contact us</a></li>#}
+                            {#<li><a href="#">Subscribe</a></li>#}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        <div class="row">
+            <div class="col-12 footer-inner">
+
+            </div>
+        </div>
+
+    </div>
+    <div class="container ">
+        <div class="row nogutters ">
+
+        </div>
+    </div>
+</footer>
+<!-- / footer -->

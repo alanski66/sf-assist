@@ -1,0 +1,160 @@
+ul.white li>a {
+  color:$white;
+}
+//unstick footer except on homepage of main sfassist lander
+
+.contact.sfassist footer,
+.homepage.sfassist footer{
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1030;
+}
+
+.footer {
+  background-color: $footer-bg-color;
+  padding-top: 0px;
+  font-size: $font-size-xs;
+  color:$white;
+  position: relative;
+}
+
+.footer .footer-inner h3 {
+  color: #ffffff;
+  font-size: 18px;
+  font-family: $font-family-sans-serif-second;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.footer .footer-inner ul {
+  margin-top: 10px;
+  padding-left: 0;
+}
+
+.footer .footer-inner ul li a {
+  color: #ffffff;
+  font-size: $font-size-xs;
+  font-family: $font-family-sans-serif-second;
+  font-weight: 100;
+}
+
+.footer .footer-inner p {
+  color: #ffffff;
+  font-size: $font-size-xs;
+  font-family: $font-family-sans-serif-second;
+  font-weight: 100;
+  ///margin-top: 10px;
+}
+
+.footer .footer-inner p span {
+  font-style: italic;
+}
+
+.footer .footer-social {
+  text-align: right;
+}
+
+.footer .footer-social ul li {
+  display: inline-block;
+  margin-left: 7px;
+}
+
+.footer .footer-social ul li a:hover svg path{
+  fill:$yellow;
+}
+.footer .footer-social ul li a:hover svg{
+  fill:red;
+}
+
+.footer .copyright {
+  border-top: 1px solid rgba(255, 255, 255, 0.39);
+  margin-top: 40px;
+  padding-top: 15px;
+  padding-bottom: 30px;
+}
+
+.footer .copyright .copyright-left ul li {
+  display: inline-block;
+  margin-right: 15px;
+  color:$white;
+  font-size: $font-size-sm;
+}
+
+.footer .copyright .copyright-left ul li:last-child {
+  margin-right: 0;
+}
+
+.footer .copyright .copyright-left ul li a {
+  color: #ffffff;
+  font-size: $font-size-xs;
+}
+
+.footer .copyright .copyright-right {
+  text-align: right;
+  font-size: $font-size-xs;
+}
+
+.footer .copyright .copyright-right ul li {
+  display: inline-block;
+  margin-right: 0px;
+  font-size: $font-size-xs;
+}
+
+.footer .copyright .copyright-right ul li:first-child {
+  margin-right: 15px;
+}
+
+.footer .copyright .copyright-right ul li a {
+  color: #ffffff;
+  font-size: $font-size-xs;
+}
+
+.funders.white{
+  background: #ffffff;
+  min-width: 160px;
+  min-height: 120px;
+  max-height: 120px;
+}
+
+@media(min-width: 0px){
+  .funders.white{
+    margin-bottom: 20px;
+  }
+}
+
+@media(min-width: 580px){
+  .funders.white{
+    margin-bottom: 0px;
+  }
+}
+@media(max-width: 768px) {
+  .footer .copyright .copyright-right {
+    text-align: left;
+  }
+  .footer .copyright .copyright-right ul{
+    padding-left:0;
+  }
+  .footer .copyright .copyright-right ul li:first-child {
+    margin-left: 0px;
+  }
+}
+
+@media (min-width: 768px){
+  .footer .copyright .copyright-right ul li:first-child {
+    //margin-right: 0px;
+  }
+  .footer .copyright .copyright-right {
+    text-align: right;
+  }
+}
+
+@media (min-width: 992px){
+  .footer .copyright .copyright-right ul li:first-child {
+    //margin-right: 15px;
+  }
+  .footer .copyright .copyright-right {
+    text-align: right;
+  }
+}

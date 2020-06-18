@@ -1,0 +1,424 @@
+/*============ section defaults =============*/
+section {
+
+  font-weight: 400;
+  font-size: $font-size-lg;
+  //font-family: $font-family-sans-serif-second;
+}
+section p {
+ // color: $white;
+ // font-weight: 400;
+ // font-size: $font-size-lg;
+  //margin-top: 15px;
+  //font-family: $font-family-sans-serif-second;
+}
+section .description > *{
+  //font-size: $font-size-lg;
+  font-family: $font-family-sans-serif;
+}
+
+/*======resource======*/
+section.resource-lander{
+  background-color: #f4f4f4;
+}
+/*======Sponsor======*/
+section.sponsor{
+  font-size: $font-size-base;
+}
+section.sponsor h3{
+  font-size: $font-size-base;
+}
+
+section.sponsor.sponsor-bottom .row{
+  background-color: $white;
+}
+section.sponsor.sponsor-bottom h3{
+  font-size: $font-size-sm;
+}
+
+section.sponsor.sponsor-bottom a img{
+
+}
+
+section .sponsor a.btn{
+  width:auto;
+  color: $blue-dark;
+}
+.sponsor .ctaText{
+  color:$gray-600;
+}
+
+/*======Light Blue======*/
+section.light-blue{
+  background:$bg-blue-light;
+}
+/*======Blue======*/
+section.blue {
+  font-family: $font-family-sans-serif-second;
+  background-color: $bg-blue;
+  text-align: left;
+  //padding: 45px 0 54px;
+  position:relative;
+  //margin-top:-100px;
+}
+
+section.blue .page-heading-medium,
+section.blue  h2 {
+  font-weight: 600;
+  font-size: 30px;
+  color: $white;
+  //margin-bottom: 15px;
+  font-family: $font-family-sans-serif-second;
+}
+
+section.blue  h2 span {
+  font-family: $font-family-sans-serif-second;
+  font-weight: 300;
+}
+
+section.blue .page-heading{
+  color:$white;
+}
+section.blue .col-md-4:last-child .involved-box:after {
+  display: none;
+}
+
+section.blue .involved-box {
+  position: relative;
+  padding: 20px 0;
+}
+
+section.blue .involved-box:after {
+  position: absolute;
+  content: "";
+  background-color: #ffffff;
+  width: 1px;
+  height: 198px;
+  right: -15px;
+  top: 0;
+}
+
+section.blue p {
+  color: $white;
+  font-weight: 500;
+  font-size: $font-size-base;
+  margin-top: 15px;
+}
+
+section.blue .involved-box p span {
+  font-family: $font-family-sans-serif-second;
+  font-weight: 800;
+}
+
+section.blue .get-involved {
+  text-align: center;
+  margin-top: 40px;
+}
+
+section.blue .get-involved a {
+  width: 263px;
+  height: 78px;
+  line-height: 78px;
+  font-size: 28px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
+  display: inline-block;
+  text-align: center;
+  border-radius: 39px;
+  background-color: #ffffff;
+  color: $blue-bg;
+}
+
+/*====== gray ======*/
+section.gray{
+  font-family: $font-family-sans-serif-second;
+  background-color: $gray-bg;
+  text-align: left;
+  padding: 45px 0 54px;
+  position:relative;
+  //margin-top:-100px;
+}
+section.gray p{
+  color: $body-color;
+}
+
+section.gray .cta .cta-intro{
+  color:$blue-text-dark;
+  font-weight: 700;
+  font-size:1.5rem;
+}
+
+/*====== gray lighter ======*/
+section.gray-light{
+  background: $gray-300;
+
+}
+
+/*====== yellow ======*/
+section.yellow{
+  background-color: $yellow;
+}
+
+/*====== red ======*/
+
+section.red{
+  background-color: $red;
+
+}
+section.red p,section.red a{
+  color: $white;
+}
+
+/*====== white ======*/
+section.white{
+  background-color: $white;
+
+}
+section.white p{
+  color: $body-color;
+}
+
+section.white a{
+  color:$blue-mid;
+}
+
+section.white .media a{
+  color: $body-color;
+}
+/*====== awards ======*/
+section.awards-title .gray-lighter{
+  color: $gray-400;
+
+}
+
+
+/*====== subscribe ======*/
+
+section.subscribe{
+  background-color: $gray-ex-light;
+}
+
+/* block type handles ******/
+div.text{
+  margin-bottom: 30px;
+}
+/*====== downlaods box style ======*/
+section.iconList,
+section.boxList {
+  background-color: $gray-100;
+  color:$blue-dark;
+  border-radius: 5px;
+  font-size: $font-size-base;
+}
+section.boxList a{
+  color: $blue-dark;
+}
+
+/* regional donwload style box*/
+
+section.boxList{
+  padding: 1rem;
+}
+section.buttonList{
+  padding:0;
+}
+
+a.buttonList:hover{
+  background-color: #e2e6ea;
+  border-color: #e2e6ea;
+}
+
+a.boxList{
+  background-color: lighten(#e2e6ea,5%);
+  border-color: #e2e6ea;
+  white-space: normal;
+}
+a.boxList:hover{
+  background-color: darken(#e2e6ea,10%);
+  border-color: #e2e6ea;
+}
+
+
+
+/*====== website link out ======*/
+section.outlink {
+  background-color: $blue-light;
+  color:$blue-dark;
+  border-radius: 5px;
+  font-size: $font-size-base;
+}
+section.outlink a{
+  color: $blue-dark;
+}
+
+  /*======== btn colors ===============*/
+.btn {
+  border-radius: 20px;
+}
+.btn.btn-yellow{
+  background-color: $yellow;
+  color: darken($blue, 10%);
+  //color: $white;//darken($blue, 30%);
+}
+
+.btn.btn-red{
+  background-color: $red;
+  color: $white;
+}
+.btn.btn-blue{
+  background-color: $blue-mid;
+  color: $white;
+}
+
+.btn.btn-blue-light{
+  background-color: lighten($blue-mid,20%);
+  color: $white;
+}
+.btn.btn-gray{
+  background-color: $gray-700;
+  color: $white!important;
+}
+
+.btn.btn-gray-light{
+  background-color: $gray-400;
+  color: $white!important;
+}
+.btn.btn-white{
+  background-color: $white;
+  color: $body-color;
+}
+
+.btn:focus, .btn.focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem $blue;
+}
+
+//hovers
+.btn.btn-yellow:hover{
+  background-color: lighten($yellow, 10%);
+}
+
+.btn.btn-red:hover{
+  background-color: lighten($red, 10%);
+}
+.btn.btn-blue:hover{
+  background-color: lighten($blue-mid, 20%);
+}
+.btn.btn-gray:hover{
+  background-color: lighten($gray-700, 10%);
+}
+.btn.btn-white:hover{
+  background-color: lighten($white, 10%);
+}
+.btn.btn-blue-light:hover{
+  background-color: darken($blue-mid,5%);
+}
+.btn.btn-gray-light:hover{
+  background-color: lighten($gray-400, 10%);
+}
+
+/*======card layout======*/
+
+.card-layout .card{
+  border:none;
+}
+
+.card-layout h4.card-title{
+  line-height: 1.1;
+}
+.card-layout h4.card-title a{
+  font-size:24px;
+  color:$blue;
+  font-weight: 700;
+}
+.card-layout p.card-text {
+  font-size: 18px;
+  color: $body-color;
+}
+
+/*====== SHIP card layout======*/
+.ship.card-layout .portfolio-item .card{
+  min-height:300px;
+}
+.ship.card-layout .card h3{
+  font-size:24px;
+  font-weight: 700;
+  color: $blue-dark;
+}
+.ship.card-layout .card:hover,
+.ship.card-layout .card:hover p.card-text,
+.ship.card-layout .card:hover h3
+{
+  background: $blue-bg-hover;
+  background: $bg-blue;
+  color: $white;
+}
+//tile image hover
+
+//hide rollover
+.ship.card-layout .card .card-icon img.card-img-top.roll{
+  display:none;
+}
+
+//hide default
+.ship.card-layout .card:hover img.card-img-top.default{
+  display:none;
+}
+
+//display white svg
+.ship.card-layout .card:hover img.card-img-top.roll{
+  display:inline-block;
+}
+
+.ship.card-layout .card{
+  border:none;
+  background-color: $blue-light;
+}
+.ship.card-layout .card .card-icon{
+  min-height:100px;
+}
+.ship.card-layout .card .card-img-top{
+  width:auto;
+}
+.ship.card-layout h4.card-title a{
+  font-size:24px;
+  color:$blue;
+  font-weight: 700;
+}
+.ship.card-layout p.card-text {
+  font-size: 18px;
+  color: $body-color;
+}
+
+/*====== SHIP card category layout ======*/
+.ship.card-layout.category .card:hover,
+.ship.card-layout.category .card:hover p.card-text,
+.ship.card-layout.category .card:hover h3
+{
+  background: transparent;
+  color:inherit;
+}
+.ship.card-layout.category .card{
+  border:none;
+  background-color: $white;
+}
+.ship.card-layout.category .card-icon{
+  background-color: $blue-light;
+}
+.ship.card-layout.category .card-body{
+  text-align: left;
+  padding:0;
+}
+
+.card-text .tag{
+  text-transform: uppercase;
+  color: $gray-400;
+  font-size: $font-size-sm;
+}
+
+@media (min-width: 992px){
+  section.blue p{
+    font-size: $font-size-lg;
+  }
+}
+

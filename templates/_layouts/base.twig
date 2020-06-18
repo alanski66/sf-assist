@@ -1,0 +1,62 @@
+{% extends "_includes/_partials/globals.twig" %}
+{%- block htmlPage -%}
+<!DOCTYPE html>
+<html lang="en" class="iswan {{ currentSite.handle }}">
+
+<head>
+
+    {% include '_includes/_partials/globals.twig' %}
+
+    {% include '_includes/_partials/head-meta.twig' %}
+
+    {% set isMobile = craft.mobileDetect.isMobile ? '1' : '0' %}
+    {% set menu = craft.entries.section('pages').hidePage('< 1').all()  %}
+
+    <!-- Custom styles for this template -->
+    {% include '_includes/_partials/css.twig' %}
+
+
+    {% if env == 'production' %}
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-39410406-3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-39410406-3');
+    </script>
+    {% endif %}
+
+</head>
+
+
+
+
+{% if bodyClass is not defined %}
+    {% set bodyClass = entry is defined ? entry.type : craft.app.request.segments|first  %}
+{% endif %}
+<body class="{{ bodyClass }} {{ craft.app.request.getSegment(1)}} {{ currentSite.handle }}">
+
+<div class="wrapper">
+
+    <header class="header">
+        {% include '_includes/nav.twig' %}
+    </header>
+
+{% block body %}
+
+{% endblock %}
+
+{% block foot %}
+    {% include '_includes/footer.twig' %}
+    {% include '_includes/js.twig' %}
+{% endblock %}
+
+</div><!-- end wrapper -->
+{%  if siteInfo.showCookieInfo %}
+    {% include '_includes/cookies.twig' %}
+{% endif %}
+</body>
+</html>
+{%- endblock htmlPage -%}

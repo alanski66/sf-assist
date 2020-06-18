@@ -1,0 +1,42 @@
+{% extends "_layouts/site.twig" %}
+
+{% block content %}
+    <!-- ship api categories list pages/partials/_types/shipAPI-->
+    <section class=" gray-light py-2 ">
+        <div class="container">
+            <div class="row ">
+                <div class="col-xs-12 col-sm-12 col-md-12">
+                    <h1 class="page-heading">{{ "Seafarers' health resources"|t }}</h1>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <div class="container site page py-5 ">
+        <div class="row">
+            <div class="col-md-12 col-md-offset-0 main">
+                <div class="preloader text-center" ><img src="{{baseUrl}}/assets/images/preloader.gif" alt="preloader"></div>
+                <article>
+                    <!-- mustache cats -->
+                    <div class="mustache-cats row">
+
+                    </div>
+
+                </article>
+
+            </div>
+{#            {% include 'ship/_includes/ship-sidenav.twig' %}#}
+        </div>
+    </div>
+    {% set handlebars = baseUrl  ~ '/js/handlebars.js' %}
+
+    {% do view.registerJsFile(handlebars) %}
+
+
+    {% include 'ship/_includes/js-vars.twig'  %}
+
+
+    {% set catjs = baseUrl ~ '/js/ship/categories.js' %}
+    {% do view.registerJsFile(catjs) %}
+{% endblock %}

@@ -1,0 +1,40 @@
+{#{% set entry = craft.entries.section('errors').slug('error404').one() %}#}
+
+{#{% extends "_layouts/error-page-layout.twig" %}#}
+
+{% extends "_layouts/site" %}
+
+{% block content %}
+    <section class=" gray-light py-2 ">
+        <div class="container">
+            <div class="row ">
+                <div class="col-xs-12 col-sm-12 col-md-12">
+                    <h1 class="page-heading">{{ 'about'|t }}</h1>
+
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+
+    {# {% include '_includes/subscribe-section-top.twig' %} #}
+
+    <!-- Page Content -->
+    <section class="page generic mt-5">
+        <div class="container">
+            <div class="row ">
+                <div class="col-xs-12 col-md-12 col-lg-7 col-xl-7">
+
+                    {{globalContent.body }}
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+{% endblock content %}

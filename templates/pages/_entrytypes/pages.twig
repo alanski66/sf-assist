@@ -1,0 +1,72 @@
+{% extends "_layouts/site" %}
+
+{% block content %}
+
+
+    <section class=" gray-light py-2 ">
+        <div class="container">
+            <div class="row ">
+                <div class="col-xs-12 col-sm-12 col-md-12">
+                    <h1 class="page-heading">{{ entry.title }} </h1>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+
+    {# {% include '_includes/subscribe-section-top.twig' %} #}
+
+    <!-- Page Content pages.twig-->
+    <section class="page generic mt-5">
+    <div class="container">
+
+        {#<div class="row ">#}
+
+
+            {#<div class="col-lg-12 mb-3">#}
+                {#<h1>{{ entry.title }}</h1>#}
+            {#</div>#}
+        {#</div>#}
+
+        {% set lazyImage = false %}
+        {% set imageShow = false %}
+        {% set blockPrefix = "" %}
+        <div class="row ">
+            <div class="col-xs-12 col-md-12 ">
+
+                {% for block in entry.contentBlock.all() %}
+                    {% include ('pages/_partials/_' ~ blockPrefix ~ 'block_' ~ block.type.handle) %}
+                    {% if block.type.handle == "image" %}
+                        {% set lazyImage = true %}
+                        {% set imageShow = true %}
+                    {% endif %}
+                {% endfor %}
+
+
+            </div>
+            <div class="col-xs-12 col-md-12 col-lg-4 offset-lg-1 col-xl-4 offset-xl-1">
+                {% include ('_includes/sidebar_nav.twig') %}
+            </div>
+        </div>
+
+    </div>
+    </section>
+
+    <section class="hide blue gray regional-stories bg-gray pt-5">
+        <div class="container content">
+
+            <!-- Page Heading/Breadcrumbs -->
+            <div class="row">
+                <div class="col-sm-12  mb-2">
+                    <h4 class="mb-5"></h4>
+
+
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+{% endblock content %}

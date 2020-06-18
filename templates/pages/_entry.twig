@@ -1,0 +1,11 @@
+
+{#{% set seg =  craft.app.request.getSegment(1) %}#}
+{#{% if not currentUser and seg !='contact' %}#}
+{#          {% exit 403 %}#}
+{#{% endif %}#}
+{% extends
+[
+'pages/_custom/' ~ entry.slug ~ '.twig',
+'pages/_entrytypes/' ~ entry.type ~ '.twig',
+'pages/_generic.twig'
+] %}

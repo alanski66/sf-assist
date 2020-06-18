@@ -1,0 +1,123 @@
+{#
+# Callback entry template
+# -------------------
+#}
+
+{% extends "_layouts/site" %}
+
+{% block content %}
+    <section class=" gray-light py-2 ">
+        <div class="container">
+            <div class="row ">
+                <div class="col-xs-12 col-sm-12 col-md-12">
+                    <h1 class="page-heading">{{ "Request a callback" | t }} </h1>
+
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+    <div class="container site page">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-1 main mb-5">
+
+                <div class="row ">
+                    <div class="col-md-12 py-3 ">
+                        <article>
+
+
+                            <p class="callbackform">{{ "Please fill in the form below and someone will contact you at your chosen time" | t }}</p>
+
+                        </article>
+                    </div>
+                </div>
+
+                <div class="row thanks" style="display:none">
+                    <div class="col-md-12">
+                        <p class="thankyou alert alert-success">
+                            {{ "Thank you." | t }}
+                        </p>
+                    </div>
+                </div>
+                {% macro errorList(errors) %}
+                    {% if errors %}
+                        <ul class="errors">
+                            {% for error in errors %}
+                                <li>{{ error }}</li>
+                            {% endfor %}
+                        </ul>
+                    {% endif %}
+                {% endmacro %}
+
+                {% from _self import errorList %}
+                <form method="post" class="form callbackform mb-5" id="callback" action="" accept-charset="UTF-8">
+                    {{ csrfInput() }}
+
+                    <input type="hidden" name="action" value="guest-entries/save">
+                    {{ redirectInput('success') }}
+                    <input type="hidden" name="sectionUid" value="f9a2e796-e321-4293-ae6e-433a19371a62">
+
+                    <div class="form-group">
+                        <label for="title">{{ "Name" | t }}</label>
+                        <input id="title" type="text" class="form-control"  name="title" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="callbackTel">{{ "Telephone number (including the country code for where you are)" | t }}</label>
+                        <input id="callbackTel" type="text" class="form-control"  name="fields[callbackTelephone]" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="callbackemail">{{ "Email" | t }}</label>
+                        <input id="callbackemail" type="text" class="form-control" name="fields[callbackemail]" required="" aria-required="true">
+                    </div>
+                    <div class="form-group">
+                        <label for="language">{{ "Language you would like us to talk to you in?" | t }}</label>
+                        <input id="language" type="text" class="form-control" name="fields[language]" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="callbacktime">{{ "When would you like us to call you?" | t }}</label>
+                        <input id="callbacktime" type="text" class="form-control" name="fields[callBackTimeTxt]" required="" aria-required="true">
+                    </div>
+                    <div class="form-group">
+                        <label for="body">{{ "What do you want to talk about?" | t }}</label>
+                        <textarea class="form-control" id="body" name="fields[body]" required></textarea>
+                        {% if entry is defined %}
+                            {{ errorList(entry.getErrors('body')) }}
+                        {% endif %}
+
+                    </div>
+                    <div class="form-group">
+
+                    </div>
+
+
+
+                    <div id="captcha"></div>
+                    <input type="submit" class="btn btn-primary" value="{{ "Submit" | t }}">
+                    <input type="hidden" name="siteId" value="{{currentSite.id}}">
+                    <input type="hidden" name="fields[company]" value="{{currentSite.name}}">
+                    <input type="hidden" name="postDate" value="{{ now|date("Y-m-j H:i:s") }}" />
+
+
+                </form>
+            </div>
+            <div class="col-md-3 col-md-offset-1 sidebar">
+
+
+
+            </div>
+        </div>
+    </div>
+
+    {#{% set formJS = baseUrl  ~ 'assets/js/forms.js' %}#}
+    {#{% includeJsFile formJS %}#}
+
+    {#{% set formJSVal = baseUrl  ~ 'assets/js/validation/jquery.validate.min.js' %}#}
+    {#{% includeJsFile formJSVal %}#}
+
+    {#{% set formJSValLocales = baseUrl  ~ 'assets/js/validation/localization/messages_' ~ {{ currentLocale }} ~ '.min.js' %}#}
+    {#{% includeJsFile formJSValLocales %}#}
+
+
+
+{% endblock %}
