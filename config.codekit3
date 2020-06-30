@@ -154,12 +154,12 @@
 		"oAP": "/build/scripts",
 		"oF": 0
 		},
-	"/sf-assist.sketch": {
+	"/sf-assist-icons.sketch": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/sf-assist.sketch",
+		"oAP": "/sf-assist-icons.sketch",
 		"oF": 0
 		},
 	"/src/js/jscustom.js": {
