@@ -69,12 +69,17 @@
 
                 <div class="form-group my-2">
                     <label for="company-select" class=" hide" aria-hidden="false">Select a company</label>
+
                     <select  class="form-control " name="sites" id="company-select">
                         <option value="" class="small text-muted">Please select your company</option>
                         {% for site in allSites %}
-                            {% if site.getGroup().id == '5' %}
-                                {#              {% set sitesWithGroup = sitesWithGroup|merge([site]) %}#}
+                            {% set siteId = site.id %}
+                            {% set groupId = site.getGroup().id %}
+                            {% if groupId == '5' %}
+                                {% set setForSiteId = craft.app.getGlobals().getSetByHandle('siteInfo', siteId) %}
+                                {% if setForSiteId.showInDropdown == '1' %}
                                 <option value="{{baseUrl ~ '/' ~ site.handle }}">{{site.name}}</option>
+                                    {% endif %}
                             {% endif %}
                         {% endfor %}
                     </select>

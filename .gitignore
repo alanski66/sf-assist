@@ -7,8 +7,9 @@
 /sql
 .DS_Store
 sf-assist.code-workspace
-config.codekit3
+*config.codekit3
 /templates-bak.zip
+*.sketch
 
 
 # Craft 3 .gitignore
