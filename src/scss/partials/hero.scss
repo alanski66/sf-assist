@@ -1,0 +1,123 @@
+
+
+.hero .text-inner {
+  background-color: rgba(255, 255, 255, 0.7);
+
+}
+.hero {
+  width: 100%;
+  height: 100%;
+  min-width: 100%;
+  min-height: 100%;
+  position: relative;
+}
+.hero .zup{
+  z-index: 11;
+}
+.hero::before {
+
+  background-size: cover;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  opacity: 1;
+}
+
+.hero::after {
+  background-color: #563d7c;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.4;
+}
+
+.supported > *{
+  z-index: 11;
+}
+.supportedby{
+  color:darken($white,10%);
+  font-size: $font-size-xs;
+}
+.flex-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.not-hero {
+  width: 100vw;
+  height: 10em;
+}
+
+.bg-info {
+  background-color: #17a2b8;
+  color: #fff;
+}
+
+.not-hero-message {
+  color: #fff;
+  text-shadow: #343a40 2px 2px;
+  min-width: 50%;
+  min-height: 7em;
+}
+
+.hero-message {
+  color: #fff;
+  text-shadow: #343a40 2px 2px;
+  min-width: 100%;
+  min-height: 12em;
+  position: relative;
+  z-index: 2;
+}
+
+.hero-message::before {
+  content: "";
+  display: block;
+  position: absolute;
+  margin-left: 0;
+  min-width: 100%;
+  min-height: 12em;
+  z-index: -1;
+  opacity: 0.4;
+  background-color: #343a40;
+}
+
+.hero-title,
+.hero-sub-title {
+  width: 100%;
+  display: block;
+  text-align: center;
+}
+
+.hero-title {
+  margin: 3% 0;
+  text-transform: uppercase;
+}
+
+@media(min-width:1024px) {
+
+  .hero {
+    min-height:700px;
+  }
+  .hero-message {
+    min-width: 50%;
+    min-height: 12em;
+  }
+  .hero-message::before {
+    margin-left: 25%;
+    min-width: 50%;
+    min-height: 12em;
+  }
+}
+

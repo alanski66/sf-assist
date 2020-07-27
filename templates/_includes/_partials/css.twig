@@ -1,1 +1,60 @@
+{%  if entry.customBrandHeroImage |length  %}
+{% set asset = entry.customBrandHeroImage[0] ?? null %}
+   {% if asset %}
+       {% set transformedBannerImages = craft.imager.transformImage(asset,
+           [
+               { width: 550, height:380, position: asset.getFocalPoint(), jpegQuality: 75,ratio: 4/3, cropZoom:1.5 },
+               { width: 768, height:480, position: asset.getFocalPoint(), ratio: 2/1, jpegQuality: 85, zoom: 1 },
+               { width: 1024, height:600, position: asset.getFocalPoint() ,jpegQuality: 95 },
+               { width: 1200, height:600, position: asset.getFocalPoint() },
+               { width: 2400, height:980, position: asset.getFocalPoint() }
+           ],
+
+           {
+               format: 'jpg',
+               allowUpscale: true,
+               mode: 'crop',
+               jpegQuality: 95,
+               interlace: true
+           }
+           ) %}
+   {% endif %}
+<style>
+    @media (max-width: 550px) {
+        .hero:before {
+        background-image: url('{{ baseUrl ~ transformedBannerImages[0].url}}');
+        }
+    }
+
+    @media (max-width: 768px) {
+        .hero:before {
+        background-image: url('{{ baseUrl ~ transformedBannerImages[1].url}}');
+        }
+    }
+
+    @media (max-width: 1024px) {
+        .hero:before {
+        background-image: url('{{ baseUrl ~ transformedBannerImages[2].url}}');
+        }
+    }
+
+    @media (max-width: 1800px) {
+    .hero:before {
+    background-image: url('{{ baseUrl ~ transformedBannerImages[3].url}}');
+    }
+    }
+
+    @media (max-width: 1240px) {
+    .hero:before {
+    background-image: url('{{ baseUrl ~ transformedBannerImages[4].url}}');
+    }
+    }
+
+
+    .hero:before {
+        background-image: url('{{ baseUrl ~ transformedBannerImages[3].url}}');
+    }
+</style>
+{% endif %}
+
 <link href="{{baseUrl}}/css/styles.css" rel="stylesheet">
