@@ -10,74 +10,55 @@
 
 {% block content %}
 
+    <!-- Page Content -->
 
-
-
-<!-- Page Content -->
-{#  <div class="bg-info position-absolut home-lang d-flex justify-content-center pb-2">#}
-
-{#    {% if currentSite.group.sites | length > 1 %}#}
-
-{#      <div class="btn-group">#}
-{#        <button type="button" class="lng btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">#}
-{#          <i class="fa fa-language" aria-hidden="true"></i> Language</a>#}
-{#        </button>#}
-{#        <div class="dropdown-menu">#}
-{#          {% for site in currentSite.group.sites %}#}
-
-{#            {% set url = alias(site.baseUrl) %}#}
-{#            {% if entry is defined %}#}
-{#              {% set entryForOtherSite = craft.entries.id(entry.id).site(site).one() %}#}
-{#              {% if entryForOtherSite %}#}
-{#                {% set url = entryForOtherSite.getUrl() %}#}
-{#              {% endif %}#}
-{#            {% endif %}#}
-{#            <a  class="dropdown-item  {% if currentSite.id == site.id %} is-active{% endif %}" href="{{ url }}">{{ site.handle }}</a>#}
-
-{#          {% endfor %}#}
-{#        </div>#}
-{#      </div>#}
-{#    {% endif %}#}
-
-{#  </div>#}
-
-  {% if entry.bannerImage | length %}
-      {% set image = entry.bannerImage.one().url %}
+    {# switch site specific featured hero banner #}
+    {% if entry.customBrandHeroImage | length %}
+        {% set image = entry.customBrandHeroImage.one().url %}
+        {% include '_includes/sites/' ~ currentSite.handle ~ '-hero-featured.twig' %}
     {% else %}
-      {% set image = 'assets/images/_static/placeholder.jpg' %}
-  {% endif %}
-  <div class=" d-flex align-items-center position-relative heroic" style="background-image: url('{{ image }}');min-height:600px">
-<div class="hero-site-overlay"></div>
-    <div class="container-fluid p-5">
-      <div class="row section-bg mb-4" >
-        <div class="mx-auto text-center col-md-8">
+        {# use standard banner for featured hero #}
+        {% if entry.bannerImage | length %}
+            {% set image = entry.bannerImage.one().url %}
+        {% else %}
+        {# deafult static banner for featured hero #}
+            {% set image = 'assets/images/banners/waves.jpg' %}
+        {% endif %}
+        <div class=" d-flex align-items-center position-relative heroic"
+             style="background-image: url('{{ image }}');min-height:600px">
+            <div class="hero-site-overlay"></div>
+            <div class="container-fluid p-5">
+                <div class="row section-bg mb-4">
+                    <div class="mx-auto text-center col-md-8">
 
-          <h1 class=" text-white mb-3">{{entry.strapline1}}</h1>
-          <h2 class=" text-white">{{entry.strapline2}}</h2>
+                        <h1 class=" text-white mb-3">{{ entry.strapline1 }}</h1>
+                        <h2 class=" text-white">{{ entry.strapline2 }}</h2>
 
-          <div class="text-white">{{- entry.introText -}}</div>
-          {%  if entry.ctaLink | length %}
-          {% set link = entry.ctaLink.one.url %}
-          {% elseif entry.custom | length %}
-          {% set link = entry.custom %}
-          {% endif %}
-          <div class="cta">
-            <a class="btn btn-outline rounded" href="{{ link }}">{{ entry.ctaButtonText }}</a>
-          </div>
+                        <div class="text-white">{{- entry.introText -}}</div>
+                        {% if entry.ctaLink | length %}
+                            {% set link = entry.ctaLink.one.url %}
+                        {% elseif entry.custom | length %}
+                            {% set link = entry.custom %}
+                        {% endif %}
+                        <div class="cta">
+                            <a class="btn btn-outline rounded" href="{{ link }}">{{ entry.ctaButtonText }}</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row d-flex">
+                </div>
+                <!--
+                <div class="py-3 d-fl justify-content-center align-items-center bg-info"-->
+            </div>
         </div>
-      </div>
-      <div class="row d-flex">
-      </div>
-      <!--
-      <div class="py-3 d-fl justify-content-center align-items-center bg-info"-->
-    </div>
-  </div>
-<!-- / page content -->
+    {% endif %}
+
+    <!-- / page content -->
 
 {% endblock %}
 
     {% js %}
-    $('#company-select').change(function() {
-    window.location = $(this).val();
-    });
+        $('#company-select').change(function() {
+        window.location = $(this).val();
+        });
     {% endjs %}

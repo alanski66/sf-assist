@@ -11,17 +11,20 @@
 
 @import 'font-awesome-v4/font-awesome.scss';
 
+
 @import 'partials/block-theme';
 @import 'partials/header';
 @import 'partials/nav';
 
-@import 'partials/footer';
 @import 'partials/page';
+@import 'partials/footer';
+
 @import 'partials/footer';
 @import 'partials/forms';
 @import 'partials/utility';
 @import 'partials/ship-api';
-
+@import 'partials/hero';
+@import 'partials/sitespecific/thome';
 //really simple social share
 //@import 'rrssb/rrssb.scss';
 

@@ -352,8 +352,8 @@ button.lng{
 @media (min-width:650px) {
   //aligns vertically hero trapezoids
   .rel-v-middle {
-    top: 50%;
-    transform: translateY(-50%);
+    top: 0;
+    transform: translateY(-38%);
     position: relative;
   }
 }
