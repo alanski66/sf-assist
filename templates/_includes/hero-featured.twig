@@ -3,7 +3,8 @@
         <div class="row">
             <div class="col-12 col-sm-12 col-md-8 col-lg-6 col-auto ml-auto ">
                 <div class="text-inner p-5 text-center text-md-right my-5">
-                    <h1 class="  mb-3">{{ entry.strapline1 }}</h1>
+                    {%  set strap1 = entry.strapline1 | replace('[site]',siteName) %}
+                    <h1 class="  mb-3">{{ strap1 }}</h1>
                     <h2 class=" ">{{ entry.strapline2 }}</h2>
 
                     <div class="">{{- entry.introText -}}</div>
