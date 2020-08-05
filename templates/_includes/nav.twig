@@ -201,7 +201,7 @@
                         {% do view.registerJs(script) %}
 
                     {% else %}
-                        {% set link = navlink %}
+                        {% set link = siteUrl ~ navlink %}
                     {% endif %}
 
                     <li class="{{ entry.title |lower  }} {{ order }} py-3 px-sm-3 px-lg-5 px-xl-5   bg-primary list-group-item nav-item {{ macros.activeLinkClass(navlink, entry.level)|trim }} level{{ entry.level }} {{ entry.title |lower  }}">
