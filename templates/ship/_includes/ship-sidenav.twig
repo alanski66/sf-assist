@@ -1,41 +1,43 @@
-{% set entry = craft.entries.id(600).one() %}
-                {% if entry is defined %}
-                    {# set up menu root and sub nav variables #}
-                    {% set landing = entry.getAncestors().level(1).one() %}
+{#{% set entry = craft.entries.id(610).one() %}#}
+{#                {% if entry is defined %}#}
+{#                    #}{# set up menu root and sub nav variables #}
+{#                    {% set landing = entry.getAncestors().level(1).one() %}#}
 
-                    {% switch landing %}
+{#                    {% switch landing %}#}
 
-                    {% case null %}
-                    {% if entry.hasDescendants() %}
-                        {% set heading = entry.title %}
-                        {% set rootpage = entry %}
-                    {% endif %}
-                    {% set landingId = entry.id %}
-                    {% set ancestorIds = entry.getDescendants().ids() %}
-                    {% set entryIds = [ landingId ]|merge( ancestorIds ) %}
+{#                    {% case null %}#}
+{#                    {% if entry.hasDescendants() %}#}
+{#                        {% set heading = entry.title %}#}
+{#                        {% set rootpage = entry %}#}
+{#                    {% endif %}#}
+{#                    {% set landingId = entry.id %}#}
+{#                    {% set ancestorIds = entry.getDescendants().ids() %}#}
+{#                    {% set entryIds = [ landingId ]|merge( ancestorIds ) %}#}
 
-                    {% case true %}
+{#                    {% case true %}#}
 
-                    {% set heading = landing.title %}
-                    {% set landingId = landing.id %}
-                    {% set rootpage = landing %}
-                    {% set ancestorIds = landing.getDescendants().ids() %}
-                    {% set entryIds = [ landingId ]|merge( ancestorIds ) %}
-                    {% endswitch %}
+{#                    {% set heading = landing.title %}#}
+{#                    {% set landingId = landing.id %}#}
+{#                    {% set rootpage = landing %}#}
+{#                    {% set ancestorIds = landing.getDescendants().ids() %}#}
+{#                    {% set entryIds = [ landingId ]|merge( ancestorIds ) %}#}
+{#                    {% endswitch %}#}
 
-                {% endif %}
+{#                {% endif %}#}
 
 <div class="col-md-3 col-md-offset-1 col-lg-4  sidebar d-fex justify-content-end">
 
-    {% if heading is defined %}
-        <h4>{{ heading | t }}</h4>
-    {% endif %}
-<h5>Resources</h5>
-    {% set entries = craft.entries.id(entryIds) %}
+{#    {% if heading is defined %}#}
+        <h4>Resources</h4>
+{#    {% endif %}#}
+
+{#    {% set entries = craft.entries.id(entryIds) %}#}
 
 
     <ul class="list-unstyled">
-        {% for entry in entries.all() %}
+        <div class="mustache-catnav"></div>
+    </ul>
+{#        {% for entry in entries.all() %}#}
 
 {#            {% if entry.level > 1 %}#}
 
@@ -43,18 +45,18 @@
 {#                    <a href="/{{ currentLocale }}/{{ entry.uri }}"#}
 {#                       class="{{ macros.isActiveChildClass(entry.slug) | trim }} level{{ entry.level }}">{{ entry.title }}</a>#}
 {#                </li>#}
-                {%  set seggy = "resources" | t %}
+{#                {%  set seggy = "resources" | t %}#}
 
-                {% set lastSeg = craft.app.request.segments|last %}
+{#                {% set lastSeg = craft.app.request.segments|last %}#}
 
-                {% if entry.slug == seggy or entry.slug in lastSeg %}
+{#                {% if entry.slug == seggy or entry.slug in lastSeg %}#}
 
-                    <div class="mustache-catnav"></div>
-                    {% else %}
+{#                    <div class="mustache-catnav"></div>#}
+{#                    {% else %}#}
 
-                {% endif %}
+{#                {% endif %}#}
 {#            {% endif %}#}
-        {% endfor %}
-    </ul>
+{#        {% endfor %}#}
+{#    </ul>#}
 
 </div>
