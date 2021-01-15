@@ -61,7 +61,12 @@
                                 <a class="card-icon w-25" >
 
                                     {%  if pdfImage |length %}
-                                        <a href="{{ entry.pdfDocument.one().url }}">
+                                        <a href="{{ entry.pdfDocument.one().url }}"
+                                           data-on="click"
+                                           data-event-category="Downloads"
+                                           data-event-action="Resource item download"
+                                           data-event-label="{{ entry.pdfDocument.one().filename }}"
+                                        >
                                         <img class="card-img-top mb-3 img-fluid mx-auto" src="{{ pdfImage.getUrl('pdfTransform') }}"
                                              width="{{ pdfImage.getWidth('pdfTransform') }}" height="{{ pdfImage.getHeight('pdfTransform') }}"
                                              alt="{{ pdfImage.title ? pdfImage.title : entry.title }} {{ pdfImage.imageCredit ? pdfImage.imageCredit: ''  }}">
