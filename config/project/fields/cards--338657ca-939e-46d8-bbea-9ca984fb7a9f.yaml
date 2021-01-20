@@ -1,0 +1,14 @@
+contentColumnType: string
+fieldGroup: 04f271ca-91c2-45b8-a0a9-5510973cadcd
+handle: cards
+instructions: ''
+name: Cards
+searchable: true
+settings:
+  contentTable: '{{%matrixcontent_cards_3}}'
+  maxBlocks: ''
+  minBlocks: ''
+  propagationMethod: language
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

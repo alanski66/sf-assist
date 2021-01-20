@@ -1,0 +1,13 @@
+contentColumnType: boolean
+fieldGroup: 95a13bbd-3401-43e3-84b1-479984da84ec
+handle: hideBanner
+instructions: ''
+name: 'Hide banner'
+searchable: true
+settings:
+  default: false
+  offLabel: null
+  onLabel: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Lightswitch

@@ -1,0 +1,164 @@
+field: acbc0bba-242f-40cf-bdd1-a6417f6eeaa9
+fieldLayouts:
+  d4f9c486-7867-4dd1-97bc-dcce99542d77:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: e47d7e3f-80be-44fe-8022-0d8ac03d0d57
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 794e5528-8ada-4fcc-8d67-ee3fb58905e1
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: b5ba5b41-4bd5-4984-8982-1a80317498ca
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 02a0696b-5fef-4116-ba52-f18b14fe7009
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  02a0696b-5fef-4116-ba52-f18b14fe7009:
+    contentColumnType: string
+    fieldGroup: null
+    handle: displayStyle
+    instructions: 'Sets display style for document list'
+    name: 'Display style'
+    searchable: true
+    settings:
+      optgroups: true
+      options:
+        -
+          __assoc__:
+            -
+              - label
+              - 'Box list'
+            -
+              - value
+              - boxList
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - 'Icon list'
+            -
+              - value
+              - iconList
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - 'Button list'
+            -
+              - value
+              - buttonList
+            -
+              - default
+              - ''
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Dropdown
+  794e5528-8ada-4fcc-8d67-ee3fb58905e1:
+    contentColumnType: text
+    fieldGroup: null
+    handle: subline
+    instructions: 'small amount of text to appear under heading if required - use for short explanations'
+    name: Subline
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\PlainText
+  b5ba5b41-4bd5-4984-8982-1a80317498ca:
+    contentColumnType: string
+    fieldGroup: null
+    handle: download
+    instructions: ''
+    name: Download
+    searchable: true
+    settings:
+      allowSelfRelations: false
+      allowUploads: true
+      allowedKinds: null
+      defaultUploadLocationSource: 'volume:69530c26-670d-47c2-a35f-a3ce5489b277'
+      defaultUploadLocationSubpath: ''
+      limit: ''
+      localizeRelations: true
+      previewMode: full
+      restrictFiles: ''
+      selectionLabel: 'Choose a file to add'
+      showSiteMenu: true
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: true
+      singleUploadLocationSource: 'volume:69530c26-670d-47c2-a35f-a3ce5489b277'
+      singleUploadLocationSubpath: ''
+      source: null
+      sources: '*'
+      targetSiteId: null
+      useSingleFolder: false
+      validateRelatedElements: false
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  e47d7e3f-80be-44fe-8022-0d8ac03d0d57:
+    contentColumnType: text
+    fieldGroup: null
+    handle: heading
+    instructions: 'heading to show above download(s)'
+    name: Heading
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\PlainText
+handle: downloads
+name: Downloads
+sortOrder: 6

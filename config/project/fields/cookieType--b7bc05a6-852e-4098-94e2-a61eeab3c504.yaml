@@ -1,0 +1,45 @@
+contentColumnType: string
+fieldGroup: 57e17ebd-5a65-4486-a175-645b52fcf8e5
+handle: cookieType
+instructions: ''
+name: 'Cookie type'
+searchable: true
+settings:
+  optgroups: true
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - Informational
+        -
+          - value
+          - ''
+        -
+          - default
+          - '1'
+    -
+      __assoc__:
+        -
+          - label
+          - Opt-out
+        -
+          - value
+          - opt-out
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Opt-in
+        -
+          - value
+          - opt-in
+        -
+          - default
+          - ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Dropdown

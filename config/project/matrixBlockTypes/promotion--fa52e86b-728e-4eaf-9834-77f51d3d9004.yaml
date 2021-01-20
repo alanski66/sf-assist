@@ -1,0 +1,148 @@
+field: acbc0bba-242f-40cf-bdd1-a6417f6eeaa9
+fieldLayouts:
+  94325d58-5ad0-40ad-a738-54d0a7e01fe6:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: f39ef456-6c58-4268-bdd4-84de4c7c01aa
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 66d852db-6826-44d9-a927-5391137b5465
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: f1c08b6a-df2b-4cdf-aa22-98ebb63784fc
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 5456edfc-4d31-4867-b950-376a1305242d
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 7f6d3a2a-18dd-4e4d-8791-82e2f2fdb96e
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  5456edfc-4d31-4867-b950-376a1305242d:
+    contentColumnType: string(255)
+    fieldGroup: null
+    handle: customLink
+    instructions: 'Add a custom link to the content you are promoting. If you fill out this field this will override the entry selection and display this custom text and a custom link in the promotion box'
+    name: 'Custom link'
+    searchable: true
+    settings:
+      maxLength: '255'
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Url
+  66d852db-6826-44d9-a927-5391137b5465:
+    contentColumnType: string
+    fieldGroup: null
+    handle: entryToPromote
+    instructions: 'Select an entry to promote - the template will handle display'
+    name: 'Entry to promote'
+    searchable: true
+    settings:
+      allowSelfRelations: false
+      limit: '1'
+      localizeRelations: true
+      selectionLabel: ''
+      showSiteMenu: true
+      source: null
+      sources: '*'
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: null
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Entries
+  7f6d3a2a-18dd-4e4d-8791-82e2f2fdb96e:
+    contentColumnType: text
+    fieldGroup: null
+    handle: customLinkTitle
+    instructions: ''
+    name: 'Custom link title'
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\PlainText
+  f1c08b6a-df2b-4cdf-aa22-98ebb63784fc:
+    contentColumnType: text
+    fieldGroup: null
+    handle: customText
+    instructions: 'Supplemental text'
+    name: 'Custom text'
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\PlainText
+  f39ef456-6c58-4268-bdd4-84de4c7c01aa:
+    contentColumnType: text
+    fieldGroup: null
+    handle: boxHeading
+    instructions: 'Box header - leave blank to not show'
+    name: 'Box heading'
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\PlainText
+handle: promotion
+name: Promotion
+sortOrder: 5

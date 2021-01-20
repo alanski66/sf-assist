@@ -1,0 +1,11 @@
+enableVersioning: true
+handle: callback
+name: Callback
+propagationMethod: all
+siteSettings:
+  dda3b550-c778-4d47-86b0-11543ac8053a:
+    enabledByDefault: true
+    hasUrls: true
+    template: callback/index
+    uriFormat: 'callback/{slug}'
+type: channel

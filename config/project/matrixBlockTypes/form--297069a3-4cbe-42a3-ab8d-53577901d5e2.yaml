@@ -1,0 +1,31 @@
+field: acbc0bba-242f-40cf-bdd1-a6417f6eeaa9
+fieldLayouts:
+  20f05245-099f-4079-a799-a28d99b8b7e8:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 108b1b6b-e274-4afb-bcdd-52b381ecceb7
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  108b1b6b-e274-4afb-bcdd-52b381ecceb7:
+    contentColumnType: integer
+    fieldGroup: null
+    handle: selectForm
+    instructions: 'choose a form to show - if not created go make one first :)'
+    name: 'Select form'
+    searchable: true
+    translationKeyFormat: null
+    translationMethod: site
+    type: wheelform\fields\FormField
+handle: form
+name: Form
+sortOrder: 7

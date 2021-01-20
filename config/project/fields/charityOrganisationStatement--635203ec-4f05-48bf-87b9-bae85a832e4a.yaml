@@ -1,0 +1,18 @@
+contentColumnType: text
+fieldGroup: 972163a3-4d75-4e5a-af88-88030b7a0689
+handle: charityOrganisationStatement
+instructions: 'eg The International Seafarers'' Welfare and Assistance Network is a Registered Charity in England and Wales'
+name: 'Charity organisation statement'
+searchable: true
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: text
+  initialRows: '4'
+  multiline: ''
+  placeholder: ''
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

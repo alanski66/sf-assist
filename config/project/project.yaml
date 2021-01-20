@@ -1,0 +1,166 @@
+dateModified: 1611150446
+email:
+  fromEmail: bw@seafarerassistance.org
+  fromName: 'Seafarer Assistance'
+  replyToEmail: bw@seafarerassistance.org
+  template: null
+  transportSettings:
+    command: ''
+  transportType: craft\mail\transportadapters\Sendmail
+plugins:
+  architect:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.0.0
+  environment-label:
+    enabled: '1'
+    licenseKey: null
+    schemaVersion: 1.0.0
+    settings:
+      labelColor: '#d4fb79'
+      labelText: LIVE
+      prefixText: null
+      showLabel: true
+      suffixText: null
+      targetSelector: '#global-header:before'
+      textColor: ''
+  feed-me:
+    edition: standard
+    enabled: true
+    schemaVersion: 4.3.0
+  guest-entries:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.1.0
+    settings:
+      enableCsrfProtection: '1'
+      entryVariable: entry
+      sections:
+        __assoc__:
+          -
+            - 20c9b3f2-1864-49ea-b42b-78c7a309d0fe
+            -
+              __assoc__:
+                -
+                  - sectionUid
+                  - 20c9b3f2-1864-49ea-b42b-78c7a309d0fe
+                -
+                  - allowGuestSubmissions
+                  - '1'
+                -
+                  - enabledByDefault
+                  - ''
+                -
+                  - runValidation
+                  - '1'
+                -
+                  - authorUid
+                  - bdfbdb14-ff96-40fb-be37-98105526046f
+  guest-entries-notification:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+    settings:
+      confirmationTemplate: /email/_notifications.twig
+      emailSubject: 'New Callback Entry'
+      emailTo: bw@seafarerassistance.org
+      fromEmail: bw@seafarerassistance.org
+      fromName: 'Seafarer Assistance'
+  guide:
+    edition: lite
+    enabled: true
+    schemaVersion: 2.0.0
+    settings:
+      assetVolume: 69530c26-670d-47c2-a35f-a3ce5489b277
+      clientName: ''
+      myCompanyName: ''
+      templatePath: _guide
+  imager:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.0.0
+  logout-redirect:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.0.0
+  minify:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  mobile-detect:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  nocache:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  oembed:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.1
+  pdfthumbnailer:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+    settings:
+      pdfDocument: pdfDocument
+      pdfThumbnailImage: pdfThumbnailImage
+      pdfThumbnailImageVolume: pdfThumbnailImageVolume
+  position-fieldtype:
+    enabled: '1'
+    licenseKey: null
+    schemaVersion: 1.0.0
+    settings: null
+  redactor:
+    enabled: '1'
+    licenseKey: null
+    schemaVersion: 2.3.0
+    settings: null
+  schema:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  section-field:
+    edition: standard
+    enabled: true
+    schemaVersion: 0.0.1
+  seo:
+    edition: standard
+    enabled: true
+    schemaVersion: 3.1.1
+  splashing-images:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.2.0
+  super-table:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.2.1
+  typogrify:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  user-group-login:
+    edition: standard
+    enabled: true
+    schemaVersion: '1'
+  wheelform:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.0.0
+    settings:
+      cp_label: Forms
+      from_email: info@seafarerassistance.org
+      from_name: 'Seafarer Assistance Website'
+      recaptcha_public: 6LemPaYZAAAAANgtzlXkUI9tsdr6JFyCrhH6P1J8
+      recaptcha_secret: 6LemPaYZAAAAABNxW11soo3Fd9j8uXcja2VY_TwM
+      recaptcha_version: '2'
+      success_message: 'Thank You! we will review your submission shortly.'
+      volume_id: '2'
+system:
+  edition: pro
+  live: true
+  name: 'Seafarers Assistance'
+  schemaVersion: 3.5.13
+  timeZone: America/Los_Angeles

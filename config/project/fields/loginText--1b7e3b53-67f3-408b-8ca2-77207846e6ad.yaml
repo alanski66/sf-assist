@@ -1,0 +1,18 @@
+contentColumnType: text
+fieldGroup: 0d3f66ab-1780-42d8-936f-e106849c2d0f
+handle: loginText
+instructions: ''
+name: 'Login text'
+searchable: true
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: ''
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\PlainText

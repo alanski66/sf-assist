@@ -56,6 +56,12 @@ return [
         // Base site URL
         'siteUrl' => null,
         'shipAPIdomain' => 'https://www.seafarerswelfare.org',
+        // Set this to `false` to prevent administrative changes from being made on Staging
+        'allowAdminChanges' => true,
+        // Don’t allow updates on Staging
+        'allowUpdates' => false,
+        // Prevent crawlers from indexing pages and following links
+        'disallowRobots' => true,
     ],
 
     // Production environment settings
@@ -63,5 +69,13 @@ return [
         // Base site URL
         'siteUrl' => null,
         'shipAPIdomain' => 'https://www.seafarerswelfare.org',
+        // Set this to `false` to prevent administrative changes from being made on Staging
+        'allowAdminChanges' => true,
+
+        // Don’t allow updates on Staging
+        'allowUpdates' => false,
+
+        // Prevent crawlers from indexing pages and following links
+        'disallowRobots' => true,
     ]
 ];

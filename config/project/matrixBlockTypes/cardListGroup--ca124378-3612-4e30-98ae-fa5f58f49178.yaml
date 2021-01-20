@@ -1,0 +1,77 @@
+field: 338657ca-939e-46d8-bbea-9ca984fb7a9f
+fieldLayouts:
+  bd3d2aca-d06d-46c8-93a0-7bbef010ae22:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 8ac944b2-2dd7-488d-983d-9feb5b3cc7a3
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 4881baab-fb5a-4f28-8db5-8b0750a56b7d
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  4881baab-fb5a-4f28-8db5-8b0750a56b7d:
+    contentColumnType: string
+    fieldGroup: null
+    handle: listItem
+    instructions: ''
+    name: 'List item'
+    searchable: true
+    settings:
+      columns:
+        __assoc__:
+          -
+            - 6c4c11ac-021e-45b3-a9e6-baa58884d18e
+            -
+              __assoc__:
+                -
+                  - width
+                  - ''
+      contentTable: '{{%stc_2_listitem}}'
+      fieldLayout: table
+      maxRows: ''
+      minRows: ''
+      placeholderKey: null
+      propagationMethod: all
+      selectionLabel: 'Add a list item'
+      staticField: ''
+    translationKeyFormat: null
+    translationMethod: site
+    type: verbb\supertable\fields\SuperTableField
+  8ac944b2-2dd7-488d-983d-9feb5b3cc7a3:
+    contentColumnType: text
+    fieldGroup: null
+    handle: listHeader
+    instructions: ''
+    name: 'List header'
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: cardListGroup
+name: 'Card list group'
+sortOrder: 2

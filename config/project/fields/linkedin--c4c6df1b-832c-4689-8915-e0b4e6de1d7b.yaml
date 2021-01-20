@@ -1,0 +1,18 @@
+contentColumnType: text
+fieldGroup: 9f57329d-94c6-468b-a2cb-9620f9a80df9
+handle: linkedin
+instructions: ''
+name: LinkedIn
+searchable: true
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: text
+  initialRows: '4'
+  multiline: ''
+  placeholder: ''
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

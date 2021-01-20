@@ -1,0 +1,32 @@
+contentColumnType: string
+fieldGroup: c38c46d2-bf79-4921-873b-f0ee33727fac
+handle: staffImage
+instructions: ''
+name: 'Staff image'
+searchable: true
+settings:
+  allowSelfRelations: false
+  allowUploads: true
+  allowedKinds: null
+  defaultUploadLocationSource: 'volume:5755ea95-9453-4c72-ad18-15102ce35069'
+  defaultUploadLocationSubpath: ''
+  limit: '1'
+  localizeRelations: false
+  previewMode: full
+  restrictFiles: ''
+  selectionLabel: 'Add a staff image high res portrait / square dimensions'
+  showSiteMenu: true
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: true
+  singleUploadLocationSource: 'volume:69530c26-670d-47c2-a35f-a3ce5489b277'
+  singleUploadLocationSubpath: ''
+  source: null
+  sources:
+    - 'volume:5755ea95-9453-4c72-ad18-15102ce35069'
+  targetSiteId: null
+  useSingleFolder: false
+  validateRelatedElements: false
+  viewMode: list
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Assets

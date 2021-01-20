@@ -1,0 +1,31 @@
+contentColumnType: string
+fieldGroup: 95a13bbd-3401-43e3-84b1-479984da84ec
+handle: bannerImage
+instructions: 'Upload a picture in landscape mode approx 2400px by 960'
+name: 'Banner image'
+searchable: true
+settings:
+  allowSelfRelations: false
+  allowUploads: true
+  allowedKinds: null
+  defaultUploadLocationSource: 'volume:8efd0c0c-fba0-499f-a93e-1b57ff148494'
+  defaultUploadLocationSubpath: ''
+  limit: '1'
+  localizeRelations: true
+  previewMode: full
+  restrictFiles: ''
+  selectionLabel: ''
+  showSiteMenu: true
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: true
+  singleUploadLocationSource: 'volume:69530c26-670d-47c2-a35f-a3ce5489b277'
+  singleUploadLocationSubpath: ''
+  source: null
+  sources: '*'
+  targetSiteId: null
+  useSingleFolder: false
+  validateRelatedElements: false
+  viewMode: list
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Assets

@@ -1,0 +1,18 @@
+contentColumnType: text
+fieldGroup: e001e685-5f71-409f-88bf-0a4c333d9520
+handle: imageCredit
+instructions: 'Add the author of the text'
+name: 'Image credit'
+searchable: true
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: text
+  initialRows: '4'
+  multiline: ''
+  placeholder: ''
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: language
+type: craft\fields\PlainText

@@ -1,0 +1,18 @@
+contentColumnType: text
+fieldGroup: 5a3f814e-aa63-4ff9-a82b-7bf63e1eaa0a
+handle: includeTrackingScripts
+instructions: ''
+name: 'Include tracking scripts'
+searchable: true
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: text
+  initialRows: '8'
+  multiline: '1'
+  placeholder: ''
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

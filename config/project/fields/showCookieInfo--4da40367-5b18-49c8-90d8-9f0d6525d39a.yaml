@@ -1,0 +1,13 @@
+contentColumnType: boolean
+fieldGroup: 57e17ebd-5a65-4486-a175-645b52fcf8e5
+handle: showCookieInfo
+instructions: 'Turn on to show cookie message'
+name: 'Show cookie info'
+searchable: true
+settings:
+  default: false
+  offLabel: null
+  onLabel: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Lightswitch
