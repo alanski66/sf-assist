@@ -1,0 +1,18 @@
+contentColumnType: text
+fieldGroup: f4c77426-3ec4-4532-b94d-83fff64f75c4
+handle: ctaButtonText
+instructions: ''
+name: 'CTA button text'
+searchable: true
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: text
+  initialRows: '4'
+  multiline: ''
+  placeholder: ''
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\PlainText

@@ -1,0 +1,13 @@
+contentColumnType: boolean
+fieldGroup: 04f271ca-91c2-45b8-a0a9-5510973cadcd
+handle: hidePage
+instructions: 'Turn this on to hide page from display'
+name: 'Hide page'
+searchable: true
+settings:
+  default: false
+  offLabel: null
+  onLabel: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Lightswitch

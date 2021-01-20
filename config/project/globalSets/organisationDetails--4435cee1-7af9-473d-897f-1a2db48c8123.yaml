@@ -1,0 +1,45 @@
+fieldLayouts:
+  d8c73f87-6f84-4a27-bab5-4913319d64b5:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: daf32c17-29eb-4fa9-88fd-b0e569f8cbfc
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 49f44432-4e22-4832-87b3-1e0741da1e5c
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: bb7da2af-04eb-40d1-84a4-9e7e38a0bcbe
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 51792261-a438-4fc7-9604-1581089a917e
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: 'Global contact'
+        sortOrder: 1
+handle: organisationDetails
+name: 'Organisation details'

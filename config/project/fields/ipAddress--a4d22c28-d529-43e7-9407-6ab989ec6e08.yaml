@@ -1,0 +1,18 @@
+contentColumnType: text
+fieldGroup: 6ddf52cb-2324-4882-b67f-2f71db18073e
+handle: ipAddress
+instructions: ''
+name: 'Ip address'
+searchable: true
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: ''
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

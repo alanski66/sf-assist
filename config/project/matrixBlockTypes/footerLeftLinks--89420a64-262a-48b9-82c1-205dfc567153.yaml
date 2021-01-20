@@ -1,0 +1,42 @@
+field: a8866897-a11c-4d44-bbca-2997e4ab9b0c
+fieldLayouts:
+  21b69e28-ee9b-430d-be88-bae6740a6b9f:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 7f0127c8-74ef-42c4-be14-c8f3c8f6772b
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  7f0127c8-74ef-42c4-be14-c8f3c8f6772b:
+    contentColumnType: string
+    fieldGroup: null
+    handle: footerLeftLink
+    instructions: ''
+    name: 'Footer left link'
+    searchable: true
+    settings:
+      allowSelfRelations: false
+      limit: ''
+      localizeRelations: false
+      selectionLabel: ''
+      showSiteMenu: true
+      source: null
+      sources: '*'
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: null
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Entries
+handle: footerLeftLinks
+name: 'Footer left links'
+sortOrder: 2

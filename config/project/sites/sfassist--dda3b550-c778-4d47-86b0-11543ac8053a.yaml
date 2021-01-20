@@ -1,0 +1,9 @@
+baseUrl: $CRAFTENV_BASE_URL
+enabled: true
+handle: sfassist
+hasUrls: true
+language: en-GB
+name: 'Seafarer Assistance'
+primary: true
+siteGroup: 20841924-54de-4923-9da2-1c683b16c45d
+sortOrder: 1

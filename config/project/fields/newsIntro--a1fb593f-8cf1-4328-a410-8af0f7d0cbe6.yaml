@@ -1,0 +1,18 @@
+contentColumnType: text
+fieldGroup: f8f993ed-1301-42d7-92b2-acb531dbe101
+handle: newsIntro
+instructions: ''
+name: 'news intro'
+searchable: true
+settings:
+  byteLimit: null
+  charLimit: '200'
+  code: ''
+  columnType: text
+  initialRows: '4'
+  multiline: ''
+  placeholder: ''
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

@@ -1,0 +1,9 @@
+siteUid: null
+sortOrder: 3
+template: about/_entry
+uriParts:
+  1:
+    - '*'
+    - '[^\/]+'
+  2: /about
+uriPattern: '<any:[^\/]+>/about'

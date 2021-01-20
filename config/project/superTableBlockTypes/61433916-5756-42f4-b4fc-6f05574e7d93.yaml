@@ -1,0 +1,37 @@
+field: af60db8b-ccbf-4192-9a5c-fc0639d3899d
+fieldLayouts:
+  65b235da-53d1-4f0b-b743-f767ef3358a4:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: e0e8bec7-1b0f-4f37-94fb-9cb74fd433a3
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  e0e8bec7-1b0f-4f37-94fb-9cb74fd433a3:
+    contentColumnType: text
+    fieldGroup: null
+    handle: tickItem
+    instructions: ''
+    name: 'Tick item'
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText

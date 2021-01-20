@@ -1,0 +1,18 @@
+contentColumnType: text
+fieldGroup: 6f31baa9-2520-41f6-ab02-adf43db48203
+handle: organisationName
+instructions: ''
+name: 'Organisation name'
+searchable: true
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: text
+  initialRows: '4'
+  multiline: ''
+  placeholder: ''
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

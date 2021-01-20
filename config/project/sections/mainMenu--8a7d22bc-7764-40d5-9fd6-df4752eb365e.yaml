@@ -1,0 +1,54 @@
+enableVersioning: true
+handle: mainMenu
+name: 'Main menu'
+propagationMethod: all
+siteSettings:
+  281fb882-28ec-4e00-b70e-1010b1b320ed:
+    enabledByDefault: true
+    hasUrls: false
+    template: null
+    uriFormat: null
+  4b65b33e-8e9b-4be4-9f88-64bdc174a039:
+    enabledByDefault: true
+    hasUrls: false
+    template: null
+    uriFormat: null
+  4bdad15e-1803-451a-95a0-4a7b5d64a717:
+    enabledByDefault: true
+    hasUrls: false
+    template: null
+    uriFormat: null
+  5585d2cb-1a50-4621-9f99-463ffd418167:
+    enabledByDefault: true
+    hasUrls: false
+    template: null
+    uriFormat: null
+  61a67fb5-00ae-4927-b90a-b5bae5385d1f:
+    enabledByDefault: true
+    hasUrls: false
+    template: null
+    uriFormat: null
+  7a53b7c5-970a-4314-b83f-76422547d344:
+    enabledByDefault: true
+    hasUrls: false
+    template: null
+    uriFormat: null
+  c27d10ff-4285-4a0d-b7ec-56951b3f7f6e:
+    enabledByDefault: true
+    hasUrls: false
+    template: null
+    uriFormat: null
+  ccc07aee-8884-4a2b-b93e-a2afbeae8808:
+    enabledByDefault: true
+    hasUrls: false
+    template: null
+    uriFormat: null
+  dda3b550-c778-4d47-86b0-11543ac8053a:
+    enabledByDefault: true
+    hasUrls: false
+    template: null
+    uriFormat: null
+structure:
+  maxLevels: null
+  uid: b01af136-7047-41af-8510-c449f4698736
+type: structure

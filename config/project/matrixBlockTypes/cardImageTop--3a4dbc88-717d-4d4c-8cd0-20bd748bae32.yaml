@@ -1,0 +1,298 @@
+field: 338657ca-939e-46d8-bbea-9ca984fb7a9f
+fieldLayouts:
+  7d757602-62c5-4ff3-92da-1d6e747ffdf8:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 4b18a12d-af37-4f5a-a54f-2106dfbd2fcb
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: f96e6d80-ad9e-4c78-b1c4-c1f3a03bffd2
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 5473aace-4074-4fb7-aa2e-467dbffe24a9
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 7888e512-9107-4a5b-aace-92228b88be6a
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: f3517307-9666-4cfb-9aa7-6e7669f8ac13
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: aa4874fc-584e-48ca-9c64-0e827e6540d4
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: feb65961-74c7-4b0f-9f1a-22ed35189b82
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 482c18af-4f01-492b-8f55-066cf921f8e6
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 9155dd04-124d-4208-8d10-9f83d944870e
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  482c18af-4f01-492b-8f55-066cf921f8e6:
+    contentColumnType: string
+    fieldGroup: null
+    handle: exampleLinks
+    instructions: 'Use this to link to a couple of examples relevant to the content'
+    name: 'Example links'
+    searchable: true
+    settings:
+      allowSelfRelations: false
+      limit: ''
+      localizeRelations: false
+      selectionLabel: ''
+      showSiteMenu: true
+      source: null
+      sources: '*'
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: null
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Entries
+  4b18a12d-af37-4f5a-a54f-2106dfbd2fcb:
+    contentColumnType: text
+    fieldGroup: null
+    handle: cardTitle
+    instructions: ''
+    name: 'Card title'
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: language
+    type: craft\fields\PlainText
+  5473aace-4074-4fb7-aa2e-467dbffe24a9:
+    contentColumnType: text
+    fieldGroup: null
+    handle: cardText
+    instructions: ''
+    name: 'Card text'
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: text
+      initialRows: '4'
+      multiline: '1'
+      placeholder: ''
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: language
+    type: craft\fields\PlainText
+  7888e512-9107-4a5b-aace-92228b88be6a:
+    contentColumnType: text
+    fieldGroup: null
+    handle: cardButton
+    instructions: ''
+    name: 'Card button'
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: language
+    type: craft\fields\PlainText
+  9155dd04-124d-4208-8d10-9f83d944870e:
+    contentColumnType: string
+    fieldGroup: null
+    handle: customLinks
+    instructions: ''
+    name: 'Custom links'
+    searchable: true
+    settings:
+      columns:
+        __assoc__:
+          -
+            - cf23b0ca-dd3c-43c3-882c-a13cb6753156
+            -
+              __assoc__:
+                -
+                  - width
+                  - ''
+          -
+            - 675b889f-8f75-4714-9b69-050cf6339d83
+            -
+              __assoc__:
+                -
+                  - width
+                  - ''
+      contentTable: '{{%stc_1_customlinks}}'
+      fieldLayout: row
+      maxRows: '2'
+      minRows: ''
+      placeholderKey: null
+      propagationMethod: language
+      selectionLabel: 'Add custom example links'
+      staticField: ''
+    translationKeyFormat: null
+    translationMethod: site
+    type: verbb\supertable\fields\SuperTableField
+  aa4874fc-584e-48ca-9c64-0e827e6540d4:
+    contentColumnType: string
+    fieldGroup: null
+    handle: cardButtonLink
+    instructions: ''
+    name: 'Card button link'
+    searchable: true
+    settings:
+      allowSelfRelations: false
+      limit: ''
+      localizeRelations: false
+      selectionLabel: ''
+      showSiteMenu: true
+      source: null
+      sources: '*'
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: null
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Entries
+  f3517307-9666-4cfb-9aa7-6e7669f8ac13:
+    contentColumnType: text
+    fieldGroup: null
+    handle: cardButtonCustomLink
+    instructions: 'Use this to add custom offsite url'
+    name: 'Card button custom link'
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: language
+    type: craft\fields\PlainText
+  f96e6d80-ad9e-4c78-b1c4-c1f3a03bffd2:
+    contentColumnType: string
+    fieldGroup: null
+    handle: cardImage
+    instructions: ''
+    name: 'Card image'
+    searchable: true
+    settings:
+      allowSelfRelations: false
+      allowUploads: true
+      allowedKinds: null
+      defaultUploadLocationSource: 'volume:69530c26-670d-47c2-a35f-a3ce5489b277'
+      defaultUploadLocationSubpath: ''
+      limit: ''
+      localizeRelations: true
+      previewMode: full
+      restrictFiles: ''
+      selectionLabel: ''
+      showSiteMenu: true
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: true
+      singleUploadLocationSource: 'volume:69530c26-670d-47c2-a35f-a3ce5489b277'
+      singleUploadLocationSubpath: ''
+      source: null
+      sources:
+        - 'volume:69530c26-670d-47c2-a35f-a3ce5489b277'
+      targetSiteId: null
+      useSingleFolder: false
+      validateRelatedElements: false
+      viewMode: large
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  feb65961-74c7-4b0f-9f1a-22ed35189b82:
+    contentColumnType: text
+    fieldGroup: null
+    handle: linksHeading
+    instructions: ''
+    name: 'Links heading'
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: language
+    type: craft\fields\PlainText
+handle: cardImageTop
+name: 'Card image top'
+sortOrder: 1

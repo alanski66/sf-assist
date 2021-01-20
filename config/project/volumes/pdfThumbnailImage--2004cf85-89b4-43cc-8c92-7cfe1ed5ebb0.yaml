@@ -1,0 +1,56 @@
+fieldLayouts:
+  999d25e7-9182-4ad6-9f3d-5f3ae34b758c:
+    tabs:
+      -
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\TitleField
+            warning: null
+            width: 100
+          -
+            fieldUid: 44ce4f57-f3d7-416c-bc55-f7505aa7b29e
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 2e999a83-5681-42a4-bf7d-99b2c00d47b3
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+handle: pdfThumbnailImage
+hasUrls: true
+name: 'PDF Thumbnail image'
+settings:
+  path: '@assetBasePath/images/pdfthumbs'
+sortOrder: 6
+type: craft\volumes\Local
+url: '@assetBaseUrl/images/pdfthumbs'

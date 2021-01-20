@@ -1,0 +1,18 @@
+contentColumnType: text
+fieldGroup: 57e17ebd-5a65-4486-a175-645b52fcf8e5
+handle: cookieDismiss
+instructions: ''
+name: cookieDismiss
+searchable: true
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: ''
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

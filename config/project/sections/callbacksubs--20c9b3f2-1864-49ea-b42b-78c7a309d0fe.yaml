@@ -1,0 +1,23 @@
+enableVersioning: false
+handle: callbacksubs
+name: 'Callback submissions'
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  dda3b550-c778-4d47-86b0-11543ac8053a:
+    enabledByDefault: true
+    hasUrls: false
+    template: null
+    uriFormat: null
+type: channel

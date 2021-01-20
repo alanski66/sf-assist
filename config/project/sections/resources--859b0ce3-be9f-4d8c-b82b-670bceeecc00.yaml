@@ -1,0 +1,28 @@
+enableVersioning: true
+handle: resources
+name: Resources
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+  -
+    __assoc__:
+      -
+        - label
+        - 'Landing page view'
+      -
+        - urlFormat
+        - resources
+      -
+        - refresh
+        - '1'
+propagationMethod: none
+type: channel

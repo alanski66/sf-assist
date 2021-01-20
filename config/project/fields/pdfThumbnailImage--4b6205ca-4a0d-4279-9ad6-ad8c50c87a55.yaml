@@ -1,0 +1,32 @@
+contentColumnType: string
+fieldGroup: d8865574-a21c-465b-a6eb-dfaf84ae8e18
+handle: pdfThumbnailImage
+instructions: ''
+name: 'PDF Thumbnail image'
+searchable: true
+settings:
+  allowSelfRelations: false
+  allowUploads: true
+  allowedKinds: null
+  defaultUploadLocationSource: 'volume:2004cf85-89b4-43cc-8c92-7cfe1ed5ebb0'
+  defaultUploadLocationSubpath: ''
+  limit: ''
+  localizeRelations: true
+  previewMode: full
+  restrictFiles: ''
+  selectionLabel: ''
+  showSiteMenu: true
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  singleUploadLocationSource: 'volume:69530c26-670d-47c2-a35f-a3ce5489b277'
+  singleUploadLocationSubpath: ''
+  source: null
+  sources:
+    - 'volume:2004cf85-89b4-43cc-8c92-7cfe1ed5ebb0'
+  targetSiteId: null
+  useSingleFolder: false
+  validateRelatedElements: false
+  viewMode: list
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Assets

@@ -1,0 +1,9 @@
+baseUrl: '@web/klaveness'
+enabled: true
+handle: klaveness
+hasUrls: true
+language: en-GB
+name: 'Torvald Klaveness'
+primary: false
+siteGroup: 215f0d82-30c1-48e9-90e5-1e8d18d21397
+sortOrder: 6
