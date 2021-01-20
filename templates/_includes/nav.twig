@@ -1,100 +1,100 @@
 <!-- nav twig -->
 {% import '_macros' as macros %}
-{% set topNavPages = craft.entries.section('topNav').hidePage('< 1').all()  %}
+{% set topNavPages = craft.entries.section('topNav').hidePage('< 1').all() %}
 
 <div class="navigation bg-secondary">
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark py-3 ">
         <div class="container">
             <a class="navbar-brand py-0 py-md-3" href="{{ siteUrl }}">
-                <img class="img-fluid" src="{{baseUrl}}/assets/images/slogo-ol.svg" alt="">
+                <img class="img-fluid" src="{{ baseUrl }}/assets/images/slogo-ol.svg" alt="">
             </a>
-            <button class="custom-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="custom-toggler navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                    aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-{#            <div class="collapse navbar-collapse" id="navbarResponsive">#}
-{#                <ul class="navbar-nav ml-auto">#}
+            {#            <div class="collapse navbar-collapse" id="navbarResponsive">#}
+            {#                <ul class="navbar-nav ml-auto">#}
             <div class="collapse navbar-collapse text-center justify-content-end" id="navbarResponsive">
 
-                    <ul class="navbar-nav top mx-auto">
-                        {% set topNavPages = craft.entries.section('topNav').hidePage('0').all()  %}
+                <ul class="navbar-nav top mx-auto">
+                    {% set topNavPages = craft.entries.section('topNav').hidePage('0').all() %}
 
-                        {% for entry in topNavPages %}
+                    {% for entry in topNavPages %}
 
 
-                            {#{%  if entry.altNavTitle|length %}#}
-                            {#{%  set navTitle = entry.altNavTitle %}#}
-                            {#{% else %}#}
-                            {#{%  set navTitle = entry.title %}#}
-                            {#{% endif %}#}
-                            {% set onclick ="" %}
-                            {% set popclass ="" %}
-                            {% if entry.entryLink.one()|length %}
-                                {% set navlink = entry.entryLink.one().url %}
-                            {% else %}
-                                {% set navlink = entry.customLink %}
-                            {% endif %}
+                        {#{%  if entry.altNavTitle|length %}#}
+                        {#{%  set navTitle = entry.altNavTitle %}#}
+                        {#{% else %}#}
+                        {#{%  set navTitle = entry.title %}#}
+                        {#{% endif %}#}
+                        {% set onclick ="" %}
+                        {% set popclass ="" %}
+                        {% if entry.entryLink.one()|length %}
+                            {% set navlink = entry.entryLink.one().url %}
+                        {% else %}
+                            {% set navlink = entry.customLink %}
+                        {% endif %}
 
-                            {% if entry.level == 1 and entry.children|length %}
-                                <li class="nav-item dropdown {{ macros.activeLinkClass(navlink, entry.level)|trim }} level{{ entry.level }}">
+                        {% if entry.level == 1 and entry.children|length %}
+                            <li class="nav-item dropdown {{ macros.activeLinkClass(navlink, entry.level)|trim }} level{{ entry.level }}">
 
+                                {% if isMobile == 1 %}
+                                    <a id="{{ entry.title }}" href="#" class="nav-link mob" data-toggle="dropdown"
+                                       role="button"
+                                       data-length="{{ entry.title|length }}" aria-haspopup="true"
+                                       aria-expanded="false">{{ entry.title }}<span class="caret"></span></a>
+                                {% else %}
+                                    <a id="{{ entry.title }}" href="{{ siteUrl }}{{ navlink }}" class="nav-link  notmob"
+                                       data-length="{{ entry.title|length }}" aria-haspopup="true"
+                                       aria-expanded="false">{{ entry.title }} <span class="caret"></span></a>
+                                {% endif %}
+
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <!-- add mobile parent link to drop down -->
                                     {% if isMobile == 1 %}
-                                        <a id="{{ entry.title }}" href="#" class="nav-link mob" data-toggle="dropdown" role="button"
-                                           data-length="{{ entry.title|length }}" aria-haspopup="true"
-                                           aria-expanded="false">{{ entry.title }}<span class="caret"></span></a>
-                                    {% else %}
-                                        <a id="{{ entry.title }}" href="{{ siteUrl }}{{ navlink }}" class="nav-link  notmob"
-                                           data-length="{{ entry.title|length }}" aria-haspopup="true"
-                                           aria-expanded="false">{{ entry.title }} <span class="caret"></span></a>
+                                        <a id="{{ entry.title }}" href="{{ siteUrl }}{{ navlink }}"
+                                           class="dropwdown-item {{ macros.activeLinkClass(navlink, entry.level)|trim }} level{{ entry.level }}">{{ entry.title }}</a>
                                     {% endif %}
-
-                                    <div class="dropdown-menu dropdown-menu-right">
-
-                                        <!-- add mobile parent link to drop down -->
-                                        {% if isMobile == 1 %}
-
-                                            <a id="{{ entry.title }}" href="{{ siteUrl }}{{ navlink }}"
-                                               class="dropwdown-item {{ macros.activeLinkClass(navlink, entry.level)|trim }} level{{ entry.level }}">{{ entry.title }}</a>
+                                    <!-- get children -->
+                                    {% for child in entry.getDescendants().hidePage('< 1') %}
+                                        {% if child is defined %}
+                                            {# get child custom link or entry uri #}
+                                            {#{% if child.entryLink.one()|length %}#}
+                                            {#{% set childlink = child.entryLink.one().uri %}#}
+                                            {#{% else %}#}
+                                            {% set childlink = child.uri %}
+                                            {#{% endif %}#}
+                                            <a id="{{ entry.title }}" href="{{ siteUrl }}{{ childlink }}"
+                                               class="dropdown-item level {{ child.level }}">{{ child.title }}</a>
 
                                         {% endif %}
+                                    {% endfor %}
 
-                                        <!-- get children -->
-                                        {% for child in entry.getDescendants().hidePage('< 1') %}
-                                            {% if child is defined %}
-                                                {# get child custom link or entry uri #}
-                                                {#{% if child.entryLink.one()|length %}#}
-                                                {#{% set childlink = child.entryLink.one().uri %}#}
-                                                {#{% else %}#}
-                                                {% set childlink = child.uri %}
-                                                {#{% endif %}#}
-                                                <a id="{{ entry.title }}" href="{{ siteUrl }}{{ childlink }}"
-                                                   class="dropdown-item level {{ child.level }}">{{ child.title }}</a>
+                                </div>
+                            </li>
 
-                                            {% endif %}
-                                        {% endfor %}
+                        {% elseif entry.level == 1 and not entry.hasDescendants() %}
 
-                                    </div>
-                                </li>
-
-                            {% elseif entry.level == 1 and not entry.hasDescendants() %}
-
-                                <li class=" nav-item {{ macros.activeLinkClass(navlink, entry.level)|trim }} level{{ entry.level }} {{ entry.title |lower  }}">
-                                    <a id="{{ entry.title|lower }}" href="{{ navlink }}" {{ onclick }} class="p-2  nav-link {{ macros.activeLinkClass(navlink, entry.level) |trim }} level{{ entry.level }}">
-
-                                        {{ entry.title }}</a>
-                                </li>
-                            {% endif %}
-                        {%  endfor %}
-                    </ul>
+                            <li class=" nav-item {{ macros.activeLinkClass(navlink, entry.level)|trim }} level{{ entry.level }} {{ entry.title |lower }}">
+                                <a id="{{ entry.title|lower }}" href="{{ navlink }}" {{ onclick }}
+                                   class="p-2  nav-link {{ macros.activeLinkClass(navlink, entry.level) |trim }} level{{ entry.level }}">{{ entry.title }}</a>
+                            </li>
+                        {% endif %}
+                    {% endfor %}
+                </ul>
 
                 <div class=" navend">
                     <div class="d-flex justify-content-end  flex-column text-right col-12">
                         <div class="text-center text-lg-right">
-                            <span class="direct-dial">direct dial:</span> <a href="tel: {{ organisationDetails.organisationTelephone }}">{{ organisationDetails.organisationTelephone }}</a>
+                            <span class="direct-dial">direct dial:</span> <a
+                                    href="tel: {{ organisationDetails.organisationTelephone }}">{{ organisationDetails.organisationTelephone }}</a>
                         </div>
 
                         <div class="text-center text-lg-right ">
-                            <span class="direct-email">email:</span> <a href="mailto:{{ organisationDetails.organisationEmail }}">{{ organisationDetails.organisationEmail }}</a>
+                            <span class="direct-email">email:</span> <a
+                                    href="mailto:{{ organisationDetails.organisationEmail }}">{{ organisationDetails.organisationEmail }}</a>
 
                         </div>
 
@@ -109,87 +109,88 @@
     <nav class="bg-primary">
         <div class="d-flex text-center justify-content-center" id="navbar2SupportedContent">
 
-        <ul class="navbar-nav  list-group list-group-horizontal">
+            <ul class="navbar-nav  list-group list-group-horizontal">
 
-            {% set pages = craft.entries.section('mainMenu').hidePage('0').all()  %}
-
-
-            {% for entry in pages %}
+                {% set pages = craft.entries.section('mainMenu').hidePage('0').all() %}
 
 
-                {#{%  if entry.altNavTitle|length %}#}
-                {#{%  set navTitle = entry.altNavTitle %}#}
-                {#{% else %}#}
-                {#{%  set navTitle = entry.title %}#}
-                {#{% endif %}#}
-                {% set openInNew = "_self" %}
-                {% set onclick ="" %}
-                {% set popclass ="" %}
-                {% if entry.entryLink.one()|length %}
-                    {% set navlink = entry.entryLink.one().uri %}
-                {% else %}
-                    {% set navlink = entry.customLink %}
-                {% endif %}
+                {% for entry in pages %}
 
-                {% if entry.openInNewWindow %}
-                    {% set openInNew = "_blank" %}
-                {% endif %}
 
-                {% if entry.level == 1 and entry.children|length %}
-                    <li class="nav-item dropdown {{ macros.activeLinkClass(navlink, entry.level)|trim }} level{{ entry.level }}">
+                    {#{%  if entry.altNavTitle|length %}#}
+                    {#{%  set navTitle = entry.altNavTitle %}#}
+                    {#{% else %}#}
+                    {#{%  set navTitle = entry.title %}#}
+                    {#{% endif %}#}
+                    {% set openInNew = "_self" %}
+                    {% set onclick ="" %}
+                    {% set popclass ="" %}
+                    {% if entry.entryLink.one()|length %}
+                        {% set navlink = entry.entryLink.one().uri %}
+                    {% else %}
+                        {% set navlink = entry.customLink %}
+                    {% endif %}
 
-                        {% if isMobile == 1 %}
-                            <a id="{{ entry.title }}" href="#" class="nav-link mob" data-toggle="dropdown" role="button"
-                               data-length="{{ entry.title|length }}" aria-haspopup="true"
-                               aria-expanded="false">{{ entry.title }}<span class="caret"></span></a>
-                        {% else %}
-                            <a id="{{ entry.title }}" href="{{ siteUrl }}{{ navlink }}" class="nav-link  notmob"
-                               data-length="{{ entry.title|length }}" aria-haspopup="true"
-                               aria-expanded="false">{{ entry.title }} <span class="caret"></span></a>
-                        {% endif %}
+                    {% if entry.openInNewWindow %}
+                        {% set openInNew = "_blank" %}
+                    {% endif %}
 
-                        <div class="dropdown-menu dropdown-menu-right">
+                    {% if entry.level == 1 and entry.children|length %}
+                        <li class="nav-item dropdown {{ macros.activeLinkClass(navlink, entry.level)|trim }} level{{ entry.level }}">
 
-                            <!-- add mobile parent link to drop down -->
                             {% if isMobile == 1 %}
-
-                                <a id="{{ entry.title }}" href="{{ siteUrl }}{{ navlink }}"
-                                   class="dropwdown-item {{ macros.activeLinkClass(navlink, entry.level)|trim }} level{{ entry.level }}">{{ entry.title }}</a>
-
+                                <a id="{{ entry.title }}" href="#" class="nav-link mob" data-toggle="dropdown"
+                                   role="button"
+                                   data-length="{{ entry.title|length }}" aria-haspopup="true"
+                                   aria-expanded="false">{{ entry.title }}<span class="caret"></span></a>
+                            {% else %}
+                                <a id="{{ entry.title }}" href="{{ siteUrl }}{{ navlink }}" class="nav-link  notmob"
+                                   data-length="{{ entry.title|length }}" aria-haspopup="true"
+                                   aria-expanded="false">{{ entry.title }} <span class="caret"></span></a>
                             {% endif %}
 
-                            <!-- get children -->
-                            {% for child in entry.getDescendants().hidePage('< 1') %}
-                                {% if child is defined %}
-                                    {# get child custom link or entry uri #}
-                                    {#{% if child.entryLink.one()|length %}#}
-                                    {#{% set childlink = child.entryLink.one().uri %}#}
-                                    {#{% else %}#}
-                                    {% set childlink = child.uri %}
-                                    {#{% endif %}#}
-                                    <a id="{{ entry.title }}" href="{{ siteUrl }}{{ childlink }}"
-                                       class="dropdown-item level {{ child.level }}">{{ child.title }}</a>
+                            <div class="dropdown-menu dropdown-menu-right">
+
+                                <!-- add mobile parent link to drop down -->
+                                {% if isMobile == 1 %}
+
+                                    <a id="{{ entry.title }}" href="{{ siteUrl }}{{ navlink }}"
+                                       class="dropwdown-item {{ macros.activeLinkClass(navlink, entry.level)|trim }} level{{ entry.level }}">{{ entry.title }}</a>
 
                                 {% endif %}
-                            {% endfor %}
 
-                        </div>
-                    </li>
+                                <!-- get children -->
+                                {% for child in entry.getDescendants().hidePage('< 1') %}
+                                    {% if child is defined %}
+                                        {# get child custom link or entry uri #}
+                                        {#{% if child.entryLink.one()|length %}#}
+                                        {#{% set childlink = child.entryLink.one().uri %}#}
+                                        {#{% else %}#}
+                                        {% set childlink = child.uri %}
+                                        {#{% endif %}#}
+                                        <a id="{{ entry.title }}" href="{{ siteUrl }}{{ childlink }}"
+                                           class="dropdown-item level {{ child.level }}">{{ child.title }}</a>
 
-                {% elseif entry.level == 1 and not entry.hasDescendants() %}
+                                    {% endif %}
+                                {% endfor %}
 
-                    {% set link = "" %}
-                    {% set order = " order-2 " %}
-                    {% if entry.title |lower == 'email' %}
-                        {% set link = "mailto:" ~ navlink %}
+                            </div>
+                        </li>
 
-                    {% elseif entry.title |lower  =='chat' %}
-                        {% set link = entry.customLink %}
-                        {#                                    {%  set onclick = "onclick=" ~ clickstring ~ "return:false;" %}#}
+                    {% elseif entry.level == 1 and not entry.hasDescendants() %}
 
-                        {% set popclass = "popup " %}
-                        {% set order = " order-1 " %}
-                        {% set script = "$('.popup').click(function() {
+                        {% set link = "" %}
+                        {% set order = " order-2 " %}
+                        {% if entry.title |lower == 'email' %}
+                            {% set link = "mailto:" ~ navlink %}
+
+                        {% elseif entry.title |lower  =='chat' %}
+                            {% set link = entry.customLink %}
+                            {#                                    {%  set onclick = "onclick=" ~ clickstring ~ "return:false;" %}#}
+
+                            {% set popclass = "popup " %}
+                            {% set order = " order-1 " %}
+                            {% set script = "$('.popup').click(function() {
                                                 console.log('pop');
                                                     var newwindow = window.open($(this).prop('href'), '',
                                                    'height=480,width=484');
@@ -198,23 +199,26 @@
                                                     }
                                                     return false;
                                             });" %}
-                        {% do view.registerJs(script) %}
+                            {% do view.registerJs(script) %}
 
-                    {% else %}
-                        {% set link = navlink %}
+                        {% else %}
+                            {% set link = navlink %}
+                        {% endif %}
+
+                        <li class="{{ entry.title |lower }} {{ order }} py-3 px-sm-3 px-lg-5 px-xl-5   bg-primary list-group-item nav-item {{ macros.activeLinkClass(navlink, entry.level)|trim }} level{{ entry.level }} {{ entry.title |lower }}">
+                            <a target="{{ openInNew }}" id="{{ entry.title|lower }}" href="{{ link }}" {{ onclick }}
+                               class="p-0 {{ popclass }} nav-link {{ macros.activeLinkClass(navlink, entry.level) |trim }} level{{ entry.level }}">
+                                <img class="nav-icon {{ entry.title |lower }}"
+                                     src="{{ baseUrl }}/icons/{{ entry.title |lower }}.svg">
+                            </a>
+                            <a target="{{ openInNew }}" id="{{ entry.title|lower }}" href="{{ link }}" {{ onclick }}
+                               class="p-0 {{ popclass }} nav-link {{ macros.activeLinkClass(navlink, entry.level) |trim }} level{{ entry.level }}">
+
+                                {{ entry.title }}</a>
+                        </li>
                     {% endif %}
-
-                    <li class="{{ entry.title |lower  }} {{ order }} py-3 px-sm-3 px-lg-5 px-xl-5   bg-primary list-group-item nav-item {{ macros.activeLinkClass(navlink, entry.level)|trim }} level{{ entry.level }} {{ entry.title |lower  }}">
-                        <a target="{{ openInNew }}" id="{{ entry.title|lower }}" href="{{ link }}" {{ onclick }} class="p-0 {{ popclass }} nav-link {{ macros.activeLinkClass(navlink, entry.level) |trim }} level{{ entry.level }}">
-                        <img class="nav-icon {{ entry.title |lower  }}" src = "{{ baseUrl }}/icons/{{ entry.title |lower  }}.svg" >
-                        </a>
-                       <a target="{{ openInNew }}" id="{{ entry.title|lower }}" href="{{ link }}" {{ onclick }} class="p-0 {{ popclass }} nav-link {{ macros.activeLinkClass(navlink, entry.level) |trim }} level{{ entry.level }}">
-
-                            {{ entry.title }}</a>
-                    </li>
-                {% endif %}
-            {%  endfor %}
-        </ul>
+                {% endfor %}
+            </ul>
 
         </div>
     </nav>

@@ -1,0 +1,54 @@
+<div class="hero ">
+    <div class="container d-flex align-items-center">
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-8 col-lg-6 col-auto mr-auto ">
+                <div class="text-inner p-5 text-center text-md-left my-5">
+
+                    {%  set strap1 = entry.strapline1 | replace('[site]',siteName) %}
+
+                    <h1 class="  mb-3">{{ strap1 }}</h1>
+                    <h2 class=" ">{{ entry.strapline2 }}</h2>
+
+                    <div class="">{{- entry.introText -}}</div>
+                    {% if entry.ctaLink | length %}
+                        {% set link = entry.ctaLink.one.url %}
+                    {% elseif entry.custom | length %}
+                        {% set link = entry.custom %}
+                    {% endif %}
+                    <div class="cta">
+                        <a class="btn btn-outline rounded" href="{{ link }}">{{ entry.ctaButtonText }}</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% set brandasset = entry.companyBrandLogo[0] ?? null %}
+    {% if brandasset | length %}
+        {% set thumb = {
+            mode: 'crop',
+            height: 75,
+            quality: 85
+        } %}
+    <div class="container d-flex supported align-self-baseline justify-content-center justify-content-md-start pb-5">
+                {% if entry.brandLogoText | length %}
+                    <div class="supportedby align-self-center pr-3">{{ entry.brandLogoText }}</div>
+                {% endif %}
+                <img class="align-self-center" width="auto"  src="{{ brandasset.getUrl(thumb) }}" alt="Brand logo">
+    </div>
+    {% endif %}
+{#        <figure class="image-holder">#}
+
+{#            {% set imgCredit =  asset.imageCredit ?? null %}#}
+{#            {% set imgCaption =  asset.imageCaption ?? null %}#}
+
+{#            {% if imgCredit %}#}
+{#                <figcaption>#}
+{#                <span class="picture-credit">&copy; {{ asset.imageCredit }}</span>#}
+{#                </figcaption>#}
+{#            {% endif %}#}
+{#        </figure>#}
+
+
+</div>
+
+
