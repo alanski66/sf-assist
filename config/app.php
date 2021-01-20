@@ -17,18 +17,18 @@
  * your config/ folder, alongside this one.
  */
 
-// return [
-//     'modules' => [
-//         'my-module' => \modules\Module::class,
-//     ],
-//     //'bootstrap' => ['my-module'],
-// ];
-
 return [
     'modules' => [
-        'business-logic' => \modules\businesslogic\BusinessLogic::class
+        'my-module' => \modules\Module::class,
     ],
-    'bootstrap' => [
-        'business-logic'
-    ],
+    //'bootstrap' => ['my-module'],
 ];
+
+// return [
+//     'modules' => [
+//         'business-logic' => \modules\businesslogic\BusinessLogic::class
+//     ],
+//     'bootstrap' => [
+//         'business-logic'
+//     ],
+// ];
