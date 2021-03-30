@@ -1,5 +1,5 @@
 fieldLayouts:
-  4d41183a-5bd6-43d1-af6b-934d99210288:
+  cdd0d96f-905b-41ff-8de0-98095d37a754:
     tabs:
       -
         elements:
@@ -23,7 +23,7 @@ fieldLayouts:
             step: null
             tip: null
             title: null
-            type: craft\fieldlayoutelements\TitleField
+            type: craft\fieldlayoutelements\AssetTitleField
             warning: null
             width: 100
         name: Content

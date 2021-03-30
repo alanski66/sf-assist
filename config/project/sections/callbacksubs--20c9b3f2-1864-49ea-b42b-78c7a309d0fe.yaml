@@ -13,8 +13,18 @@ previewTargets:
       -
         - refresh
         - '1'
-propagationMethod: all
+propagationMethod: none
 siteSettings:
+  4b65b33e-8e9b-4be4-9f88-64bdc174a039:
+    enabledByDefault: true
+    hasUrls: false
+    template: null
+    uriFormat: null
+  61a67fb5-00ae-4927-b90a-b5bae5385d1f:
+    enabledByDefault: true
+    hasUrls: false
+    template: null
+    uriFormat: null
   dda3b550-c778-4d47-86b0-11543ac8053a:
     enabledByDefault: true
     hasUrls: false

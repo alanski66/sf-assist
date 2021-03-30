@@ -10701,6 +10701,9 @@ ul.white li > a {
   .footer .copyright .copyright-right {
     text-align: right; } }
 
+form#callback input#password {
+  display: none; }
+
 body {
   background-color: #0a9ad4; }
 

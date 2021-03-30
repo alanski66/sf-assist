@@ -103,7 +103,7 @@ fieldLayouts:
 handle: callback
 hasTitleField: true
 name: Callback
-section: 20c9b3f2-1864-49ea-b42b-78c7a309d0fe
+section: 20c9b3f2-1864-49ea-b42b-78c7a309d0fe # Callback submissions
 sortOrder: 1
 titleFormat: null
 titleTranslationKeyFormat: null

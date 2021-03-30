@@ -25,6 +25,25 @@ fieldLayouts:
         name: Content
         sortOrder: 1
 fields:
+  8ac944b2-2dd7-488d-983d-9feb5b3cc7a3:
+    contentColumnType: text
+    fieldGroup: null
+    handle: listHeader
+    instructions: ''
+    name: 'List header'
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
   4881baab-fb5a-4f28-8db5-8b0750a56b7d:
     contentColumnType: string
     fieldGroup: null
@@ -53,25 +72,6 @@ fields:
     translationKeyFormat: null
     translationMethod: site
     type: verbb\supertable\fields\SuperTableField
-  8ac944b2-2dd7-488d-983d-9feb5b3cc7a3:
-    contentColumnType: text
-    fieldGroup: null
-    handle: listHeader
-    instructions: ''
-    name: 'List header'
-    searchable: true
-    settings:
-      byteLimit: null
-      charLimit: null
-      code: ''
-      columnType: text
-      initialRows: '4'
-      multiline: ''
-      placeholder: ''
-      uiMode: normal
-    translationKeyFormat: null
-    translationMethod: none
-    type: craft\fields\PlainText
 handle: cardListGroup
 name: 'Card list group'
 sortOrder: 2

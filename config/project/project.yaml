@@ -1,4 +1,4 @@
-dateModified: 1611150446
+dateModified: 1617121165
 email:
   fromEmail: bw@seafarerassistance.org
   fromName: 'Seafarer Assistance'
@@ -38,12 +38,12 @@ plugins:
       sections:
         __assoc__:
           -
-            - 20c9b3f2-1864-49ea-b42b-78c7a309d0fe
+            - 20c9b3f2-1864-49ea-b42b-78c7a309d0fe # Callback submissions
             -
               __assoc__:
                 -
                   - sectionUid
-                  - 20c9b3f2-1864-49ea-b42b-78c7a309d0fe
+                  - 20c9b3f2-1864-49ea-b42b-78c7a309d0fe # Callback submissions
                 -
                   - allowGuestSubmissions
                   - '1'
@@ -56,6 +56,12 @@ plugins:
                 -
                   - authorUid
                   - bdfbdb14-ff96-40fb-be37-98105526046f
+  guest-entries-honeypot:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+    settings:
+      honeypotParam: password
   guest-entries-notification:
     edition: standard
     enabled: true
@@ -63,15 +69,15 @@ plugins:
     settings:
       confirmationTemplate: /email/_notifications.twig
       emailSubject: 'New Callback Entry'
-      emailTo: bw@seafarerassistance.org
-      fromEmail: bw@seafarerassistance.org
+      emailTo: alan@joomkit.com
+      fromEmail: info@seafarerassistance.org
       fromName: 'Seafarer Assistance'
   guide:
     edition: lite
     enabled: true
     schemaVersion: 2.0.0
     settings:
-      assetVolume: 69530c26-670d-47c2-a35f-a3ce5489b277
+      assetVolume: 69530c26-670d-47c2-a35f-a3ce5489b277 # Images
       clientName: ''
       myCompanyName: ''
       templatePath: _guide
@@ -162,5 +168,5 @@ system:
   edition: pro
   live: true
   name: 'Seafarers Assistance'
-  schemaVersion: 3.5.13
+  schemaVersion: 3.6.7
   timeZone: America/Los_Angeles

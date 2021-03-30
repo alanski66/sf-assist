@@ -3,11 +3,6 @@ handle: pages
 name: Pages
 propagationMethod: none
 siteSettings:
-  281fb882-28ec-4e00-b70e-1010b1b320ed:
-    enabledByDefault: true
-    hasUrls: true
-    template: pages/_entry.twig
-    uriFormat: '{% if object.level == 1 %}{slug}{% else %}{parent.uri}/{slug}{% endif %}'
   4b65b33e-8e9b-4be4-9f88-64bdc174a039:
     enabledByDefault: true
     hasUrls: true
@@ -18,7 +13,7 @@ siteSettings:
     hasUrls: true
     template: pages/_entry.twig
     uriFormat: '{% if object.level == 1 %}{slug}{% else %}{parent.uri}/{slug}{% endif %}'
-  5585d2cb-1a50-4621-9f99-463ffd418167:
+  7a53b7c5-970a-4314-b83f-76422547d344:
     enabledByDefault: true
     hasUrls: true
     template: pages/_entry.twig
@@ -28,7 +23,12 @@ siteSettings:
     hasUrls: true
     template: pages/_entry.twig
     uriFormat: '{% if object.level == 1 %}{slug}{% else %}{parent.uri}/{slug}{% endif %}'
-  7a53b7c5-970a-4314-b83f-76422547d344:
+  281fb882-28ec-4e00-b70e-1010b1b320ed:
+    enabledByDefault: true
+    hasUrls: true
+    template: pages/_entry.twig
+    uriFormat: '{% if object.level == 1 %}{slug}{% else %}{parent.uri}/{slug}{% endif %}'
+  5585d2cb-1a50-4621-9f99-463ffd418167:
     enabledByDefault: true
     hasUrls: true
     template: pages/_entry.twig
