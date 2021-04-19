@@ -77,7 +77,7 @@ fields:
       allowSelfRelations: false
       allowUploads: true
       allowedKinds: null
-      defaultUploadLocationSource: 'volume:69530c26-670d-47c2-a35f-a3ce5489b277'
+      defaultUploadLocationSource: 'volume:69530c26-670d-47c2-a35f-a3ce5489b277' # Images
       defaultUploadLocationSubpath: ''
       limit: '1'
       localizeRelations: true
@@ -87,12 +87,12 @@ fields:
       showSiteMenu: true
       showUnpermittedFiles: false
       showUnpermittedVolumes: true
-      singleUploadLocationSource: 'volume:69530c26-670d-47c2-a35f-a3ce5489b277'
+      singleUploadLocationSource: 'volume:69530c26-670d-47c2-a35f-a3ce5489b277' # Images
       singleUploadLocationSubpath: ''
       source: null
       sources:
-        - 'volume:69530c26-670d-47c2-a35f-a3ce5489b277'
-        - 'volume:e64ccb15-e61c-41a3-84f8-e9c3a375a142'
+        - 'volume:69530c26-670d-47c2-a35f-a3ce5489b277' # Images
+        - 'volume:e64ccb15-e61c-41a3-84f8-e9c3a375a142' # Unsplash images
       targetSiteId: null
       useSingleFolder: false
       validateRelatedElements: false

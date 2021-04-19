@@ -119,7 +119,7 @@ fields:
       allowSelfRelations: false
       allowUploads: true
       allowedKinds: null
-      defaultUploadLocationSource: 'volume:69530c26-670d-47c2-a35f-a3ce5489b277'
+      defaultUploadLocationSource: 'volume:69530c26-670d-47c2-a35f-a3ce5489b277' # Images
       defaultUploadLocationSubpath: ''
       limit: ''
       localizeRelations: true
@@ -129,7 +129,7 @@ fields:
       showSiteMenu: true
       showUnpermittedFiles: false
       showUnpermittedVolumes: true
-      singleUploadLocationSource: 'volume:69530c26-670d-47c2-a35f-a3ce5489b277'
+      singleUploadLocationSource: 'volume:69530c26-670d-47c2-a35f-a3ce5489b277' # Images
       singleUploadLocationSubpath: ''
       source: null
       sources: '*'

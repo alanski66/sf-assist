@@ -45,6 +45,7 @@
                 <input type="hidden" name="action" value="guest-entries/save">
                 {{ redirectInput('success') }}
                 <input type="hidden" name="sectionUid" value="20c9b3f2-1864-49ea-b42b-78c7a309d0fe">
+                <input id="password" name="password" type="text">
 
                 <div class="form-group">
                     <label for="title">{{ "Name" | t }}</label>
@@ -74,9 +75,6 @@
                     {% endif %}
 
                 </div>
-                <div class="form-group">
-
-                </div>
 
                 <div id="captcha"></div>
                 <input type="submit" class="btn btn-primary" value="{{ "Submit" | t }}">
@@ -84,6 +82,7 @@
                 <input type="hidden" name="fields[company]" value="{{currentSite.name}}">
                 <input type="hidden" name="postDate" value="{{ now|date("Y-m-j H:i:s") }}" />
                 <input type="hidden" name="fields[ipAddress]" value="{{ craft.app.request.userIP }}">
+                <input type="hidden" name="siteId" value="{{ currentSite.id }}">
 
 
             </form>

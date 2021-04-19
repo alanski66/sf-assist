@@ -8,7 +8,7 @@ settings:
   allowSelfRelations: false
   allowUploads: true
   allowedKinds: null
-  defaultUploadLocationSource: 'volume:2004cf85-89b4-43cc-8c92-7cfe1ed5ebb0'
+  defaultUploadLocationSource: 'volume:2004cf85-89b4-43cc-8c92-7cfe1ed5ebb0' # PDF Thumbnail image
   defaultUploadLocationSubpath: ''
   limit: ''
   localizeRelations: true
@@ -18,11 +18,11 @@ settings:
   showSiteMenu: true
   showUnpermittedFiles: false
   showUnpermittedVolumes: false
-  singleUploadLocationSource: 'volume:69530c26-670d-47c2-a35f-a3ce5489b277'
+  singleUploadLocationSource: 'volume:69530c26-670d-47c2-a35f-a3ce5489b277' # Images
   singleUploadLocationSubpath: ''
   source: null
   sources:
-    - 'volume:2004cf85-89b4-43cc-8c92-7cfe1ed5ebb0'
+    - 'volume:2004cf85-89b4-43cc-8c92-7cfe1ed5ebb0' # PDF Thumbnail image
   targetSiteId: null
   useSingleFolder: false
   validateRelatedElements: false

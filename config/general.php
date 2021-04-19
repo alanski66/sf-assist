@@ -59,7 +59,7 @@ return [
         // Set this to `false` to prevent administrative changes from being made on Staging
         'allowAdminChanges' => true,
         // Don’t allow updates on Staging
-        'allowUpdates' => false,
+        'allowUpdates' => true,
         // Prevent crawlers from indexing pages and following links
         'disallowRobots' => true,
     ],
@@ -73,7 +73,7 @@ return [
         'allowAdminChanges' => true,
 
         // Don’t allow updates on Staging
-        'allowUpdates' => false,
+        'allowUpdates' => true,
 
         // Prevent crawlers from indexing pages and following links
         'disallowRobots' => true,

@@ -81,7 +81,7 @@ fields:
       allowSelfRelations: false
       allowUploads: true
       allowedKinds: null
-      defaultUploadLocationSource: 'volume:69530c26-670d-47c2-a35f-a3ce5489b277'
+      defaultUploadLocationSource: 'volume:69530c26-670d-47c2-a35f-a3ce5489b277' # Images
       defaultUploadLocationSubpath: ''
       limit: '1'
       localizeRelations: false
@@ -91,11 +91,11 @@ fields:
       showSiteMenu: true
       showUnpermittedFiles: false
       showUnpermittedVolumes: true
-      singleUploadLocationSource: 'volume:69530c26-670d-47c2-a35f-a3ce5489b277'
+      singleUploadLocationSource: 'volume:69530c26-670d-47c2-a35f-a3ce5489b277' # Images
       singleUploadLocationSubpath: ''
       source: null
       sources:
-        - 'volume:8efd0c0c-fba0-499f-a93e-1b57ff148494'
+        - 'volume:8efd0c0c-fba0-499f-a93e-1b57ff148494' # Banner images
       targetSiteId: null
       useSingleFolder: false
       validateRelatedElements: false
@@ -117,6 +117,25 @@ fields:
       columnType: text
       initialRows: '4'
       multiline: '1'
+      placeholder: ''
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  9ba48dc9-f0b4-4494-8c36-4c201f29d30e:
+    contentColumnType: text
+    fieldGroup: null
+    handle: slideTitle
+    instructions: ''
+    name: Title
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
       placeholder: ''
       uiMode: normal
     translationKeyFormat: null
@@ -153,25 +172,6 @@ fields:
     settings:
       byteLimit: null
       charLimit: '10'
-      code: ''
-      columnType: text
-      initialRows: '4'
-      multiline: ''
-      placeholder: ''
-      uiMode: normal
-    translationKeyFormat: null
-    translationMethod: none
-    type: craft\fields\PlainText
-  9ba48dc9-f0b4-4494-8c36-4c201f29d30e:
-    contentColumnType: text
-    fieldGroup: null
-    handle: slideTitle
-    instructions: ''
-    name: Title
-    searchable: true
-    settings:
-      byteLimit: null
-      charLimit: null
       code: ''
       columnType: text
       initialRows: '4'

@@ -62,12 +62,12 @@ fields:
     translationKeyFormat: null
     translationMethod: site
     type: craft\fields\PlainText
-  213c5cea-e8c3-48a5-9501-d506030864dd:
+  7fb40023-ad56-4c67-bc65-9353674d5c1b:
     contentColumnType: text
     fieldGroup: null
-    handle: citationIntro
+    handle: citation
     instructions: ''
-    name: 'Citation intro'
+    name: Citation
     searchable: true
     settings:
       byteLimit: null
@@ -94,12 +94,12 @@ fields:
     translationKeyFormat: null
     translationMethod: site
     type: craft\fields\Url
-  7fb40023-ad56-4c67-bc65-9353674d5c1b:
+  213c5cea-e8c3-48a5-9501-d506030864dd:
     contentColumnType: text
     fieldGroup: null
-    handle: citation
+    handle: citationIntro
     instructions: ''
-    name: Citation
+    name: 'Citation intro'
     searchable: true
     settings:
       byteLimit: null

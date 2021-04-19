@@ -52,19 +52,25 @@ fieldLayouts:
         name: Content
         sortOrder: 1
 fields:
-  5456edfc-4d31-4867-b950-376a1305242d:
-    contentColumnType: string(255)
+  7f6d3a2a-18dd-4e4d-8791-82e2f2fdb96e:
+    contentColumnType: text
     fieldGroup: null
-    handle: customLink
-    instructions: 'Add a custom link to the content you are promoting. If you fill out this field this will override the entry selection and display this custom text and a custom link in the promotion box'
-    name: 'Custom link'
+    handle: customLinkTitle
+    instructions: ''
+    name: 'Custom link title'
     searchable: true
     settings:
-      maxLength: '255'
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
       placeholder: ''
+      uiMode: normal
     translationKeyFormat: null
     translationMethod: site
-    type: craft\fields\Url
+    type: craft\fields\PlainText
   66d852db-6826-44d9-a927-5391137b5465:
     contentColumnType: string
     fieldGroup: null
@@ -86,25 +92,19 @@ fields:
     translationKeyFormat: null
     translationMethod: site
     type: craft\fields\Entries
-  7f6d3a2a-18dd-4e4d-8791-82e2f2fdb96e:
-    contentColumnType: text
+  5456edfc-4d31-4867-b950-376a1305242d:
+    contentColumnType: string(255)
     fieldGroup: null
-    handle: customLinkTitle
-    instructions: ''
-    name: 'Custom link title'
+    handle: customLink
+    instructions: 'Add a custom link to the content you are promoting. If you fill out this field this will override the entry selection and display this custom text and a custom link in the promotion box'
+    name: 'Custom link'
     searchable: true
     settings:
-      byteLimit: null
-      charLimit: null
-      code: ''
-      columnType: text
-      initialRows: '4'
-      multiline: ''
+      maxLength: '255'
       placeholder: ''
-      uiMode: normal
     translationKeyFormat: null
     translationMethod: site
-    type: craft\fields\PlainText
+    type: craft\fields\Url
   f1c08b6a-df2b-4cdf-aa22-98ebb63784fc:
     contentColumnType: text
     fieldGroup: null
