@@ -1,4 +1,4 @@
-dateModified: 1617121165
+dateModified: 1618829930
 email:
   fromEmail: bw@seafarerassistance.org
   fromName: 'Seafarer Assistance'
@@ -69,7 +69,7 @@ plugins:
     settings:
       confirmationTemplate: /email/_notifications.twig
       emailSubject: 'New Callback Entry'
-      emailTo: alan@joomkit.com
+      emailTo: info@seafarerassistance.org
       fromEmail: info@seafarerassistance.org
       fromName: 'Seafarer Assistance'
   guide:
@@ -168,5 +168,5 @@ system:
   edition: pro
   live: true
   name: 'Seafarers Assistance'
-  schemaVersion: 3.6.7
+  schemaVersion: 3.6.8
   timeZone: America/Los_Angeles
