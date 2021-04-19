@@ -126,7 +126,7 @@
                     {% set onclick ="" %}
                     {% set popclass ="" %}
                     {% if entry.entryLink.one()|length %}
-                        {% set navlink = entry.entryLink.one().uri %}
+                        {% set navlink = entry.entryLink.one().url %}
                     {% else %}
                         {% set navlink = entry.customLink %}
                     {% endif %}
