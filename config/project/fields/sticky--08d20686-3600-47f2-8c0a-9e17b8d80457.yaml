@@ -1,5 +1,5 @@
 contentColumnType: boolean
-fieldGroup: f8f993ed-1301-42d7-92b2-acb531dbe101
+fieldGroup: f8f993ed-1301-42d7-92b2-acb531dbe101 # News
 handle: sticky
 instructions: 'turn this on to make news item stay on the top heading space'
 name: Sticky

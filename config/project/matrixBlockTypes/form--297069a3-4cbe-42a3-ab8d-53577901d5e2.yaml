@@ -1,11 +1,11 @@
-field: acbc0bba-242f-40cf-bdd1-a6417f6eeaa9
+field: acbc0bba-242f-40cf-bdd1-a6417f6eeaa9 # Content block
 fieldLayouts:
   20f05245-099f-4079-a799-a28d99b8b7e8:
     tabs:
       -
         elements:
           -
-            fieldUid: 108b1b6b-e274-4afb-bcdd-52b381ecceb7
+            fieldUid: 108b1b6b-e274-4afb-bcdd-52b381ecceb7 # Select form
             instructions: null
             label: null
             required: '0'
@@ -16,7 +16,7 @@ fieldLayouts:
         name: Content
         sortOrder: 1
 fields:
-  108b1b6b-e274-4afb-bcdd-52b381ecceb7:
+  108b1b6b-e274-4afb-bcdd-52b381ecceb7: # Select form
     contentColumnType: integer
     fieldGroup: null
     handle: selectForm

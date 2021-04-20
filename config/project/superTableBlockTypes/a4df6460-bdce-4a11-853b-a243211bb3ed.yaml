@@ -1,11 +1,11 @@
-field: 9155dd04-124d-4208-8d10-9f83d944870e
+field: 9155dd04-124d-4208-8d10-9f83d944870e # Custom links
 fieldLayouts:
   bffbcb67-1f5a-49c1-a883-950caf0a66f0:
     tabs:
       -
         elements:
           -
-            fieldUid: cf23b0ca-dd3c-43c3-882c-a13cb6753156
+            fieldUid: cf23b0ca-dd3c-43c3-882c-a13cb6753156 # Custom link title
             instructions: null
             label: null
             required: '0'
@@ -14,7 +14,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 675b889f-8f75-4714-9b69-050cf6339d83
+            fieldUid: 675b889f-8f75-4714-9b69-050cf6339d83 # Custom link
             instructions: null
             label: null
             required: '0'
@@ -25,7 +25,7 @@ fieldLayouts:
         name: Content
         sortOrder: 1
 fields:
-  675b889f-8f75-4714-9b69-050cf6339d83:
+  675b889f-8f75-4714-9b69-050cf6339d83: # Custom link
     contentColumnType: string(255)
     fieldGroup: null
     handle: customLink
@@ -35,10 +35,12 @@ fields:
     settings:
       maxLength: '255'
       placeholder: ''
+      types:
+        - url
     translationKeyFormat: null
     translationMethod: language
     type: craft\fields\Url
-  cf23b0ca-dd3c-43c3-882c-a13cb6753156:
+  cf23b0ca-dd3c-43c3-882c-a13cb6753156: # Custom link title
     contentColumnType: text
     fieldGroup: null
     handle: customLinkTitle
@@ -52,7 +54,7 @@ fields:
       columnType: text
       initialRows: '4'
       multiline: ''
-      placeholder: ''
+      placeholder: null
       uiMode: normal
     translationKeyFormat: null
     translationMethod: language

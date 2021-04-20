@@ -1,5 +1,5 @@
 contentColumnType: boolean
-fieldGroup: 95a13bbd-3401-43e3-84b1-479984da84ec
+fieldGroup: 95a13bbd-3401-43e3-84b1-479984da84ec # Banner
 handle: hideBanner
 instructions: ''
 name: 'Hide banner'

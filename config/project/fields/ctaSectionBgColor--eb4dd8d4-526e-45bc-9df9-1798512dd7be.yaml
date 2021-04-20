@@ -1,5 +1,5 @@
 contentColumnType: string
-fieldGroup: f4c77426-3ec4-4532-b94d-83fff64f75c4
+fieldGroup: f4c77426-3ec4-4532-b94d-83fff64f75c4 # Global donate
 handle: ctaSectionBgColor
 instructions: ''
 name: 'CTA section bg color'

@@ -4,7 +4,7 @@ fieldLayouts:
       -
         elements:
           -
-            fieldUid: eb4dd8d4-526e-45bc-9df9-1798512dd7be
+            fieldUid: eb4dd8d4-526e-45bc-9df9-1798512dd7be # CTA section bg color
             instructions: null
             label: null
             required: '0'
@@ -13,7 +13,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 88f481ab-083c-4016-a3a2-1ce22e2f1a55
+            fieldUid: 88f481ab-083c-4016-a3a2-1ce22e2f1a55 # CTA text
             instructions: null
             label: null
             required: '0'
@@ -22,7 +22,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 854a81d0-40bc-45ae-ae97-3405888619f2
+            fieldUid: 854a81d0-40bc-45ae-ae97-3405888619f2 # CTA button color
             instructions: null
             label: null
             required: '0'
@@ -31,7 +31,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: b94541a5-4fee-46e9-8f0d-59da799180c8
+            fieldUid: b94541a5-4fee-46e9-8f0d-59da799180c8 # CTA button text
             instructions: null
             label: null
             required: '0'
@@ -40,7 +40,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: c37dd07c-e401-4016-a7c9-bbfd7f66055a
+            fieldUid: c37dd07c-e401-4016-a7c9-bbfd7f66055a # CTA link
             instructions: null
             label: null
             required: '0'
@@ -49,7 +49,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: a0089a26-45cd-4af0-a9f2-5f78694a585c
+            fieldUid: a0089a26-45cd-4af0-a9f2-5f78694a585c # CTA custom
             instructions: null
             label: null
             required: '0'

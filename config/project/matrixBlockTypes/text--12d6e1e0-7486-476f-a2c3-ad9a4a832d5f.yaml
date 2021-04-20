@@ -1,11 +1,11 @@
-field: acbc0bba-242f-40cf-bdd1-a6417f6eeaa9
+field: acbc0bba-242f-40cf-bdd1-a6417f6eeaa9 # Content block
 fieldLayouts:
   c8d029e2-f0e2-4441-a7d2-31ad3363831c:
     tabs:
       -
         elements:
           -
-            fieldUid: b7959e32-8927-4bdd-9fa9-71c0e3cd6e77
+            fieldUid: b7959e32-8927-4bdd-9fa9-71c0e3cd6e77 # Heading
             instructions: null
             label: null
             required: '0'
@@ -14,7 +14,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: eb8c1c6d-fa93-412d-968d-74ef065a071b
+            fieldUid: eb8c1c6d-fa93-412d-968d-74ef065a071b # Text
             instructions: null
             label: null
             required: '0'
@@ -25,7 +25,7 @@ fieldLayouts:
         name: Content
         sortOrder: 1
 fields:
-  b7959e32-8927-4bdd-9fa9-71c0e3cd6e77:
+  b7959e32-8927-4bdd-9fa9-71c0e3cd6e77: # Heading
     contentColumnType: text
     fieldGroup: null
     handle: heading
@@ -39,12 +39,12 @@ fields:
       columnType: text
       initialRows: '4'
       multiline: ''
-      placeholder: ''
+      placeholder: null
       uiMode: normal
     translationKeyFormat: null
     translationMethod: site
     type: craft\fields\PlainText
-  eb8c1c6d-fa93-412d-968d-74ef065a071b:
+  eb8c1c6d-fa93-412d-968d-74ef065a071b: # Text
     contentColumnType: text
     fieldGroup: null
     handle: text

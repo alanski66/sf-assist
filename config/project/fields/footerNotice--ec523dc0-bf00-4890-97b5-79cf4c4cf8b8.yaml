@@ -1,5 +1,5 @@
 contentColumnType: text
-fieldGroup: 934ddb53-dab9-45e3-ac3d-7d9337db8185
+fieldGroup: 934ddb53-dab9-45e3-ac3d-7d9337db8185 # Global content
 handle: footerNotice
 instructions: 'Text that explains any seafarer can access if they arrive here from google or mistakenly select the wrong company. *** USe placeholder [site] to substitute company site name'
 name: 'Footer notice'
@@ -11,7 +11,7 @@ settings:
   columnType: null
   initialRows: '4'
   multiline: ''
-  placeholder: ''
+  placeholder: null
   uiMode: normal
 translationKeyFormat: null
 translationMethod: site

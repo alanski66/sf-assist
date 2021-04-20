@@ -1,5 +1,5 @@
 fieldLayouts:
-  8c45d296-6d01-47f3-baec-e2e4ea3ec6de:
+  e04fa785-8568-4bb7-9cd1-8b253f535b3a:
     tabs:
       -
         elements:
@@ -34,5 +34,7 @@ name: Social
 settings:
   path: '@assetBasePath/social'
 sortOrder: 7
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
 type: craft\volumes\Local
 url: '@assetBaseUrl/social'

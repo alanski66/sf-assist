@@ -1,5 +1,5 @@
 contentColumnType: string
-fieldGroup: 5bd7b2c9-de07-41a0-889c-3f0fc7ef292f
+fieldGroup: 5bd7b2c9-de07-41a0-889c-3f0fc7ef292f # Featured
 handle: featureIntroText
 instructions: 'Keep this succinct - itds limited to 60 characters to facilitate SEO display'
 name: 'Feature intro text'
@@ -11,7 +11,7 @@ settings:
   columnType: string
   initialRows: '4'
   multiline: '1'
-  placeholder: ''
+  placeholder: null
   uiMode: normal
 translationKeyFormat: null
 translationMethod: none

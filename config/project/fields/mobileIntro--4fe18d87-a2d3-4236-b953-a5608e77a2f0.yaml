@@ -1,5 +1,5 @@
 contentColumnType: text
-fieldGroup: b2e3fe44-6689-44a8-b721-48ebd2c79f00
+fieldGroup: b2e3fe44-6689-44a8-b721-48ebd2c79f00 # Mobile specific
 handle: mobileIntro
 instructions: ''
 name: 'Mobile intro'

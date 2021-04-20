@@ -5,5 +5,5 @@ hasUrls: true
 language: en-GB
 name: 'Seafarer Assistance'
 primary: true
-siteGroup: 20841924-54de-4923-9da2-1c683b16c45d
+siteGroup: 20841924-54de-4923-9da2-1c683b16c45d # Multisite main
 sortOrder: 1

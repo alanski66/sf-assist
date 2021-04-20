@@ -1,5 +1,5 @@
 contentColumnType: string
-fieldGroup: 0d3f66ab-1780-42d8-936f-e106849c2d0f
+fieldGroup: 0d3f66ab-1780-42d8-936f-e106849c2d0f # Home
 handle: companyBrandLogo
 instructions: 'Use this for a company brand logo to be displayed - eg over image. Transparent logos required for overlay on top of branded banner image'
 name: 'Company brand logo'

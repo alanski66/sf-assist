@@ -1,5 +1,5 @@
 contentColumnType: text
-fieldGroup: c38c46d2-bf79-4921-873b-f0ee33727fac
+fieldGroup: c38c46d2-bf79-4921-873b-f0ee33727fac # Staff
 handle: staffJobTitle
 instructions: ''
 name: 'Staff job title'
@@ -11,7 +11,7 @@ settings:
   columnType: text
   initialRows: '4'
   multiline: ''
-  placeholder: ''
+  placeholder: null
   uiMode: normal
 translationKeyFormat: null
 translationMethod: none

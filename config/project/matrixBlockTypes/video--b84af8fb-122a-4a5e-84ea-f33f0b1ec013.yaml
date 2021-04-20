@@ -1,11 +1,11 @@
-field: acbc0bba-242f-40cf-bdd1-a6417f6eeaa9
+field: acbc0bba-242f-40cf-bdd1-a6417f6eeaa9 # Content block
 fieldLayouts:
   8efae287-b2a5-469d-acc1-8b33c8126af8:
     tabs:
       -
         elements:
           -
-            fieldUid: e6566bbe-eaf3-4424-9f1c-3df84eeed2ef
+            fieldUid: e6566bbe-eaf3-4424-9f1c-3df84eeed2ef # Video
             instructions: null
             label: null
             required: '0'
@@ -16,7 +16,7 @@ fieldLayouts:
         name: Content
         sortOrder: 1
 fields:
-  e6566bbe-eaf3-4424-9f1c-3df84eeed2ef:
+  e6566bbe-eaf3-4424-9f1c-3df84eeed2ef: # Video
     contentColumnType: text
     fieldGroup: null
     handle: video
@@ -30,7 +30,7 @@ fields:
       columnType: text
       initialRows: '6'
       multiline: '1'
-      placeholder: ''
+      placeholder: null
       uiMode: normal
     translationKeyFormat: null
     translationMethod: site

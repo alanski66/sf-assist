@@ -1,5 +1,5 @@
 contentColumnType: text
-fieldGroup: 9f57329d-94c6-468b-a2cb-9620f9a80df9
+fieldGroup: 9f57329d-94c6-468b-a2cb-9620f9a80df9 # Social links
 handle: twitter
 instructions: ''
 name: Twitter
@@ -11,7 +11,7 @@ settings:
   columnType: text
   initialRows: '4'
   multiline: ''
-  placeholder: ''
+  placeholder: null
   uiMode: normal
 translationKeyFormat: null
 translationMethod: none

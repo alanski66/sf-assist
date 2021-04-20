@@ -1,5 +1,5 @@
 fieldLayouts:
-  436156fd-0ef2-44d0-836d-f24c2948bc18:
+  b18cef30-761c-481a-bf84-6f6c8511687d:
     tabs:
       -
         elements:
@@ -34,5 +34,7 @@ name: 'Brand logo'
 settings:
   path: '@assetBasePath/images/brandlogos'
 sortOrder: 9
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
 type: craft\volumes\Local
 url: '@assetBaseUrl/images/brandlogos'

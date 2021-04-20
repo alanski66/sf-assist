@@ -1,5 +1,5 @@
 contentColumnType: text
-fieldGroup: f8f993ed-1301-42d7-92b2-acb531dbe101
+fieldGroup: f8f993ed-1301-42d7-92b2-acb531dbe101 # News
 handle: newsIntro
 instructions: ''
 name: 'news intro'
@@ -11,7 +11,7 @@ settings:
   columnType: text
   initialRows: '4'
   multiline: ''
-  placeholder: ''
+  placeholder: null
   uiMode: normal
 translationKeyFormat: null
 translationMethod: none

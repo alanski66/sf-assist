@@ -27,7 +27,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 943d62c7-9600-469f-b6d7-9f8162759193
+            fieldUid: 943d62c7-9600-469f-b6d7-9f8162759193 # Custom link
             instructions: null
             label: null
             required: '0'
@@ -36,7 +36,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 70579a5e-bdbd-4298-a851-a0f6979cc7a1
+            fieldUid: 70579a5e-bdbd-4298-a851-a0f6979cc7a1 # Entry link
             instructions: null
             label: null
             required: '0'
@@ -45,7 +45,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 27dcb930-4bae-49e2-84d3-2b47b4f2a19c
+            fieldUid: 27dcb930-4bae-49e2-84d3-2b47b4f2a19c # Open in new window
             instructions: null
             label: null
             required: '0'
@@ -54,7 +54,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: cf1e4563-c3fa-4515-bc6c-0a8d7d25980f
+            fieldUid: cf1e4563-c3fa-4515-bc6c-0a8d7d25980f # Hide page
             instructions: null
             label: null
             required: '0'
@@ -63,7 +63,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: abaa395c-662b-4f31-932b-edc406a82c5c
+            fieldUid: abaa395c-662b-4f31-932b-edc406a82c5c # Alternative navigation title
             instructions: null
             label: null
             required: '0'
@@ -76,7 +76,7 @@ fieldLayouts:
 handle: mainMenu
 hasTitleField: true
 name: 'Main menu'
-section: 8a7d22bc-7764-40d5-9fd6-df4752eb365e
+section: 8a7d22bc-7764-40d5-9fd6-df4752eb365e # Main menu
 sortOrder: 1
 titleFormat: null
 titleTranslationKeyFormat: null

@@ -1,11 +1,11 @@
-field: acbc0bba-242f-40cf-bdd1-a6417f6eeaa9
+field: acbc0bba-242f-40cf-bdd1-a6417f6eeaa9 # Content block
 fieldLayouts:
   4ae26920-742a-4e6d-9b02-e938c7cc4a42:
     tabs:
       -
         elements:
           -
-            fieldUid: 0c1c29aa-3066-417e-a569-3b8ad4b2ccbf
+            fieldUid: 0c1c29aa-3066-417e-a569-3b8ad4b2ccbf # Quote
             instructions: null
             label: null
             required: '0'
@@ -14,7 +14,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 213c5cea-e8c3-48a5-9501-d506030864dd
+            fieldUid: 213c5cea-e8c3-48a5-9501-d506030864dd # Citation intro
             instructions: null
             label: null
             required: '0'
@@ -23,7 +23,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 7fb40023-ad56-4c67-bc65-9353674d5c1b
+            fieldUid: 7fb40023-ad56-4c67-bc65-9353674d5c1b # Citation
             instructions: null
             label: null
             required: '0'
@@ -32,7 +32,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 29a1fb65-d50c-4f48-8297-164038ba941a
+            fieldUid: 29a1fb65-d50c-4f48-8297-164038ba941a # Citation link
             instructions: null
             label: null
             required: '0'
@@ -43,7 +43,7 @@ fieldLayouts:
         name: Content
         sortOrder: 1
 fields:
-  0c1c29aa-3066-417e-a569-3b8ad4b2ccbf:
+  0c1c29aa-3066-417e-a569-3b8ad4b2ccbf: # Quote
     contentColumnType: text
     fieldGroup: null
     handle: quote
@@ -57,12 +57,12 @@ fields:
       columnType: text
       initialRows: '4'
       multiline: '1'
-      placeholder: ''
+      placeholder: null
       uiMode: normal
     translationKeyFormat: null
     translationMethod: site
     type: craft\fields\PlainText
-  7fb40023-ad56-4c67-bc65-9353674d5c1b:
+  7fb40023-ad56-4c67-bc65-9353674d5c1b: # Citation
     contentColumnType: text
     fieldGroup: null
     handle: citation
@@ -76,12 +76,12 @@ fields:
       columnType: text
       initialRows: '4'
       multiline: ''
-      placeholder: ''
+      placeholder: null
       uiMode: normal
     translationKeyFormat: null
     translationMethod: site
     type: craft\fields\PlainText
-  29a1fb65-d50c-4f48-8297-164038ba941a:
+  29a1fb65-d50c-4f48-8297-164038ba941a: # Citation link
     contentColumnType: string(255)
     fieldGroup: null
     handle: citationLink
@@ -91,10 +91,12 @@ fields:
     settings:
       maxLength: '255'
       placeholder: ''
+      types:
+        - url
     translationKeyFormat: null
     translationMethod: site
     type: craft\fields\Url
-  213c5cea-e8c3-48a5-9501-d506030864dd:
+  213c5cea-e8c3-48a5-9501-d506030864dd: # Citation intro
     contentColumnType: text
     fieldGroup: null
     handle: citationIntro
@@ -108,7 +110,7 @@ fields:
       columnType: text
       initialRows: '4'
       multiline: ''
-      placeholder: ''
+      placeholder: null
       uiMode: normal
     translationKeyFormat: null
     translationMethod: site

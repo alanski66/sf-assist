@@ -5,5 +5,5 @@ hasUrls: true
 language: en-GB
 name: MarlaTankers
 primary: false
-siteGroup: 215f0d82-30c1-48e9-90e5-1e8d18d21397
+siteGroup: 215f0d82-30c1-48e9-90e5-1e8d18d21397 # Company sites
 sortOrder: 4

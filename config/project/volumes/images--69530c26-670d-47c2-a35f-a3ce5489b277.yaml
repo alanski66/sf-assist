@@ -27,7 +27,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 2e999a83-5681-42a4-bf7d-99b2c00d47b3
+            fieldUid: 2e999a83-5681-42a4-bf7d-99b2c00d47b3 # Image credit
             instructions: null
             label: null
             required: '0'
@@ -36,7 +36,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 44ce4f57-f3d7-416c-bc55-f7505aa7b29e
+            fieldUid: 44ce4f57-f3d7-416c-bc55-f7505aa7b29e # Image caption
             instructions: null
             label: null
             required: '0'
@@ -52,5 +52,7 @@ name: Images
 settings:
   path: '@assetBasePath/images'
 sortOrder: 1
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
 type: craft\volumes\Local
 url: '@assetBaseUrl/images'

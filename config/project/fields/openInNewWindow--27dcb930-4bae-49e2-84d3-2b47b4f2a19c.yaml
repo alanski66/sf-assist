@@ -1,5 +1,5 @@
 contentColumnType: boolean
-fieldGroup: ac99d94b-1a00-40be-97ab-c2fce40d1100
+fieldGroup: ac99d94b-1a00-40be-97ab-c2fce40d1100 # Menu
 handle: openInNewWindow
 instructions: 'Select this to make a menu item open in a new window'
 name: 'Open in new window'

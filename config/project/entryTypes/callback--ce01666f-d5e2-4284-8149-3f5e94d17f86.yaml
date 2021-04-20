@@ -27,7 +27,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 38760199-1e25-4174-9314-9160f6a5d4a4
+            fieldUid: 38760199-1e25-4174-9314-9160f6a5d4a4 # Call back time desired
             instructions: null
             label: null
             required: '0'
@@ -36,7 +36,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 4b036707-c74f-4b70-88f6-b2c0883ae36f
+            fieldUid: 4b036707-c74f-4b70-88f6-b2c0883ae36f # Call time
             instructions: null
             label: null
             required: '0'
@@ -45,7 +45,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 8dcc17af-9a2c-4037-8ada-6eab77728df9
+            fieldUid: 8dcc17af-9a2c-4037-8ada-6eab77728df9 # Callback telephone
             instructions: null
             label: null
             required: '0'
@@ -54,7 +54,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: aebef862-37cb-48fc-8ad1-c29e2956af7c
+            fieldUid: aebef862-37cb-48fc-8ad1-c29e2956af7c # Callback time
             instructions: null
             label: null
             required: '0'
@@ -63,7 +63,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 540b87a3-e737-441c-abfc-482709a01ea7
+            fieldUid: 540b87a3-e737-441c-abfc-482709a01ea7 # callbackEmail
             instructions: null
             label: null
             required: '0'
@@ -72,7 +72,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 5394546e-fb71-459f-868f-c4f6f85cf8a8
+            fieldUid: 5394546e-fb71-459f-868f-c4f6f85cf8a8 # Company
             instructions: null
             label: null
             required: '0'
@@ -81,7 +81,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: d7e9edbb-2d08-4b87-9916-021bd26a16e1
+            fieldUid: d7e9edbb-2d08-4b87-9916-021bd26a16e1 # Language
             instructions: null
             label: null
             required: '0'
@@ -90,7 +90,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 85fc3b41-3642-41bd-a769-2cf9e1b27ccd
+            fieldUid: 85fc3b41-3642-41bd-a769-2cf9e1b27ccd # Body
             instructions: null
             label: null
             required: '0'

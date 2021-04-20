@@ -1,5 +1,5 @@
 fieldLayouts:
-  898c2ce7-bd35-4226-96d0-39a1901219f7:
+  a594bcd3-7d81-46c1-a86a-34581934a2fb:
     tabs:
       -
         elements:
@@ -34,5 +34,7 @@ name: 'Staff images'
 settings:
   path: '@assetBasePath/images/staff'
 sortOrder: 4
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
 type: craft\volumes\Local
 url: '@assetBaseUrl/images/staff'
