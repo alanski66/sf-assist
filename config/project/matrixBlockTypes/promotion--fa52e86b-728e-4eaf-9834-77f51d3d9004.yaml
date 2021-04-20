@@ -1,11 +1,11 @@
-field: acbc0bba-242f-40cf-bdd1-a6417f6eeaa9
+field: acbc0bba-242f-40cf-bdd1-a6417f6eeaa9 # Content block
 fieldLayouts:
   94325d58-5ad0-40ad-a738-54d0a7e01fe6:
     tabs:
       -
         elements:
           -
-            fieldUid: f39ef456-6c58-4268-bdd4-84de4c7c01aa
+            fieldUid: f39ef456-6c58-4268-bdd4-84de4c7c01aa # Box heading
             instructions: null
             label: null
             required: '0'
@@ -14,7 +14,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 66d852db-6826-44d9-a927-5391137b5465
+            fieldUid: 66d852db-6826-44d9-a927-5391137b5465 # Entry to promote
             instructions: null
             label: null
             required: '0'
@@ -23,7 +23,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: f1c08b6a-df2b-4cdf-aa22-98ebb63784fc
+            fieldUid: f1c08b6a-df2b-4cdf-aa22-98ebb63784fc # Custom text
             instructions: null
             label: null
             required: '0'
@@ -32,7 +32,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 5456edfc-4d31-4867-b950-376a1305242d
+            fieldUid: 5456edfc-4d31-4867-b950-376a1305242d # Custom link
             instructions: null
             label: null
             required: '0'
@@ -41,7 +41,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 7f6d3a2a-18dd-4e4d-8791-82e2f2fdb96e
+            fieldUid: 7f6d3a2a-18dd-4e4d-8791-82e2f2fdb96e # Custom link title
             instructions: null
             label: null
             required: '0'
@@ -52,7 +52,7 @@ fieldLayouts:
         name: Content
         sortOrder: 1
 fields:
-  7f6d3a2a-18dd-4e4d-8791-82e2f2fdb96e:
+  7f6d3a2a-18dd-4e4d-8791-82e2f2fdb96e: # Custom link title
     contentColumnType: text
     fieldGroup: null
     handle: customLinkTitle
@@ -66,12 +66,12 @@ fields:
       columnType: text
       initialRows: '4'
       multiline: ''
-      placeholder: ''
+      placeholder: null
       uiMode: normal
     translationKeyFormat: null
     translationMethod: site
     type: craft\fields\PlainText
-  66d852db-6826-44d9-a927-5391137b5465:
+  66d852db-6826-44d9-a927-5391137b5465: # Entry to promote
     contentColumnType: string
     fieldGroup: null
     handle: entryToPromote
@@ -92,7 +92,7 @@ fields:
     translationKeyFormat: null
     translationMethod: site
     type: craft\fields\Entries
-  5456edfc-4d31-4867-b950-376a1305242d:
+  5456edfc-4d31-4867-b950-376a1305242d: # Custom link
     contentColumnType: string(255)
     fieldGroup: null
     handle: customLink
@@ -102,10 +102,12 @@ fields:
     settings:
       maxLength: '255'
       placeholder: ''
+      types:
+        - url
     translationKeyFormat: null
     translationMethod: site
     type: craft\fields\Url
-  f1c08b6a-df2b-4cdf-aa22-98ebb63784fc:
+  f1c08b6a-df2b-4cdf-aa22-98ebb63784fc: # Custom text
     contentColumnType: text
     fieldGroup: null
     handle: customText
@@ -119,12 +121,12 @@ fields:
       columnType: text
       initialRows: '4'
       multiline: ''
-      placeholder: ''
+      placeholder: null
       uiMode: normal
     translationKeyFormat: null
     translationMethod: site
     type: craft\fields\PlainText
-  f39ef456-6c58-4268-bdd4-84de4c7c01aa:
+  f39ef456-6c58-4268-bdd4-84de4c7c01aa: # Box heading
     contentColumnType: text
     fieldGroup: null
     handle: boxHeading
@@ -138,7 +140,7 @@ fields:
       columnType: text
       initialRows: '4'
       multiline: ''
-      placeholder: ''
+      placeholder: null
       uiMode: normal
     translationKeyFormat: null
     translationMethod: site

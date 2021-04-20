@@ -1,11 +1,11 @@
-field: 338657ca-939e-46d8-bbea-9ca984fb7a9f
+field: 338657ca-939e-46d8-bbea-9ca984fb7a9f # Cards
 fieldLayouts:
   bd3d2aca-d06d-46c8-93a0-7bbef010ae22:
     tabs:
       -
         elements:
           -
-            fieldUid: 8ac944b2-2dd7-488d-983d-9feb5b3cc7a3
+            fieldUid: 8ac944b2-2dd7-488d-983d-9feb5b3cc7a3 # List header
             instructions: null
             label: null
             required: '0'
@@ -14,7 +14,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 4881baab-fb5a-4f28-8db5-8b0750a56b7d
+            fieldUid: 4881baab-fb5a-4f28-8db5-8b0750a56b7d # List item
             instructions: null
             label: null
             required: '0'
@@ -25,7 +25,7 @@ fieldLayouts:
         name: Content
         sortOrder: 1
 fields:
-  8ac944b2-2dd7-488d-983d-9feb5b3cc7a3:
+  8ac944b2-2dd7-488d-983d-9feb5b3cc7a3: # List header
     contentColumnType: text
     fieldGroup: null
     handle: listHeader
@@ -39,12 +39,12 @@ fields:
       columnType: text
       initialRows: '4'
       multiline: ''
-      placeholder: ''
+      placeholder: null
       uiMode: normal
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText
-  4881baab-fb5a-4f28-8db5-8b0750a56b7d:
+  4881baab-fb5a-4f28-8db5-8b0750a56b7d: # List item
     contentColumnType: string
     fieldGroup: null
     handle: listItem
@@ -55,7 +55,7 @@ fields:
       columns:
         __assoc__:
           -
-            - 6c4c11ac-021e-45b3-a9e6-baa58884d18e
+            - 6c4c11ac-021e-45b3-a9e6-baa58884d18e # item
             -
               __assoc__:
                 -

@@ -4,7 +4,7 @@ fieldLayouts:
       -
         elements:
           -
-            fieldUid: 03c5550e-dcc7-4568-bc0d-fffc089f9396
+            fieldUid: 03c5550e-dcc7-4568-bc0d-fffc089f9396 # Include tracking scripts
             instructions: null
             label: null
             required: '0'

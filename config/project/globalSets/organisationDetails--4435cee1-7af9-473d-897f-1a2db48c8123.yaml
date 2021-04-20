@@ -4,7 +4,7 @@ fieldLayouts:
       -
         elements:
           -
-            fieldUid: daf32c17-29eb-4fa9-88fd-b0e569f8cbfc
+            fieldUid: daf32c17-29eb-4fa9-88fd-b0e569f8cbfc # Organisation name
             instructions: null
             label: null
             required: '0'
@@ -13,7 +13,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 49f44432-4e22-4832-87b3-1e0741da1e5c
+            fieldUid: 49f44432-4e22-4832-87b3-1e0741da1e5c # Organisation address
             instructions: null
             label: null
             required: '0'
@@ -22,7 +22,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: bb7da2af-04eb-40d1-84a4-9e7e38a0bcbe
+            fieldUid: bb7da2af-04eb-40d1-84a4-9e7e38a0bcbe # Organisation email
             instructions: null
             label: null
             required: '0'
@@ -31,7 +31,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 51792261-a438-4fc7-9604-1581089a917e
+            fieldUid: 51792261-a438-4fc7-9604-1581089a917e # Organisation telephone
             instructions: null
             label: null
             required: '0'

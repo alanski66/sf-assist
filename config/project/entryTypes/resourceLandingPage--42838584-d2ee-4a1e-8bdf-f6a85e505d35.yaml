@@ -27,7 +27,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 98b30784-0bde-4938-928a-6bf154a806a9
+            fieldUid: 98b30784-0bde-4938-928a-6bf154a806a9 # Intro text
             instructions: null
             label: null
             required: '0'
@@ -36,7 +36,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: cf1e4563-c3fa-4515-bc6c-0a8d7d25980f
+            fieldUid: cf1e4563-c3fa-4515-bc6c-0a8d7d25980f # Hide page
             instructions: null
             label: null
             required: '0'
@@ -45,7 +45,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: abaa395c-662b-4f31-932b-edc406a82c5c
+            fieldUid: abaa395c-662b-4f31-932b-edc406a82c5c # Alternative navigation title
             instructions: null
             label: null
             required: '0'
@@ -58,7 +58,7 @@ fieldLayouts:
       -
         elements:
           -
-            fieldUid: 71ca7802-37e2-4c68-877d-7fcfb890a192
+            fieldUid: 71ca7802-37e2-4c68-877d-7fcfb890a192 # Feature content
             instructions: null
             label: null
             required: '0'
@@ -67,7 +67,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 26a325fe-7f1d-40a5-b307-6a2d371dc6e3
+            fieldUid: 26a325fe-7f1d-40a5-b307-6a2d371dc6e3 # Feature image
             instructions: null
             label: null
             required: '0'
@@ -76,7 +76,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 5b7818b4-46a0-40ef-b373-1c5a6f4d461b
+            fieldUid: 5b7818b4-46a0-40ef-b373-1c5a6f4d461b # Feature intro text
             instructions: null
             label: null
             required: '0'
@@ -85,7 +85,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 1f113853-a212-457d-b76f-db78244af209
+            fieldUid: 1f113853-a212-457d-b76f-db78244af209 # Feature title
             instructions: null
             label: null
             required: '0'
@@ -94,7 +94,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: da26ab3d-5b81-4a02-b922-36ff90bbb95f
+            fieldUid: da26ab3d-5b81-4a02-b922-36ff90bbb95f # Feature link
             instructions: null
             label: null
             required: '0'
@@ -103,7 +103,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 5e1ed6e4-9824-4759-8805-96310b5ad444
+            fieldUid: 5e1ed6e4-9824-4759-8805-96310b5ad444 # Feature button hide
             instructions: null
             label: null
             required: '0'
@@ -116,7 +116,7 @@ fieldLayouts:
       -
         elements:
           -
-            fieldUid: 40e8c726-41e0-4aa7-aab2-2b9bda75957d
+            fieldUid: 40e8c726-41e0-4aa7-aab2-2b9bda75957d # SEO
             instructions: null
             label: null
             required: '0'
@@ -129,7 +129,7 @@ fieldLayouts:
 handle: resourceLandingPage
 hasTitleField: true
 name: 'Resource Landing page'
-section: d92c03cb-0d89-4034-a675-4c44d44df257
+section: d92c03cb-0d89-4034-a675-4c44d44df257 # Pages
 sortOrder: 2
 titleFormat: null
 titleTranslationKeyFormat: null

@@ -1,5 +1,5 @@
 contentColumnType: text
-fieldGroup: 04f271ca-91c2-45b8-a0a9-5510973cadcd
+fieldGroup: 04f271ca-91c2-45b8-a0a9-5510973cadcd # Pages
 handle: altNavTitle
 instructions: ''
 name: 'Alternative navigation title'
@@ -11,7 +11,7 @@ settings:
   columnType: text
   initialRows: '4'
   multiline: ''
-  placeholder: ''
+  placeholder: null
   uiMode: normal
 translationKeyFormat: null
 translationMethod: site

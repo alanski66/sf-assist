@@ -1,5 +1,5 @@
 contentColumnType: text
-fieldGroup: ac99d94b-1a00-40be-97ab-c2fce40d1100
+fieldGroup: ac99d94b-1a00-40be-97ab-c2fce40d1100 # Menu
 handle: customLink
 instructions: ''
 name: 'Custom link'
@@ -11,7 +11,7 @@ settings:
   columnType: text
   initialRows: '4'
   multiline: ''
-  placeholder: ''
+  placeholder: null
   uiMode: normal
 translationKeyFormat: null
 translationMethod: site

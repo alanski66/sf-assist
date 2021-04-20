@@ -1,5 +1,5 @@
 contentColumnType: text
-fieldGroup: c38c46d2-bf79-4921-873b-f0ee33727fac
+fieldGroup: c38c46d2-bf79-4921-873b-f0ee33727fac # Staff
 handle: staffRoleDescription
 instructions: 'Add a small description or bio of staff here '
 name: 'Staff role description'

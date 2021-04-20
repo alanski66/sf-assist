@@ -4,7 +4,7 @@ fieldLayouts:
       -
         elements:
           -
-            fieldUid: b73a5e64-5d5e-41a7-853a-824a3024080d
+            fieldUid: b73a5e64-5d5e-41a7-853a-824a3024080d # Page not found
             instructions: null
             label: null
             required: '0'
@@ -13,7 +13,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: a60f914a-c228-4c11-9e4b-56e2007fc75d
+            fieldUid: a60f914a-c228-4c11-9e4b-56e2007fc75d # Show in dropdown
             instructions: null
             label: null
             required: '0'
@@ -26,7 +26,7 @@ fieldLayouts:
       -
         elements:
           -
-            fieldUid: 4da40367-5b18-49c8-90d8-9f0d6525d39a
+            fieldUid: 4da40367-5b18-49c8-90d8-9f0d6525d39a # Show cookie info
             instructions: null
             label: null
             required: '0'
@@ -35,7 +35,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: d8dee4b7-c8da-42e3-aaca-bf3d942c6092
+            fieldUid: d8dee4b7-c8da-42e3-aaca-bf3d942c6092 # Cookie message
             instructions: null
             label: null
             required: '0'
@@ -44,7 +44,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: b7bc05a6-852e-4098-94e2-a61eeab3c504
+            fieldUid: b7bc05a6-852e-4098-94e2-a61eeab3c504 # Cookie type
             instructions: null
             label: null
             required: '0'
@@ -53,7 +53,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 87fee2ba-71ec-49c1-8345-e86069687e5e
+            fieldUid: 87fee2ba-71ec-49c1-8345-e86069687e5e # cookieDeny
             instructions: null
             label: null
             required: '0'
@@ -62,7 +62,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 5f5df2da-9dc7-4641-a3c8-104b423f4ce5
+            fieldUid: 5f5df2da-9dc7-4641-a3c8-104b423f4ce5 # cookieDismiss
             instructions: null
             label: null
             required: '0'
@@ -71,7 +71,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: fd3354cb-5a34-401e-9db7-c24ab958faa1
+            fieldUid: fd3354cb-5a34-401e-9db7-c24ab958faa1 # cookiePolicyLinkText
             instructions: null
             label: null
             required: '0'

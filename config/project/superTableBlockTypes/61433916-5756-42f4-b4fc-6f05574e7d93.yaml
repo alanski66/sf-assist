@@ -1,11 +1,11 @@
-field: af60db8b-ccbf-4192-9a5c-fc0639d3899d
+field: af60db8b-ccbf-4192-9a5c-fc0639d3899d # Tick list item
 fieldLayouts:
   65b235da-53d1-4f0b-b743-f767ef3358a4:
     tabs:
       -
         elements:
           -
-            fieldUid: e0e8bec7-1b0f-4f37-94fb-9cb74fd433a3
+            fieldUid: e0e8bec7-1b0f-4f37-94fb-9cb74fd433a3 # Tick item
             instructions: null
             label: null
             required: '0'
@@ -16,7 +16,7 @@ fieldLayouts:
         name: Content
         sortOrder: 1
 fields:
-  e0e8bec7-1b0f-4f37-94fb-9cb74fd433a3:
+  e0e8bec7-1b0f-4f37-94fb-9cb74fd433a3: # Tick item
     contentColumnType: text
     fieldGroup: null
     handle: tickItem
@@ -30,7 +30,7 @@ fields:
       columnType: text
       initialRows: '4'
       multiline: ''
-      placeholder: ''
+      placeholder: null
       uiMode: normal
     translationKeyFormat: null
     translationMethod: none

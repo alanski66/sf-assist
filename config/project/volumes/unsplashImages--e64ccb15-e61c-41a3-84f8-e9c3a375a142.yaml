@@ -27,7 +27,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 2e999a83-5681-42a4-bf7d-99b2c00d47b3
+            fieldUid: 2e999a83-5681-42a4-bf7d-99b2c00d47b3 # Image credit
             instructions: null
             label: null
             required: '0'
@@ -43,5 +43,7 @@ name: 'Unsplash images'
 settings:
   path: '@assetBasePath/images/unsplash'
 sortOrder: 3
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
 type: craft\volumes\Local
 url: '@assetBaseUrl/images/unsplash'

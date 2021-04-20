@@ -1,5 +1,5 @@
 contentColumnType: boolean
-fieldGroup: 5bd7b2c9-de07-41a0-889c-3f0fc7ef292f
+fieldGroup: 5bd7b2c9-de07-41a0-889c-3f0fc7ef292f # Featured
 handle: featureContent
 instructions: 'Turn this on to make this content feature in its section'
 name: 'Feature content'

@@ -1,5 +1,5 @@
 contentColumnType: text
-fieldGroup: 0d3f66ab-1780-42d8-936f-e106849c2d0f
+fieldGroup: 0d3f66ab-1780-42d8-936f-e106849c2d0f # Home
 handle: strapline1
 instructions: ''
 name: 'Strapline 1'
@@ -11,7 +11,7 @@ settings:
   columnType: null
   initialRows: '4'
   multiline: ''
-  placeholder: ''
+  placeholder: null
   uiMode: normal
 translationKeyFormat: null
 translationMethod: site

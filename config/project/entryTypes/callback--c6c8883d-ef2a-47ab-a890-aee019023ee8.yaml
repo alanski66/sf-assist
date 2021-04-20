@@ -1,5 +1,5 @@
 fieldLayouts:
-  43d4859d-693f-4b5a-af61-bebcd35a324c:
+  ac6f8d05-9b94-4b38-9dd2-9b0b81bbd452:
     tabs:
       -
         elements:
@@ -31,7 +31,7 @@ fieldLayouts:
 handle: callback
 hasTitleField: true
 name: 'Callback form page'
-section: d92c03cb-0d89-4034-a675-4c44d44df257
+section: d92c03cb-0d89-4034-a675-4c44d44df257 # Pages
 sortOrder: 12
 titleFormat: null
 titleTranslationKeyFormat: null

@@ -1,11 +1,11 @@
-field: a8866897-a11c-4d44-bbca-2997e4ab9b0c
+field: a8866897-a11c-4d44-bbca-2997e4ab9b0c # Copyright
 fieldLayouts:
   21b69e28-ee9b-430d-be88-bae6740a6b9f:
     tabs:
       -
         elements:
           -
-            fieldUid: 7f0127c8-74ef-42c4-be14-c8f3c8f6772b
+            fieldUid: 7f0127c8-74ef-42c4-be14-c8f3c8f6772b # Footer left link
             instructions: null
             label: null
             required: '0'
@@ -16,7 +16,7 @@ fieldLayouts:
         name: Content
         sortOrder: 1
 fields:
-  7f0127c8-74ef-42c4-be14-c8f3c8f6772b:
+  7f0127c8-74ef-42c4-be14-c8f3c8f6772b: # Footer left link
     contentColumnType: string
     fieldGroup: null
     handle: footerLeftLink

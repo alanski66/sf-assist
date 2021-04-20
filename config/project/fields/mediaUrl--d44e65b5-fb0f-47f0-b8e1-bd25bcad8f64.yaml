@@ -1,5 +1,5 @@
 contentColumnType: text
-fieldGroup: d8865574-a21c-465b-a6eb-dfaf84ae8e18
+fieldGroup: d8865574-a21c-465b-a6eb-dfaf84ae8e18 # Resource
 handle: mediaUrl
 instructions: 'Add the url of the media you wish to embed'
 name: 'Media Url'

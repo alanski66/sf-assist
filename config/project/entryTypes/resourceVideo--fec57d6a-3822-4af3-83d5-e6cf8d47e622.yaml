@@ -27,7 +27,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 98b30784-0bde-4938-928a-6bf154a806a9
+            fieldUid: 98b30784-0bde-4938-928a-6bf154a806a9 # Intro text
             instructions: null
             label: null
             required: '0'
@@ -36,7 +36,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: d44e65b5-fb0f-47f0-b8e1-bd25bcad8f64
+            fieldUid: d44e65b5-fb0f-47f0-b8e1-bd25bcad8f64 # Media Url
             instructions: null
             label: null
             required: '0'
@@ -49,7 +49,7 @@ fieldLayouts:
 handle: resourceVideo
 hasTitleField: true
 name: 'Resource video'
-section: 859b0ce3-be9f-4d8c-b82b-670bceeecc00
+section: 859b0ce3-be9f-4d8c-b82b-670bceeecc00 # Resources
 sortOrder: 2
 titleFormat: null
 titleTranslationKeyFormat: null

@@ -1,5 +1,5 @@
 contentColumnType: text
-fieldGroup: f4c77426-3ec4-4532-b94d-83fff64f75c4
+fieldGroup: f4c77426-3ec4-4532-b94d-83fff64f75c4 # Global donate
 handle: ctaButtonText
 instructions: ''
 name: 'CTA button text'
@@ -11,7 +11,7 @@ settings:
   columnType: text
   initialRows: '4'
   multiline: ''
-  placeholder: ''
+  placeholder: null
   uiMode: normal
 translationKeyFormat: null
 translationMethod: site

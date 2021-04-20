@@ -1,5 +1,5 @@
 fieldLayouts:
-  132c0ff0-9bdd-4570-8e70-a95e94769ac8:
+  83634a40-a3e9-4b8d-8fb0-e2107ac63088:
     tabs:
       -
         elements:
@@ -34,5 +34,7 @@ name: Documents
 settings:
   path: '@assetBasePath/documents'
 sortOrder: 2
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
 type: craft\volumes\Local
 url: '@assetBaseUrl/documents'

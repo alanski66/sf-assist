@@ -1,5 +1,5 @@
 fieldLayouts:
-  cdd0d96f-905b-41ff-8de0-98095d37a754:
+  634fe67c-723b-4da2-8a8d-6928bf84d21b:
     tabs:
       -
         elements:
@@ -34,5 +34,7 @@ name: 'PDf thumbs'
 settings:
   path: '@assetBasePath/images/pdfthumbs'
 sortOrder: 8
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
 type: craft\volumes\Local
 url: '@assetBaseUrl/images/pdfthumbs'
