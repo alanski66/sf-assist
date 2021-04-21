@@ -4,6 +4,7 @@ body{
 }
 .content-wrapper{
   background: $white;
+  width:100%;
 }
 body,div {
   /*  background-color: $bg_grey !important;*/
@@ -341,13 +342,15 @@ button.lng{
   }
 }
 
-//@media (max-width: 767px) {
-//
-//  // Align text to center.
-//  .text-xs-center {
-//    text-align: center;
-//  }
-//}
+@media (max-width: 767px) {
+
+  h1{
+    font-size: 1.4rem;
+  }
+  h2{
+    font-size: 1.3rem;
+  }
+}
 
 @media (min-width:650px) {
   //aligns vertically hero trapezoids

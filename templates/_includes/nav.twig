@@ -109,7 +109,7 @@
     <nav class="bg-primary">
         <div class="d-flex text-center justify-content-center" id="navbar2SupportedContent">
 
-            <ul class="navbar-nav  list-group list-group-horizontal">
+            <ul class="navbar-nav  list-group list-group-horizontal d-flex justify-content-around">
 
                 {% set pages = craft.entries.section('mainMenu').hidePage('0').all() %}
 
@@ -205,7 +205,7 @@
                             {% set link = navlink %}
                         {% endif %}
 
-                        <li class="{{ entry.title |lower }} {{ order }} py-3 px-sm-3 px-lg-5 px-xl-5   bg-primary list-group-item nav-item {{ macros.activeLinkClass(navlink, entry.level)|trim }} level{{ entry.level }} {{ entry.title |lower }}">
+                        <li class="{{ entry.title |lower }} {{ order }} pt-2 py-1 px-sm-3 px-lg-5 px-xl-5   bg-primary list-group-item nav-item  {{ macros.activeLinkClass(navlink, entry.level)|trim }} level{{ entry.level }} {{ entry.title |lower }}">
                             <a target="{{ openInNew }}" id="{{ entry.title|lower }}" href="{{ link }}" {{ onclick }}
                                class="p-0 {{ popclass }} nav-link {{ macros.activeLinkClass(navlink, entry.level) |trim }} level{{ entry.level }}">
                                 <img class="nav-icon {{ entry.title |lower }}"
