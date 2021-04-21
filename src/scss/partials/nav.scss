@@ -1,7 +1,9 @@
 .dropdown-menu .nav-link{
   //color:#333!important
 }
-
+.list-group-horizontal .list-group-item + .list-group-item{
+  border-bottom:none;
+}
 
 .bg-info-top{
   background: $sea-green;
@@ -69,6 +71,11 @@ img.chat:hover {
 .dropdown-menu.show .nav-link:hover{
   color:$white;
 }
+
+.navbar-toggler {
+border:none;  
+}
+
 @media (min-width: 0px) {
 
   .navbar-brand{
@@ -118,19 +125,19 @@ img.chat:hover {
   }
 
   .navbar-nav.list-group-horizontal{
-    flex-direction: column;
+    //flex-direction: column;
     //text-align: left;
   }
 
   .navbar-nav .list-group-item{
-    border-bottom: 1px solid #86a8d0bd;
+    //border-bottom: 1px solid #86a8d0bd;
     border-right:none;
   }
   .navbar-nav .list-group-item a.nav-link{
     margin-top: -8px;
   }
   .navbar-nav .list-group-item.chat{
-    background-color: #00b0eb!important;
+    background-color: #00b0eb;
   }
 
   .navbar-nav .list-group-item:hover{
@@ -138,6 +145,7 @@ img.chat:hover {
   }
   //end
 }
+
 @media(min-width:608px){
 
   //top nav
@@ -205,4 +213,23 @@ img.chat:hover {
     padding: 1rem;
   }
   //end
+}
+
+@media (max-width: 568px) {
+  .list-group-horizontal{
+    width:100%;
+  }
+  .navbar-nav .list-group-item.chat{
+    background-color: transparent;
+  }
+  .navbar-nav .list-group-item, .navbar-nav .list-group-item{
+    font-size:13px;
+  }
+  .navbar-nav .list-group-item img.nav-icon{
+    width:50px;
+    margin-bottom:5px;
+  }
+  .navbar-toggler {
+    padding: 0.25rem 0rem;
+  }
 }

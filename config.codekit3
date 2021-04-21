@@ -4074,7 +4074,7 @@
       }
     },
     "esLintSourceType" : 0,
-    "externalServerAddress" : "https:\/\/sf-assist.test\/",
+    "externalServerAddress" : "https:\/\/sfassist.test\/",
     "gitIgnoreBuildFolder" : 1,
     "hideConfigFile" : 0,
     "jsCheckerReservedNamesString" : "",
