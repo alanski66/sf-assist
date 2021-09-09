@@ -1,4 +1,4 @@
-dateModified: 1618910319
+dateModified: 1631186409
 email:
   fromEmail: bw@seafarerassistance.org
   fromName: 'Seafarer Assistance'
@@ -7,6 +7,231 @@ email:
   transportSettings:
     command: ''
   transportType: craft\mail\transportadapters\Sendmail
+meta:
+  __names__:
+    0ae718ca-0d29-4fc3-89aa-69a5f9b73355: 'Brand logo text' # Brand logo text
+    0c1c29aa-3066-417e-a569-3b8ad4b2ccbf: Quote # Quote
+    0d3f66ab-1780-42d8-936f-e106849c2d0f: Home # Home
+    00ec0006-ca33-46d3-9656-7657840cb40a: Join # Join
+    1b7e3b53-67f3-408b-8ca2-77207846e6ad: 'Login text' # Login text
+    1b322709-69a0-45e5-a92d-b1e3adb27066: 'Staff role description' # Staff role description
+    1bbbe75e-abba-46a9-9d94-19d1c0f10dac: Carousel # Carousel
+    1bf7c332-58ac-4203-a0c1-b00a64d0d5e2: Callback # Callback
+    1c0136ce-d1a7-4c66-b9a5-a078749010fe: 'Footer right link' # Footer right link
+    1c311a44-27b4-4019-9baa-1bb97fa26364: 'Charity number' # Charity number
+    1eba2c3a-5fac-49e8-b41a-4d750a8e9439: 'Hide banner' # Hide banner
+    1f3e832f-50bb-4ce8-b8c1-bf85468f60ab: Image # Image
+    1f113853-a212-457d-b76f-db78244af209: 'Feature title' # Feature title
+    02a0696b-5fef-4116-ba52-f18b14fe7009: 'Display style' # Display style
+    2b6d9f27-da5c-48a5-a24c-eccedc9e3267: 'Company A' # Company A
+    2ba2e1f8-406f-4d12-a4d8-150210280758: 'Card landscape' # Card landscape
+    2d6cc6c6-6c70-4b25-9802-b040b9d12bfa: 'Staff image' # Staff image
+    2e999a83-5681-42a4-bf7d-99b2c00d47b3: 'Image credit' # Image credit
+    3a4dbc88-717d-4d4c-8cd0-20bd748bae32: 'Card image top' # Card image top
+    3a4e2b4d-08b2-4f63-8299-5c38c319a03a: Intro # Intro
+    03c5550e-dcc7-4568-bc0d-fffc089f9396: 'Include tracking scripts' # Include tracking scripts
+    3ef67368-ca08-4344-8bab-3a731b6645a6: Instagram # Instagram
+    4ae13be4-c235-48bb-a44f-cc265aeb982a: Homepage # Homepage
+    4b036707-c74f-4b70-88f6-b2c0883ae36f: 'Call time' # Call time
+    4b18a12d-af37-4f5a-a54f-2106dfbd2fcb: 'Card title' # Card title
+    4b65b33e-8e9b-4be4-9f88-64bdc174a039: BSM # BSM
+    4b6205ca-4a0d-4279-9ad6-ad8c50c87a55: 'PDF Thumbnail image' # PDF Thumbnail image
+    4bdad15e-1803-451a-95a0-4a7b5d64a717: Latsco # Latsco
+    4da40367-5b18-49c8-90d8-9f0d6525d39a: 'Show cookie info' # Show cookie info
+    4e8c561e-1c2e-4518-ba84-7409f32efe43: 'CTA text short version' # CTA text short version
+    04f271ca-91c2-45b8-a0a9-5510973cadcd: Pages # Pages
+    4fbb28d9-5f55-47db-b772-301d46321c7c: TickList # TickList
+    4fe18d87-a2d3-4236-b953-a5608e77a2f0: 'Mobile intro' # Mobile intro
+    5a3f814e-aa63-4ff9-a82b-7bf63e1eaa0a: 'Global tracking links' # Global tracking links
+    5b7818b4-46a0-40ef-b373-1c5a6f4d461b: 'Feature intro text' # Feature intro text
+    5bd7b2c9-de07-41a0-889c-3f0fc7ef292f: Featured # Featured
+    5e1ed6e4-9824-4759-8805-96310b5ad444: 'Feature button hide' # Feature button hide
+    5e97bc9a-f596-439a-a3bc-da46c858c177: Quote # Quote
+    5f5df2da-9dc7-4641-a3c8-104b423f4ce5: cookieDismiss # cookieDismiss
+    6c4c11ac-021e-45b3-a9e6-baa58884d18e: item # item
+    6c55c1fe-8dc5-4c1b-92be-ea0db0b30f1d: 'Old news image' # Old news image
+    6d698928-797f-4eee-90a9-e6ded916b406: 'About page' # About page
+    6ddf52cb-2324-4882-b67f-2f71db18073e: Callback # Callback
+    6ec08098-e89b-4e7d-a0f9-4a037e60db78: 'Site info' # Site info
+    6f31baa9-2520-41f6-ab02-adf43db48203: 'Global contact' # Global contact
+    7a53b7c5-970a-4314-b83f-76422547d344: MarlaDry # MarlaDry
+    7f0127c8-74ef-42c4-be14-c8f3c8f6772b: 'Footer left link' # Footer left link
+    7f6d3a2a-18dd-4e4d-8791-82e2f2fdb96e: 'Custom link title' # Custom link title
+    7fb40023-ad56-4c67-bc65-9353674d5c1b: Citation # Citation
+    8a7d22bc-7764-40d5-9fd6-df4752eb365e: 'Main menu' # Main menu
+    8ac944b2-2dd7-488d-983d-9feb5b3cc7a3: 'List header' # List header
+    8ad9a4d4-52b3-41db-9a8e-b50986a2f2c9: Donate # Donate
+    8b316631-f36c-481c-8e3f-c8aab26c4c24: Documents # Documents
+    08d20686-3600-47f2-8c0a-9e17b8d80457: Sticky # Sticky
+    8dcc17af-9a2c-4037-8ada-6eab77728df9: 'Callback telephone' # Callback telephone
+    8efd0c0c-fba0-499f-a93e-1b57ff148494: 'Banner images' # Banner images
+    9abbaee7-cb0e-4e11-b58f-88ba10242b3b: Carousel # Carousel
+    9ba48dc9-f0b4-4494-8c36-4c201f29d30e: Title # Title
+    9f57329d-94c6-468b-a2cb-9620f9a80df9: 'Social links' # Social links
+    10feaad9-54d3-4ee8-a118-0a6bc778ee2d: Position # Position
+    12d6e1e0-7486-476f-a2c3-ad9a4a832d5f: Text # Text
+    14edf059-6ee9-43fb-83b3-2ad7ba50b48e: Image # Image
+    20c9b3f2-1864-49ea-b42b-78c7a309d0fe: 'Callback submissions' # Callback submissions
+    26a325fe-7f1d-40a5-b307-6a2d371dc6e3: 'Feature image' # Feature image
+    26f2c742-f7f1-4946-9861-71ab9a6c9eb3: Callback # Callback
+    27dcb930-4bae-49e2-84d3-2b47b4f2a19c: 'Open in new window' # Open in new window
+    29a1fb65-d50c-4f48-8297-164038ba941a: 'Citation link' # Citation link
+    37e9d741-d6ef-4993-91a6-4c4750d02b84: Facebook # Facebook
+    39eddf65-621f-4032-a833-63a2ea963cef: Copyright # Copyright
+    40e8c726-41e0-4aa7-aab2-2b9bda75957d: SEO # SEO
+    41ffb4a1-9c5d-492d-be3a-bd7d27a2a4b1: 'Button link' # Button link
+    44ce4f57-f3d7-416c-bc55-f7505aa7b29e: 'Image caption' # Image caption
+    49dd0b3c-09c6-4e8d-a615-7962dd3e1562: 'Company B' # Company B
+    49f44432-4e22-4832-87b3-1e0741da1e5c: 'Organisation address' # Organisation address
+    56edc24f-c24c-4013-95fb-a27456bbc077: 'Brand logo' # Brand logo
+    57e17ebd-5a65-4486-a175-645b52fcf8e5: 'Global site info' # Global site info
+    60b5d772-16d6-4685-8f64-feb755abdfa1: 'Footer right links' # Footer right links
+    61a67fb5-00ae-4927-b90a-b5bae5385d1f: Teekay # Teekay
+    66d852db-6826-44d9-a927-5391137b5465: 'Entry to promote' # Entry to promote
+    67d32d80-82f8-48c3-adea-cc2ef341e708: Category # Category
+    71ca7802-37e2-4c68-877d-7fcfb890a192: 'Feature content' # Feature content
+    75b24c91-9fd0-42f7-ac34-f424fec7e873: 'Landing pages' # Landing pages
+    75fd46e7-4a10-4b5a-adc0-77629e5ebeef: Twitter # Twitter
+    85fc3b41-3642-41bd-a769-2cf9e1b27ccd: Body # Body
+    87fee2ba-71ec-49c1-8345-e86069687e5e: cookieDeny # cookieDeny
+    88f481ab-083c-4016-a3a2-1ce22e2f1a55: 'CTA text' # CTA text
+    95a13bbd-3401-43e3-84b1-479984da84ec: Banner # Banner
+    98b30784-0bde-4938-928a-6bf154a806a9: 'Intro text' # Intro text
+    108b1b6b-e274-4afb-bcdd-52b381ecceb7: 'Select form' # Select form
+    189f0288-6182-472f-8d93-746ff07b1f49: 'Top nav' # Top nav
+    213c5cea-e8c3-48a5-9501-d506030864dd: 'Citation intro' # Citation intro
+    215f0d82-30c1-48e9-90e5-1e8d18d21397: 'Company sites' # Company sites
+    281fb882-28ec-4e00-b70e-1010b1b320ed: 'Torvald Klaveness' # Torvald Klaveness
+    290b62ba-5811-472e-a7b5-9d5bb73ed3a5: 'Custom brand hero image' # Custom brand hero image
+    482c18af-4f01-492b-8f55-066cf921f8e6: 'Example links' # Example links
+    501e23ea-8ec1-4193-97aa-b78cba99f3ac: Copyright # Copyright
+    540b87a3-e737-441c-abfc-482709a01ea7: callbackEmail # callbackEmail
+    616cd910-0d50-4cdc-84c7-32169153b332: 'Staff job title' # Staff job title
+    675b889f-8f75-4714-9b69-050cf6339d83: 'Custom link' # Custom link
+    727edbaa-4674-4a82-bc49-28a722425891: 'Banner image' # Banner image
+    794e5528-8ada-4fcc-8d67-ee3fb58905e1: Subline # Subline
+    822a0bde-24d3-42f2-9906-cf07f152c444: Image # Image
+    854a81d0-40bc-45ae-ae97-3405888619f2: 'CTA button color' # CTA button color
+    859b0ce3-be9f-4d8c-b82b-670bceeecc00: Resources # Resources
+    872ec79b-7b47-4c07-a002-63f8ebae4f47: 'Default Page' # Default Page
+    934ddb53-dab9-45e3-ac3d-7d9337db8185: 'Global content' # Global content
+    943d62c7-9600-469f-b6d7-9f8162759193: 'Custom link' # Custom link
+    994ab0f8-cbef-43fd-9d7e-932637e16cba: Homepage # Homepage
+    2004cf85-89b4-43cc-8c92-7cfe1ed5ebb0: 'PDF Thumbnail image' # PDF Thumbnail image
+    2942bcfc-322a-4678-9659-c3eb83d26ce2: 'Company brand logo' # Company brand logo
+    4435cee1-7af9-473d-897f-1a2db48c8123: 'Organisation details' # Organisation details
+    4881baab-fb5a-4f28-8db5-8b0750a56b7d: 'List item' # List item
+    5456edfc-4d31-4867-b950-376a1305242d: 'Custom link' # Custom link
+    5473aace-4074-4fb7-aa2e-467dbffe24a9: 'Card text' # Card text
+    5585d2cb-1a50-4621-9f99-463ffd418167: Thome # Thome
+    5755ea95-9453-4c72-ad18-15102ce35069: 'Staff images' # Staff images
+    5800b857-bc4a-4311-a4bd-256f3dbfb2a1: 'Strapline 1' # Strapline 1
+    7559e4f9-24a4-4a78-866c-e7b69cf2a8a6: 'PDf thumbs' # PDf thumbs
+    7888e512-9107-4a5b-aace-92228b88be6a: 'Card button' # Card button
+    9155dd04-124d-4208-8d10-9f83d944870e: 'Custom links' # Custom links
+    69530c26-670d-47c2-a35f-a3ce5489b277: Images # Images
+    70579a5e-bdbd-4298-a851-a0f6979cc7a1: 'Entry link' # Entry link
+    86134e4b-244c-47a1-a61b-401fe96e8e0b: Emergencies # Emergencies
+    89420a64-262a-48b9-82c1-205dfc567153: 'Footer left links' # Footer left links
+    297069a3-4cbe-42a3-ab8d-53577901d5e2: Form # Form
+    338657ca-939e-46d8-bbea-9ca984fb7a9f: Cards # Cards
+    635203ec-4f05-48bf-87b9-bae85a832e4a: 'Charity organisation statement' # Charity organisation statement
+    972163a3-4d75-4e5a-af88-88030b7a0689: 'Global copyright' # Global copyright
+    1013085b-5aa4-431b-a003-611a7c8ff6cd: Emergencies # Emergencies
+    5394546e-fb71-459f-868f-c4f6f85cf8a8: Company # Company
+    20841924-54de-4923-9da2-1c683b16c45d: 'Multisite main' # Multisite main
+    38760199-1e25-4174-9314-9160f6a5d4a4: 'Call back time desired' # Call back time desired
+    42838584-d2ee-4a1e-8bdf-f6a85e505d35: 'Resource Landing page' # Resource Landing page
+    51792261-a438-4fc7-9604-1581089a917e: 'Organisation telephone' # Organisation telephone
+    a0089a26-45cd-4af0-a9f2-5f78694a585c: 'CTA custom' # CTA custom
+    a1fb593f-8cf1-4328-a410-8af0f7d0cbe6: 'news intro' # news intro
+    a4d22c28-d529-43e7-9407-6ab989ec6e08: 'Ip address' # Ip address
+    a7aab520-22a4-4dc8-8425-c2b650519edf: Slide # Slide
+    a7e91359-b687-40b7-97c3-954dcb9e416d: 'Button text' # Button text
+    a60f914a-c228-4c11-9e4b-56e2007fc75d: 'Show in dropdown' # Show in dropdown
+    a8866897-a11c-4d44-bbca-2997e4ab9b0c: Copyright # Copyright
+    aa704f3a-836e-4390-8a1b-2b7448a1cb2d: 'List thumb' # List thumb
+    aa4874fc-584e-48ca-9c64-0e827e6540d4: 'Card button link' # Card button link
+    ab8ca7ad-3ece-481c-b379-1ba7f307a40d: 'Main menu' # Main menu
+    abaa395c-662b-4f31-932b-edc406a82c5c: 'Alternative navigation title' # Alternative navigation title
+    ac99d94b-1a00-40be-97ab-c2fce40d1100: Menu # Menu
+    acbc0bba-242f-40cf-bdd1-a6417f6eeaa9: 'Content block' # Content block
+    aebef862-37cb-48fc-8ad1-c29e2956af7c: 'Callback time' # Callback time
+    aed79fbd-78a6-4877-86cd-5f89fdd86a01: Social # Social
+    af60db8b-ccbf-4192-9a5c-fc0639d3899d: 'Tick list item' # Tick list item
+    b0e0a490-8903-4420-bbf5-5b8808adfbad: 'Card Thumb' # Card Thumb
+    b2e3fe44-6689-44a8-b721-48ebd2c79f00: 'Mobile specific' # Mobile specific
+    b5ba5b41-4bd5-4984-8982-1a80317498ca: Download # Download
+    b7bc05a6-852e-4098-94e2-a61eeab3c504: 'Cookie type' # Cookie type
+    b8fcf5e7-b419-4c32-a733-25a8b9c149c2: Topics # Topics
+    b21ef471-656c-4603-9c53-ca272b6a5680: Position # Position
+    b73a5e64-5d5e-41a7-853a-824a3024080d: 'Page not found' # Page not found
+    b73b0a55-2321-470f-b6c4-fff5bb7174c9: Copyright # Copyright
+    b84af8fb-122a-4a5e-84ea-f33f0b1ec013: Video # Video
+    b581c0fb-55b3-43f4-b406-8825986c48b0: Image # Image
+    b7959e32-8927-4bdd-9fa9-71c0e3cd6e77: Heading # Heading
+    b94541a5-4fee-46e9-8f0d-59da799180c8: 'CTA button text' # CTA button text
+    ba28a84f-a35e-4817-9da7-b966dd5b2d0b: Subscribe # Subscribe
+    bb7da2af-04eb-40d1-84a4-9e7e38a0bcbe: 'Organisation email' # Organisation email
+    bb544c26-27bb-445d-9fb4-9c3e706a7e12: pdfDocument # pdfDocument
+    bcda8d9f-dd00-4cfe-ae25-21c468fd1ea9: Strapline2 # Strapline2
+    bdb9bcc5-6d5c-4325-bdbf-f9d19658766a: 'Top navi' # Top navi
+    c4c6df1b-832c-4689-8915-e0b4e6de1d7b: LinkedIn # LinkedIn
+    c6c8883d-ef2a-47ab-a890-aee019023ee8: 'Callback form page' # Callback form page
+    c9ad087d-6e04-43ed-af26-d691dd15c832: 'Company number' # Company number
+    c9f84871-a55f-47fb-be92-22d58fa52a6e: 'Show Emergency Alert' # Show Emergency Alert
+    c14d7035-0f28-467d-9fa1-1d901b3f0608: 'PDF transform' # PDF transform
+    c27d10ff-4285-4a0d-b7ec-56951b3f7f6e: Altera # Altera
+    c37dd07c-e401-4016-a7c9-bbfd7f66055a: 'CTA link' # CTA link
+    c38c46d2-bf79-4921-873b-f0ee33727fac: Staff # Staff
+    c88351bb-ce97-4a83-8b45-a7e7d0df86c7: Downloads # Downloads
+    ca124378-3612-4e30-98ae-fa5f58f49178: 'Card list group' # Card list group
+    ccc07aee-8884-4a2b-b93e-a2afbeae8808: MarlaTankers # MarlaTankers
+    ce01666f-d5e2-4284-8149-3f5e94d17f86: Callback # Callback
+    ce264188-7f3a-4c74-a55e-59569fa0bff5: Common # Common
+    cf1e4563-c3fa-4515-bc6c-0a8d7d25980f: 'Hide page' # Hide page
+    cf23b0ca-dd3c-43c3-882c-a13cb6753156: 'Custom link title' # Custom link title
+    d7e9edbb-2d08-4b87-9916-021bd26a16e1: Language # Language
+    d8b6882b-e96f-49f3-8e4c-11984b89a0de: Thumb # Thumb
+    d8dee4b7-c8da-42e3-aaca-bf3d942c6092: 'Cookie message' # Cookie message
+    d44e65b5-fb0f-47f0-b8e1-bd25bcad8f64: 'Media Url' # Media Url
+    d60f1d78-3ea1-4eff-a47f-9fb746e6f9cf: Flickr # Flickr
+    d92c03cb-0d89-4034-a675-4c44d44df257: Pages # Pages
+    d831688b-5fb9-4613-a99c-1e3ba897c8a2: CMI # CMI
+    d8865574-a21c-465b-a6eb-dfaf84ae8e18: Resource # Resource
+    da26ab3d-5b81-4a02-b922-36ff90bbb95f: 'Feature link' # Feature link
+    daf32c17-29eb-4fa9-88fd-b0e569f8cbfc: 'Organisation name' # Organisation name
+    dcbbf3e5-f3ed-4fca-8e8b-d434b738727b: SEO # SEO
+    dda3b550-c778-4d47-86b0-11543ac8053a: 'Seafarer Assistance' # Seafarer Assistance
+    e0e8bec7-1b0f-4f37-94fb-9cb74fd433a3: 'Tick item' # Tick item
+    e001e685-5f71-409f-88bf-0a4c333d9520: Default # Default
+    e08442c7-4aa2-460e-a96c-cbb38bbc9535: 'Public Schema' # Public Schema
+    e47d7e3f-80be-44fe-8022-0d8ac03d0d57: Heading # Heading
+    e64ccb15-e61c-41a3-84f8-e9c3a375a142: 'Unsplash images' # Unsplash images
+    e78a7658-fe2e-4fe3-a2de-59a0160b585e: Social # Social
+    e6566bbe-eaf3-4424-9f1c-3df84eeed2ef: Video # Video
+    e2639022-dbb4-4ea3-8e00-dbccac51844d: Tags # Tags
+    e3411368-414b-420e-a395-462535f7d94e: 'Small square' # Small square
+    eb4dd8d4-526e-45bc-9df9-1798512dd7be: 'CTA section bg color' # CTA section bg color
+    eb8c1c6d-fa93-412d-968d-74ef065a071b: Text # Text
+    ebcac749-fae2-41d0-bb3e-116e23de8f3a: 'Resource Document' # Resource Document
+    ec523dc0-bf00-4890-97b5-79cf4c4cf8b8: 'Footer notice' # Footer notice
+    ef6daf84-bfd8-4b1f-820b-bbf52a3f8e71: Tracking # Tracking
+    f010f052-a1c9-4178-90cd-61304dac9d30: Ticklist # Ticklist
+    f1c08b6a-df2b-4cdf-aa22-98ebb63784fc: 'Custom text' # Custom text
+    f4c77426-3ec4-4532-b94d-83fff64f75c4: 'Global donate' # Global donate
+    f8f993ed-1301-42d7-92b2-acb531dbe101: News # News
+    f39ef456-6c58-4268-bdd4-84de4c7c01aa: 'Box heading' # Box heading
+    f46fe5e9-2526-455d-8d3f-7c04730555cb: 'Mobile body' # Mobile body
+    f96e6d80-ad9e-4c78-b1c4-c1f3a03bffd2: 'Card image' # Card image
+    f5174c3f-c106-4d5c-a957-e1df328899e9: 'Global subscribe' # Global subscribe
+    f3517307-9666-4cfb-9aa7-6e7669f8ac13: 'Card button custom link' # Card button custom link
+    f7591436-faac-437c-95b1-d644495a3f34: Caption # Caption
+    fa52e86b-728e-4eaf-9834-77f51d3d9004: Promotion # Promotion
+    fd3354cb-5a34-401e-9db7-c24ab958faa1: cookiePolicyLinkText # cookiePolicyLinkText
+    feb65961-74c7-4b0f-9f1a-22ed35189b82: 'Links heading' # Links heading
+    febc8954-ee2a-4d66-915e-ac3292870b7c: 'Global Content' # Global Content
+    fec57d6a-3822-4af3-83d5-e6cf8d47e622: 'Resource video' # Resource video
 plugins:
   architect:
     edition: standard
@@ -27,7 +252,7 @@ plugins:
   feed-me:
     edition: standard
     enabled: true
-    schemaVersion: 4.3.0
+    schemaVersion: 4.4.0
   guest-entries:
     edition: standard
     enabled: true
@@ -92,7 +317,7 @@ plugins:
   guide:
     edition: lite
     enabled: true
-    schemaVersion: 2.0.0
+    schemaVersion: 3.0.0
     settings:
       assetVolume: 69530c26-670d-47c2-a35f-a3ce5489b277 # Images
       clientName: ''
@@ -151,7 +376,7 @@ plugins:
   seo:
     edition: standard
     enabled: true
-    schemaVersion: 3.1.1
+    schemaVersion: 3.2.0
   splashing-images:
     edition: standard
     enabled: true
@@ -185,5 +410,5 @@ system:
   edition: pro
   live: true
   name: 'Seafarers Assistance'
-  schemaVersion: 3.6.8
+  schemaVersion: 3.7.8
   timeZone: America/Los_Angeles

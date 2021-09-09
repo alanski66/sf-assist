@@ -48,6 +48,8 @@
                 </div>
                 <div class="col-sm-12 col-md-5 col-lg-4 ">
                     <div class="copyright-right">
+{#                        {% set copyright = craft.app.getGlobals().getSetByHandle('copyright', 1) %}#}
+
                         <ul>
                             {% for block in copyright.rights.type('copyright').all() %}
                                 <li>{{ block.copyright | raw}}</li>

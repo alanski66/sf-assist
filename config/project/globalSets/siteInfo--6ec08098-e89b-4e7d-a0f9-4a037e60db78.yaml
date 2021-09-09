@@ -83,3 +83,4 @@ fieldLayouts:
         sortOrder: 2
 handle: siteInfo
 name: 'Site info'
+sortOrder: 5

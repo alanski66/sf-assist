@@ -43,3 +43,4 @@ fieldLayouts:
         sortOrder: 1
 handle: organisationDetails
 name: 'Organisation details'
+sortOrder: 4

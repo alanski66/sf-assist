@@ -398,3 +398,30 @@ section.members h5{
     padding-top:3rem!important;
   }
 }
+
+
+//alerts
+
+.emergency {
+  background: #AF2127;
+  color: #fff;
+  text-align: center;
+}
+.emergency .fa-info-circle,
+.emergency a{
+  color:$white;
+}
+body div.emergency.small {
+  background: #AF2127;
+  color: #fff;
+  text-align: center;
+  font-size:1rem!important;
+}
+.emergency.small .fa-info-circle,
+.emergency.small a{
+  color:$white;
+  font-size:1rem!important;
+}
+.emergency .date{
+  font-size:1rem!important;
+}
