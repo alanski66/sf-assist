@@ -26,12 +26,13 @@
 {% endif %}
 <body class="{{ bodyClass }} {{ currentSite.handle }}">
 <div class="wrapper">
-
     <header class="header">
         {% include '_includes/nav-home.twig' %}
     </header>
     {% block body %}
         <div class="content-wrapper innit">
+        {% include "_includes/_global_alert.twig" %}
+
             {% block content %}
 
             {% endblock %}

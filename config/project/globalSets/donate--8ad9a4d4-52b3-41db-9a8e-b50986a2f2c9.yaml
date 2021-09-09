@@ -70,3 +70,4 @@ fieldLayouts:
         sortOrder: 1
 handle: donate
 name: Donate
+sortOrder: 2

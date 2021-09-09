@@ -10459,6 +10459,29 @@ section.members h5 {
   .no-hero section:nth-child(1) {
     padding-top: 3rem !important; } }
 
+.emergency {
+  background: #AF2127;
+  color: #fff;
+  text-align: center; }
+
+.emergency .fa-info-circle,
+.emergency a {
+  color: #ffffff; }
+
+body div.emergency.small {
+  background: #AF2127;
+  color: #fff;
+  text-align: center;
+  font-size: 1rem !important; }
+
+.emergency.small .fa-info-circle,
+.emergency.small a {
+  color: #ffffff;
+  font-size: 1rem !important; }
+
+.emergency .date {
+  font-size: 1rem !important; }
+
 ul.white li > a {
   color: #ffffff; }
 

@@ -34,3 +34,4 @@ fieldLayouts:
         sortOrder: 1
 handle: globalContent
 name: 'Global Content'
+sortOrder: 3
