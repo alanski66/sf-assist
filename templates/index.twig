@@ -15,7 +15,10 @@
     {# switch site specific featured hero banner #}
     {% if entry.customBrandHeroImage | length %}
         {% set image = entry.customBrandHeroImage.one().url %}
-        {% include '_includes/sites/' ~ currentSite.handle ~ '-hero-featured.twig' %}
+
+        {% include ['_includes/sites/' ~ currentSite.handle ~ '-hero-featured', '_includes/sites/generic-hero-featured'] ignore missing %}
+
+{#        {% include '_includes/sites/' ~ currentSite.handle ~ '-hero-featured.twig' %}#}
     {% else %}
         {# use standard banner for featured hero #}
         {% if entry.bannerImage | length %}
