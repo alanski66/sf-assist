@@ -1,4 +1,4 @@
-dateModified: 1631186409
+dateModified: 1643376203
 email:
   fromEmail: bw@seafarerassistance.org
   fromName: 'Seafarer Assistance'
@@ -43,6 +43,7 @@ meta:
     4fbb28d9-5f55-47db-b772-301d46321c7c: TickList # TickList
     4fe18d87-a2d3-4236-b953-a5608e77a2f0: 'Mobile intro' # Mobile intro
     5a3f814e-aa63-4ff9-a82b-7bf63e1eaa0a: 'Global tracking links' # Global tracking links
+    5afa1764-ea84-4b89-9cf3-38ab28f97bfd: K-ENE # K-ENE
     5b7818b4-46a0-40ef-b373-1c5a6f4d461b: 'Feature intro text' # Feature intro text
     5bd7b2c9-de07-41a0-889c-3f0fc7ef292f: Featured # Featured
     5e1ed6e4-9824-4759-8805-96310b5ad444: 'Feature button hide' # Feature button hide
@@ -87,6 +88,7 @@ meta:
     57e17ebd-5a65-4486-a175-645b52fcf8e5: 'Global site info' # Global site info
     60b5d772-16d6-4685-8f64-feb755abdfa1: 'Footer right links' # Footer right links
     61a67fb5-00ae-4927-b90a-b5bae5385d1f: Teekay # Teekay
+    62c2f3a6-60de-4ec8-8ab2-889acc2f7acc: Seapeak # Seapeak
     66d852db-6826-44d9-a927-5391137b5465: 'Entry to promote' # Entry to promote
     67d32d80-82f8-48c3-adea-cc2ef341e708: Category # Category
     71ca7802-37e2-4c68-877d-7fcfb890a192: 'Feature content' # Feature content
@@ -281,25 +283,6 @@ plugins:
                 -
                   - authorUid
                   - bdfbdb14-ff96-40fb-be37-98105526046f
-          -
-            - 26f2c742-f7f1-4946-9861-71ab9a6c9eb3 # Callback
-            -
-              __assoc__:
-                -
-                  - sectionUid
-                  - 26f2c742-f7f1-4946-9861-71ab9a6c9eb3 # Callback
-                -
-                  - allowGuestSubmissions
-                  - '1'
-                -
-                  - enabledByDefault
-                  - ''
-                -
-                  - runValidation
-                  - '1'
-                -
-                  - authorUid
-                  - bdfbdb14-ff96-40fb-be37-98105526046f
   guest-entries-honeypot:
     edition: standard
     enabled: true
@@ -409,6 +392,7 @@ plugins:
 system:
   edition: pro
   live: true
-  name: 'Seafarers Assistance'
+  name: 'Seafarer Assistance'
+  retryDuration: null
   schemaVersion: 3.7.8
   timeZone: America/Los_Angeles

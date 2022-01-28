@@ -1,9 +1,0 @@
-format: null
-handle: pdfTransform
-height: null
-interlace: none
-mode: crop
-name: 'PDF transform'
-position: center-center
-quality: null
-width: 350
