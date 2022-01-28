@@ -1,7 +1,12 @@
 {# pass last segment as slug to api - to keep pretty urls #}
 {#{%  set shipRoot = 'health-well-being/seafarers-health-resources' %}#}
-{%  set shipRootUrl = currentSite.handle ~ "/resources" | t %}
 
+{# deal with sit ehandle name that disallows hypehns but has a hypen in url base#}
+{%  if currentSite.handle == "kene" %}
+		{% set shipRootUrl =  "k-ene/resources" | t %}
+	{% else %}
+		{% set shipRootUrl = currentSite.handle ~ "/resources" | t %}
+{% endif %}
 {% js %}
 	var baseNavLink = 'https://' + window.location.hostname;
 	var shipRootUrl = '{{ shipRootUrl }}';

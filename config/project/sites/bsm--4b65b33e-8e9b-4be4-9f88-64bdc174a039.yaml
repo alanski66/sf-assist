@@ -1,9 +1,0 @@
-baseUrl: '@web/bsm'
-enabled: true
-handle: bsm
-hasUrls: true
-language: en-GB
-name: BSM
-primary: false
-siteGroup: 215f0d82-30c1-48e9-90e5-1e8d18d21397 # Company sites
-sortOrder: 8
