@@ -51,10 +51,6 @@
 {#                        {% set copyright = craft.app.getGlobals().getSetByHandle('copyright', 1) %}#}
 
                         <ul>
-                            {% for block in copyright.rights.type('copyright').all() %}
-                                <li>{{ block.copyright | raw}}</li>
-                            {%  endfor %}
-
                             {% for block in copyright.rights.type('footerLeftLinks').all() %}
 
                                 {%  if block.footerLeftLink | length %}
@@ -67,8 +63,8 @@
 
                             {% for block in copyright.rights.type('footerRightLinks').all() %}
 
-                                {%  for flink in block.footerRightLink.all() %}
-                                    <li class="{{ flink.title|lower|kebab }}"><a href="{{ flink.uri }}">{{ flink.title }}</a></li>
+                                {%  for frlink in block.footerRightLink.all() %}
+                                    <li class="{{ frlink.title|lower|kebab }}"><a href="{{ frlink.uri }}">{{ frlink.title }}</a></li>
                                 {%  endfor %}
 
                             {%  endfor %}
