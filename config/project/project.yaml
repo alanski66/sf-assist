@@ -1,4 +1,4 @@
-dateModified: 1643376203
+dateModified: 1679903964
 email:
   fromEmail: bw@seafarerassistance.org
   fromName: 'Seafarer Assistance'
@@ -43,7 +43,7 @@ meta:
     4fbb28d9-5f55-47db-b772-301d46321c7c: TickList # TickList
     4fe18d87-a2d3-4236-b953-a5608e77a2f0: 'Mobile intro' # Mobile intro
     5a3f814e-aa63-4ff9-a82b-7bf63e1eaa0a: 'Global tracking links' # Global tracking links
-    5afa1764-ea84-4b89-9cf3-38ab28f97bfd: K-ENE # K-ENE
+    5afa1764-ea84-4b89-9cf3-38ab28f97bfd: K-ENE # KMSM
     5b7818b4-46a0-40ef-b373-1c5a6f4d461b: 'Feature intro text' # Feature intro text
     5bd7b2c9-de07-41a0-889c-3f0fc7ef292f: Featured # Featured
     5e1ed6e4-9824-4759-8805-96310b5ad444: 'Feature button hide' # Feature button hide
@@ -254,7 +254,7 @@ plugins:
   feed-me:
     edition: standard
     enabled: true
-    schemaVersion: 4.4.0
+    schemaVersion: 4.4.1
   guest-entries:
     edition: standard
     enabled: true
@@ -394,5 +394,5 @@ system:
   live: true
   name: 'Seafarer Assistance'
   retryDuration: null
-  schemaVersion: 3.7.8
+  schemaVersion: 3.8.0.1
   timeZone: America/Los_Angeles
