@@ -82,7 +82,7 @@
 {#                                        {%  set site.handle == 'k-ene' %}#}
                                         <option value="{{baseUrl ~ '/k-ene' }}">{{site.name}}</option>
                                     {%  else %}
-                                        <option value="{{baseUrl ~ '/' ~ site.handle }}">{{site.name}}</option>
+                                        <option value="{{baseUrl ~ '/' ~ site.handle }}/">{{site.name}}</option>
 
                                     {% endif %}
                                 {% endif %}
