@@ -77,7 +77,7 @@
 
                         {% elseif entry.level == 1 and not entry.hasDescendants() %}
 
-                            <li class=" nav-item {{ macros.activeLinkClass(navlink, entry.level)|trim }} level{{ entry.level }} {{ entry.title |lower }}">
+                            <li class="l1nodes nav-item {{ macros.activeLinkClass(navlink, entry.level)|trim }} level{{ entry.level }} {{ entry.title |lower }}">
                                 <a id="{{ entry.title|lower }}" href="{{ navlink }}" {{ onclick }}
                                    class="p-2  nav-link {{ macros.activeLinkClass(navlink, entry.level) |trim }} level{{ entry.level }}">{{ entry.title }}</a>
                             </li>
